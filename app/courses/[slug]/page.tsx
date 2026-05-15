@@ -8,9 +8,9 @@ import CourseMapWrapper from "components/CourseMapWrapper"
 import { getCourseBySlug, getAllCourseSlugs, getAllCourses } from "lib/courses"
 import { getAreaById } from "lib/areas"
 import { getAllTags } from "lib/tags"
+import { getCourseSpots } from "lib/spots"
 import { courseMetadata, courseJsonLd, breadcrumbJsonLd } from "lib/seo"
 import { colors, radius, shadow } from "lib/tokens"
-import spotsData from "data/spots.json"
 
 export async function generateStaticParams() {
   return getAllCourseSlugs().map((slug) => ({ slug }))
@@ -33,32 +33,21 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
   const area = getAreaById(course.areaId)
   const allTags = getAllTags()
   const courseTags = allTags.filter((t) => course.tags.includes(t.slug))
+  const courseSpots = getCourseSpots(course.id)
+  const lastOrder = courseSpots.length
 
-  const startSpot = spotsData.find((s) => s.id === course.startPointId)
-  const endSpot = spotsData.find((s) => s.id === course.endPointId)
-
-  const mapSpots = [
-    startSpot && {
-      id: startSpot.id,
-      name: startSpot.name,
-      latitude: startSpot.latitude,
-      longitude: startSpot.longitude,
-      type: "start" as const,
-    },
-    endSpot && {
-      id: endSpot.id,
-      name: endSpot.name,
-      latitude: endSpot.latitude,
-      longitude: endSpot.longitude,
-      type: "end" as const,
-    },
-  ].filter(Boolean) as {
-    id: string
-    name: string
-    latitude: number
-    longitude: number
-    type: "start" | "end" | "waypoint"
-  }[]
+  const mapSpots = courseSpots.map((cs, i) => ({
+    id: cs.spot.id,
+    name: cs.spot.name,
+    latitude: cs.spot.latitude,
+    longitude: cs.spot.longitude,
+    type:
+      i === 0
+        ? ("start" as const)
+        : i === courseSpots.length - 1
+          ? ("end" as const)
+          : ("waypoint" as const),
+  }))
 
   const relatedCourses = getAllCourses()
     .filter((c) => c.id !== course.id && c.areaId === course.areaId)
@@ -242,77 +231,114 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
                   {course.description}
                 </p>
 
-                {startSpot && endSpot && (
-                  <div style={{ marginTop: 24 }}>
+                {courseSpots.length > 0 && (
+                  <div style={{ marginTop: 32 }}>
                     <h2
                       style={{
                         fontSize: 18,
                         fontWeight: 700,
                         color: colors.gray900,
-                        marginBottom: 12,
+                        marginBottom: 16,
                       }}
                     >
                       ルート
                     </h2>
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "flex-start",
-                        gap: 12,
-                        fontSize: 14,
-                      }}
-                    >
-                      <span
-                        style={{
-                          marginTop: 4,
-                          width: 12,
-                          height: 12,
-                          borderRadius: "50%",
-                          background: "#22c55e",
-                          flexShrink: 0,
-                        }}
-                      />
-                      <div>
-                        <p style={{ fontWeight: 500 }}>出発地点</p>
-                        <p style={{ color: colors.gray600 }}>
-                          {startSpot.name}
-                        </p>
-                      </div>
-                    </div>
-                    <div
-                      style={{
-                        marginLeft: 6,
-                        borderLeft: `2px dashed ${colors.gray200}`,
-                        padding: "4px 0 4px 16px",
-                        fontSize: 12,
-                        color: colors.gray400,
-                      }}
-                    >
-                      約{course.durationMinutes}分・
-                      {(course.distanceMeters / 1000).toFixed(1)}km
-                    </div>
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "flex-start",
-                        gap: 12,
-                        fontSize: 14,
-                      }}
-                    >
-                      <span
-                        style={{
-                          marginTop: 4,
-                          width: 12,
-                          height: 12,
-                          borderRadius: "50%",
-                          background: "#ef4444",
-                          flexShrink: 0,
-                        }}
-                      />
-                      <div>
-                        <p style={{ fontWeight: 500 }}>到着地点</p>
-                        <p style={{ color: colors.gray600 }}>{endSpot.name}</p>
-                      </div>
+                    <div style={{ display: "flex", flexDirection: "column" }}>
+                      {courseSpots.map((cs, i) => {
+                        const isFirst = i === 0
+                        const isLast = i === lastOrder - 1
+                        const dotColor = isFirst
+                          ? "#22c55e"
+                          : isLast
+                            ? "#ef4444"
+                            : colors.primary
+                        return (
+                          <div key={cs.id}>
+                            <div
+                              style={{
+                                display: "flex",
+                                gap: 16,
+                                alignItems: "flex-start",
+                              }}
+                            >
+                              <div
+                                style={{
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  alignItems: "center",
+                                  flexShrink: 0,
+                                }}
+                              >
+                                <div
+                                  style={{
+                                    width: 28,
+                                    height: 28,
+                                    borderRadius: "50%",
+                                    background: dotColor,
+                                    color: colors.white,
+                                    fontSize: 12,
+                                    fontWeight: 700,
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                  }}
+                                >
+                                  {cs.order}
+                                </div>
+                              </div>
+                              <div
+                                style={{
+                                  paddingBottom: isLast ? 0 : 24,
+                                  flex: 1,
+                                }}
+                              >
+                                <p
+                                  style={{
+                                    fontWeight: 700,
+                                    fontSize: 14,
+                                    color: colors.gray900,
+                                    lineHeight: 1.4,
+                                  }}
+                                >
+                                  {cs.title ?? cs.spot.name}
+                                </p>
+                                {cs.description && (
+                                  <p
+                                    style={{
+                                      marginTop: 4,
+                                      fontSize: 13,
+                                      color: colors.gray600,
+                                      lineHeight: 1.6,
+                                    }}
+                                  >
+                                    {cs.description}
+                                  </p>
+                                )}
+                                {cs.stayMinutes && (
+                                  <p
+                                    style={{
+                                      marginTop: 4,
+                                      fontSize: 12,
+                                      color: colors.primary,
+                                    }}
+                                  >
+                                    滞在目安 {cs.stayMinutes}分
+                                  </p>
+                                )}
+                              </div>
+                            </div>
+                            {!isLast && (
+                              <div
+                                style={{
+                                  marginLeft: 13,
+                                  borderLeft: `2px dashed ${colors.gray200}`,
+                                  height: 8,
+                                }}
+                              />
+                            )}
+                          </div>
+                        )
+                      })}
                     </div>
                   </div>
                 )}
