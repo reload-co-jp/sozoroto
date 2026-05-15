@@ -1,46 +1,99 @@
-import { Title } from "components/elements/layout"
+import type { Metadata } from "next"
+import Link from "next/link"
 import "./reset.css"
+import "./globals.css"
+import { rootMetadata } from "lib/seo"
+import { colors, font } from "lib/tokens"
 
-export const metadata = {
-  title: "Page title",
-  description: "Page description",
-}
+export const metadata: Metadata = rootMetadata()
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="ja">
-      <body>
+      <body
+        style={{
+          minHeight: "100dvh",
+          display: "flex",
+          flexDirection: "column",
+          fontFamily: font.family,
+        }}
+      >
         <header
           style={{
-            backgroundColor: "#333",
-            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-            padding: ".5rem 1rem",
-            position: "relative",
+            position: "sticky",
+            top: 0,
+            zIndex: 50,
+            borderBottom: `1px solid ${colors.gray200}`,
+            background: "rgba(255,255,255,0.92)",
+            backdropFilter: "blur(8px)",
           }}
         >
-          <Title>Page title</Title>
+          <div
+            style={{
+              maxWidth: 1024,
+              margin: "0 auto",
+              padding: "16px 24px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+            }}
+          >
+            <Link href="/">
+              <span
+                style={{
+                  fontSize: 18,
+                  fontWeight: 700,
+                  color: colors.primary,
+                }}
+              >
+                そぞろっと
+              </span>
+            </Link>
+            <nav
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: 24,
+                fontSize: 14,
+                color: colors.gray600,
+              }}
+            >
+              <Link href="/courses">コース一覧</Link>
+              <Link href="/areas">エリア</Link>
+            </nav>
+          </div>
         </header>
-        <main
-          style={{
-            background: "#222",
-            minHeight: "calc(100dvh - 5.625rem)",
-            padding: "1rem",
-          }}
-        >
-          {children}
-        </main>
+
+        <main style={{ flex: 1 }}>{children}</main>
+
         <footer
           style={{
-            backgroundColor: "#333",
-            boxShadow: "0 -4px 6px rgba(0, 0, 0, 0.1)",
-            fontSize: ".75rem",
-            padding: "1rem",
+            borderTop: `1px solid ${colors.gray200}`,
+            background: colors.white,
           }}
         >
-          <p>&copy; My organization</p>
+          <div
+            style={{
+              maxWidth: 1024,
+              margin: "0 auto",
+              padding: "40px 24px",
+              textAlign: "center",
+              fontSize: 14,
+              color: colors.gray500,
+            }}
+          >
+            <p style={{ fontWeight: 600, color: colors.primary }}>
+              そぞろっと
+            </p>
+            <p style={{ marginTop: 4 }}>
+              東京近辺の散歩コースを、そぞろっと探す。
+            </p>
+            <p style={{ marginTop: 16, fontSize: 12 }}>© 2025 sozoroto</p>
+          </div>
         </footer>
       </body>
     </html>
   )
 }
+
 export default RootLayout

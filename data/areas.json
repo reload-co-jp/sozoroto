@@ -1,0 +1,93 @@
+[
+  {
+    "id": "area-01",
+    "slug": "akihabara-kanda",
+    "name": "秋葉原・神田",
+    "description": "電気街として知られる秋葉原と、古くから商業の中心地として栄えた神田。高架下の路地や老舗の喫茶店、神田明神など、下町情緒と現代カルチャーが混在するエリア。",
+    "prefecture": "東京都",
+    "city": "千代田区",
+    "mainImageUrl": null,
+    "latitude": 35.6984,
+    "longitude": 139.7731,
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": "area-02",
+    "slug": "ochanomizu-akihabara",
+    "name": "御茶ノ水・秋葉原",
+    "description": "神田川に沿った坂道と橋が印象的な御茶ノ水から、秋葉原へと続くルート。聖橋や湯島聖堂、神田明神など歴史的スポットが点在する、起伏ある街歩きが楽しめるエリア。",
+    "prefecture": "東京都",
+    "city": "千代田区",
+    "mainImageUrl": null,
+    "latitude": 35.6985,
+    "longitude": 139.7665,
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": "area-03",
+    "slug": "ueno-yanaka",
+    "name": "上野・谷中",
+    "description": "博物館・美術館が集まる上野公園から、昭和レトロな商店街と寺町が続く谷中へ。東京でもっとも「古い東京」を感じられるエリアのひとつ。",
+    "prefecture": "東京都",
+    "city": "台東区",
+    "mainImageUrl": null,
+    "latitude": 35.7141,
+    "longitude": 139.7699,
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": "area-04",
+    "slug": "asakusa-kuramae",
+    "name": "浅草・蔵前",
+    "description": "伝統と革新が交差するエリア。浅草寺周辺の観光地から隅田川沿いを歩き、クリエイターや職人の街として注目される蔵前へ。川沿いの風景と手仕事のショップが魅力。",
+    "prefecture": "東京都",
+    "city": "台東区",
+    "mainImageUrl": null,
+    "latitude": 35.7147,
+    "longitude": 139.7967,
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": "area-05",
+    "slug": "nihonbashi-ningyocho",
+    "name": "日本橋・人形町",
+    "description": "江戸時代から続く老舗が並ぶ日本橋と、甘酒横丁で知られる人形町。近代建築と老舗商店が融合した、東京の歴史を肌で感じられるエリア。",
+    "prefecture": "東京都",
+    "city": "中央区",
+    "mainImageUrl": null,
+    "latitude": 35.6832,
+    "longitude": 139.7742,
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": "area-06",
+    "slug": "kiyosumi-shirakawa",
+    "name": "清澄白河",
+    "description": "コーヒーの街として知られるようになった清澄白河。隅田川沿いの公園や深川江戸資料館、東京都現代美術館など、水辺と文化が共存するエリア。",
+    "prefecture": "東京都",
+    "city": "江東区",
+    "mainImageUrl": null,
+    "latitude": 35.6795,
+    "longitude": 139.8019,
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": "area-07",
+    "slug": "jimbocho",
+    "name": "神保町",
+    "description": "世界最大の古書店街として知られる神保町。古書店、楽器店、スポーツ用品店、老舗喫茶店が共存する、東京随一の「本と文化の街」。",
+    "prefecture": "東京都",
+    "city": "千代田区",
+    "mainImageUrl": null,
+    "latitude": 35.6958,
+    "longitude": 139.7573,
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  }
+]

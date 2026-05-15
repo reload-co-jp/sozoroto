@@ -1,0 +1,473 @@
+import { FC } from "react"
+import { notFound } from "next/navigation"
+import Link from "next/link"
+import type { Metadata } from "next"
+import DifficultyBadge from "components/DifficultyBadge"
+import TagList from "components/TagList"
+import CourseMapWrapper from "components/CourseMapWrapper"
+import { getCourseBySlug, getAllCourseSlugs, getAllCourses } from "lib/courses"
+import { getAreaById } from "lib/areas"
+import { getAllTags } from "lib/tags"
+import { courseMetadata, courseJsonLd, breadcrumbJsonLd } from "lib/seo"
+import { colors, radius, shadow } from "lib/tokens"
+import spotsData from "data/spots.json"
+
+export async function generateStaticParams() {
+  return getAllCourseSlugs().map((slug) => ({ slug }))
+}
+
+type Props = { params: Promise<{ slug: string }> }
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params
+  const course = getCourseBySlug(slug)
+  if (!course) return {}
+  return courseMetadata(course)
+}
+
+const CourseDetailPage: FC<Props> = async ({ params }) => {
+  const { slug } = await params
+  const course = getCourseBySlug(slug)
+  if (!course) notFound()
+
+  const area = getAreaById(course.areaId)
+  const allTags = getAllTags()
+  const courseTags = allTags.filter((t) => course.tags.includes(t.slug))
+
+  const startSpot = spotsData.find((s) => s.id === course.startPointId)
+  const endSpot = spotsData.find((s) => s.id === course.endPointId)
+
+  const mapSpots = [
+    startSpot && {
+      id: startSpot.id,
+      name: startSpot.name,
+      latitude: startSpot.latitude,
+      longitude: startSpot.longitude,
+      type: "start" as const,
+    },
+    endSpot && {
+      id: endSpot.id,
+      name: endSpot.name,
+      latitude: endSpot.latitude,
+      longitude: endSpot.longitude,
+      type: "end" as const,
+    },
+  ].filter(Boolean) as {
+    id: string
+    name: string
+    latitude: number
+    longitude: number
+    type: "start" | "end" | "waypoint"
+  }[]
+
+  const relatedCourses = getAllCourses()
+    .filter((c) => c.id !== course.id && c.areaId === course.areaId)
+    .slice(0, 3)
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseJsonLd(course)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbJsonLd([
+              { name: "そぞろっと", url: "https://sozoroto.jp" },
+              { name: "コース一覧", url: "https://sozoroto.jp/courses" },
+              { name: course.title, url: `https://sozoroto.jp/courses/${course.slug}` },
+            ])
+          ),
+        }}
+      />
+
+      <div style={{ maxWidth: 896, margin: "0 auto", padding: "40px 24px" }}>
+        <nav
+          style={{
+            display: "flex",
+            gap: 8,
+            fontSize: 14,
+            color: colors.gray400,
+            marginBottom: 24,
+          }}
+        >
+          <Link href="/">ホーム</Link>
+          <span>/</span>
+          <Link href="/courses">コース一覧</Link>
+          <span>/</span>
+          <span style={{ color: colors.gray600 }}>{course.title}</span>
+        </nav>
+
+        <div
+          style={{
+            overflow: "hidden",
+            borderRadius: radius.xl,
+            background: colors.white,
+            boxShadow: shadow.sm,
+          }}
+        >
+          <div
+            style={{
+              aspectRatio: "16/7",
+              width: "100%",
+              background: colors.gray100,
+            }}
+          >
+            {course.mainImageUrl ? (
+              <img
+                src={course.mainImageUrl}
+                alt={course.title}
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
+            ) : (
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: colors.gray300,
+                }}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={64}
+                  height={64}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1}
+                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+            )}
+          </div>
+
+          <div style={{ padding: "32px 32px 40px" }}>
+            {area && (
+              <Link
+                href={`/areas/${area.slug}`}
+                style={{ fontSize: 14, color: colors.primary }}
+              >
+                {area.name}
+              </Link>
+            )}
+            <h1
+              style={{
+                marginTop: 4,
+                fontSize: 28,
+                fontWeight: 700,
+                color: colors.gray900,
+                lineHeight: 1.4,
+              }}
+            >
+              {course.title}
+            </h1>
+            <p
+              style={{
+                marginTop: 12,
+                color: colors.gray600,
+                lineHeight: 1.7,
+              }}
+            >
+              {course.shortDescription}
+            </p>
+
+            <div
+              style={{
+                marginTop: 32,
+                display: "flex",
+                flexWrap: "wrap",
+                gap: 24,
+                borderRadius: radius.lg,
+                background: colors.surface2,
+                padding: "20px 24px",
+              }}
+            >
+              <div style={{ textAlign: "center" }}>
+                <p style={{ fontSize: 11, color: colors.gray500 }}>所要時間</p>
+                <p style={{ fontWeight: 700, color: colors.gray900 }}>
+                  {course.durationMinutes}分
+                </p>
+              </div>
+              <div style={{ textAlign: "center" }}>
+                <p style={{ fontSize: 11, color: colors.gray500 }}>距離</p>
+                <p style={{ fontWeight: 700, color: colors.gray900 }}>
+                  {(course.distanceMeters / 1000).toFixed(1)}km
+                </p>
+              </div>
+              <div style={{ textAlign: "center" }}>
+                <p style={{ fontSize: 11, color: colors.gray500 }}>難易度</p>
+                <DifficultyBadge difficulty={course.difficulty} />
+              </div>
+              {course.estimatedSteps && (
+                <div style={{ textAlign: "center" }}>
+                  <p style={{ fontSize: 11, color: colors.gray500 }}>想定歩数</p>
+                  <p style={{ fontWeight: 700, color: colors.gray900 }}>
+                    {course.estimatedSteps.toLocaleString()}歩
+                  </p>
+                </div>
+              )}
+            </div>
+
+            <div
+              style={{
+                marginTop: 40,
+                display: "flex",
+                flexWrap: "wrap",
+                gap: 40,
+                alignItems: "flex-start",
+              }}
+            >
+              <div style={{ flex: "1 1 320px" }}>
+                <h2
+                  style={{
+                    fontSize: 18,
+                    fontWeight: 700,
+                    color: colors.gray900,
+                    marginBottom: 12,
+                  }}
+                >
+                  コース説明
+                </h2>
+                <p style={{ color: colors.gray700, lineHeight: 1.8 }}>
+                  {course.description}
+                </p>
+
+                {startSpot && endSpot && (
+                  <div style={{ marginTop: 24 }}>
+                    <h2
+                      style={{
+                        fontSize: 18,
+                        fontWeight: 700,
+                        color: colors.gray900,
+                        marginBottom: 12,
+                      }}
+                    >
+                      ルート
+                    </h2>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "flex-start",
+                        gap: 12,
+                        fontSize: 14,
+                      }}
+                    >
+                      <span
+                        style={{
+                          marginTop: 4,
+                          width: 12,
+                          height: 12,
+                          borderRadius: "50%",
+                          background: "#22c55e",
+                          flexShrink: 0,
+                        }}
+                      />
+                      <div>
+                        <p style={{ fontWeight: 500 }}>出発地点</p>
+                        <p style={{ color: colors.gray600 }}>
+                          {startSpot.name}
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      style={{
+                        marginLeft: 6,
+                        borderLeft: `2px dashed ${colors.gray200}`,
+                        padding: "4px 0 4px 16px",
+                        fontSize: 12,
+                        color: colors.gray400,
+                      }}
+                    >
+                      約{course.durationMinutes}分・
+                      {(course.distanceMeters / 1000).toFixed(1)}km
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "flex-start",
+                        gap: 12,
+                        fontSize: 14,
+                      }}
+                    >
+                      <span
+                        style={{
+                          marginTop: 4,
+                          width: 12,
+                          height: 12,
+                          borderRadius: "50%",
+                          background: "#ef4444",
+                          flexShrink: 0,
+                        }}
+                      />
+                      <div>
+                        <p style={{ fontWeight: 500 }}>到着地点</p>
+                        <p style={{ color: colors.gray600 }}>{endSpot.name}</p>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {course.recommendedTimeOfDay.length > 0 && (
+                  <div style={{ marginTop: 24 }}>
+                    <h2
+                      style={{
+                        fontSize: 18,
+                        fontWeight: 700,
+                        color: colors.gray900,
+                        marginBottom: 10,
+                      }}
+                    >
+                      おすすめ時間帯
+                    </h2>
+                    <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+                      {course.recommendedTimeOfDay.map((t) => (
+                        <span
+                          key={t}
+                          style={{
+                            borderRadius: radius.full,
+                            background: colors.surface2,
+                            padding: "4px 14px",
+                            fontSize: 14,
+                            color: colors.gray700,
+                          }}
+                        >
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {course.cautionNotes && (
+                  <div
+                    style={{
+                      marginTop: 24,
+                      borderRadius: radius.lg,
+                      border: `1px solid #fde68a`,
+                      background: "#fefce8",
+                      padding: "16px 20px",
+                    }}
+                  >
+                    <p
+                      style={{
+                        fontSize: 13,
+                        fontWeight: 700,
+                        color: "#92400e",
+                        marginBottom: 4,
+                      }}
+                    >
+                      注意点
+                    </p>
+                    <p style={{ fontSize: 13, color: "#a16207" }}>
+                      {course.cautionNotes}
+                    </p>
+                  </div>
+                )}
+
+                {courseTags.length > 0 && (
+                  <div style={{ marginTop: 24 }}>
+                    <h2
+                      style={{
+                        fontSize: 18,
+                        fontWeight: 700,
+                        color: colors.gray900,
+                        marginBottom: 12,
+                      }}
+                    >
+                      タグ
+                    </h2>
+                    <TagList tags={courseTags} />
+                  </div>
+                )}
+              </div>
+
+              <div style={{ flex: "0 1 320px", minWidth: 260 }}>
+                <h2
+                  style={{
+                    fontSize: 18,
+                    fontWeight: 700,
+                    color: colors.gray900,
+                    marginBottom: 12,
+                  }}
+                >
+                  地図
+                </h2>
+                <CourseMapWrapper
+                  route={course.routeGeoJson}
+                  spots={mapSpots}
+                  height="320px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {relatedCourses.length > 0 && (
+          <section style={{ marginTop: 64 }}>
+            <h2
+              style={{
+                fontSize: 20,
+                fontWeight: 700,
+                color: colors.gray900,
+                marginBottom: 24,
+              }}
+            >
+              同じエリアのコース
+            </h2>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 24 }}>
+              {relatedCourses.map((c) => (
+                <Link
+                  key={c.id}
+                  href={`/courses/${c.slug}`}
+                  style={{
+                    flex: "1 1 200px",
+                    borderRadius: radius.lg,
+                    background: colors.white,
+                    padding: "16px 20px",
+                    boxShadow: shadow.sm,
+                  }}
+                >
+                  <p
+                    style={{
+                      fontWeight: 700,
+                      color: colors.gray900,
+                      fontSize: 15,
+                    }}
+                  >
+                    {c.title}
+                  </p>
+                  <p
+                    style={{
+                      marginTop: 4,
+                      fontSize: 13,
+                      color: colors.gray600,
+                      lineHeight: 1.6,
+                      display: "-webkit-box",
+                      WebkitLineClamp: 2,
+                      WebkitBoxOrient: "vertical",
+                      overflow: "hidden",
+                    }}
+                  >
+                    {c.shortDescription}
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
+      </div>
+    </>
+  )
+}
+
+export default CourseDetailPage
