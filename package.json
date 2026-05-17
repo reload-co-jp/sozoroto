@@ -9,7 +9,8 @@
     "build": "next build",
     "start": "next start",
     "format": "prettier --write .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "fetch-routes": "node --env-file=.env.local scripts/fetch-routes.mjs"
   },
   "keywords": [],
   "author": "",

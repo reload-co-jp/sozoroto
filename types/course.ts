@@ -17,6 +17,7 @@ export type Course = {
   difficulty: Difficulty
   estimatedSteps?: number
   routeGeoJson: LineString
+  routeFetchedAt?: string
   mainImageUrl?: string
   imageUrls: string[]
   recommendedTimeOfDay: string[]

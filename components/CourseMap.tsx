@@ -2,6 +2,7 @@
 
 import { FC, useEffect, useRef } from "react"
 import type { LineString } from "geojson"
+import "maplibre-gl/dist/maplibre-gl.css"
 
 type Spot = {
   id: string
@@ -36,20 +37,12 @@ const CourseMap: FC<Props> = ({ route, spots = [], height = "400px" }) => {
           sources: {
             osm: {
               type: "raster",
-              tiles: [
-                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-              ],
+              tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
               tileSize: 256,
               attribution: "© OpenStreetMap contributors",
             },
           },
-          layers: [
-            {
-              id: "osm",
-              type: "raster",
-              source: "osm",
-            },
-          ],
+          layers: [{ id: "osm", type: "raster", source: "osm" }],
         },
         center,
         zoom: 14,
@@ -60,21 +53,14 @@ const CourseMap: FC<Props> = ({ route, spots = [], height = "400px" }) => {
       map.on("load", () => {
         map.addSource("route", {
           type: "geojson",
-          data: {
-            type: "Feature",
-            properties: {},
-            geometry: route,
-          },
+          data: { type: "Feature", properties: {}, geometry: route },
         })
 
         map.addLayer({
           id: "route-line",
           type: "line",
           source: "route",
-          layout: {
-            "line-join": "round",
-            "line-cap": "round",
-          },
+          layout: { "line-join": "round", "line-cap": "round" },
           paint: {
             "line-color": "#3d7a5f",
             "line-width": 4,
