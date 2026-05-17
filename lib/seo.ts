@@ -12,7 +12,7 @@ export function rootMetadata(): Metadata {
     metadataBase: new URL(BASE_URL),
     title: {
       template: `%s | ${SITE_NAME}`,
-      default: `${SITE_NAME} — なんとなく歩きたい日に。`,
+      default: `${SITE_NAME} — なんとなく、きままな冒険を。`,
     },
     description: SITE_DESCRIPTION,
     openGraph: {

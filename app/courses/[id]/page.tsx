@@ -59,16 +59,24 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseJsonLd(course)) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(courseJsonLd(course)),
+        }}
       />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             breadcrumbJsonLd([
-              { name: "そぞろっと", url: "https://sozoroto.reload.co.jp" },
-              { name: "コース一覧", url: "https://sozoroto.reload.co.jp/courses" },
-              { name: course.title, url: `https://sozoroto.reload.co.jp/courses/${course.id}` },
+              { name: "そぞろっと！", url: "https://sozoroto.reload.co.jp" },
+              {
+                name: "コース一覧",
+                url: "https://sozoroto.reload.co.jp/courses",
+              },
+              {
+                name: course.title,
+                url: `https://sozoroto.reload.co.jp/courses/${course.id}`,
+              },
             ])
           ),
         }}
@@ -201,7 +209,9 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
               </div>
               {course.estimatedSteps && (
                 <div style={{ textAlign: "center" }}>
-                  <p style={{ fontSize: 11, color: colors.gray500 }}>想定歩数</p>
+                  <p style={{ fontSize: 11, color: colors.gray500 }}>
+                    想定歩数
+                  </p>
                   <p style={{ fontWeight: 700, color: colors.gray900 }}>
                     {course.estimatedSteps.toLocaleString()}歩
                   </p>

@@ -4,7 +4,7 @@ import { colors, radius } from "lib/tokens"
 export const metadata: Metadata = {
   title: "このサイトについて | そぞろっと",
   description:
-    "そぞろっとは、東京近辺の散歩コースを探せるサービスです。サイトのコンセプトや使い方をご紹介します。",
+    "なんとなく、きままな冒険を。そぞろっとは、東京近辺の散歩コースを探せるサービスです。サイトのコンセプトや使い方をご紹介します。",
   alternates: { canonical: "https://sozoroto.reload.co.jp/about" },
 }
 
@@ -41,6 +41,16 @@ export default function AboutPage() {
       >
         このサイトについて
       </h1>
+      <p
+        style={{
+          color: colors.primary,
+          fontSize: 15,
+          fontWeight: 600,
+          marginBottom: 8,
+        }}
+      >
+        なんとなく、きままな冒険を。
+      </p>
       <p style={{ color: colors.gray500, fontSize: 14, marginBottom: 48 }}>
         About sozoroto
       </p>
