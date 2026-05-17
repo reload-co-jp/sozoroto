@@ -35,8 +35,8 @@ const TagPage: FC<Props> = async ({ params }) => {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             breadcrumbJsonLd([
-              { name: "そぞろっと", url: "https://sozoroto.jp" },
-              { name: tag.name, url: `https://sozoroto.jp/tags/${tag.id}` },
+              { name: "そぞろっと", url: "https://sozoroto.reload.co.jp" },
+              { name: tag.name, url: `https://sozoroto.reload.co.jp/tags/${tag.id}` },
             ])
           ),
         }}

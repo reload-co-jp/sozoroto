@@ -40,9 +40,9 @@ const AreaDetailPage: FC<Props> = async ({ params }) => {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             breadcrumbJsonLd([
-              { name: "そぞろっと", url: "https://sozoroto.jp" },
-              { name: "エリア一覧", url: "https://sozoroto.jp/areas" },
-              { name: area.name, url: `https://sozoroto.jp/areas/${area.id}` },
+              { name: "そぞろっと", url: "https://sozoroto.reload.co.jp" },
+              { name: "エリア一覧", url: "https://sozoroto.reload.co.jp/areas" },
+              { name: area.name, url: `https://sozoroto.reload.co.jp/areas/${area.id}` },
             ])
           ),
         }}

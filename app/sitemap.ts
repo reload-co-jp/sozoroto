@@ -5,7 +5,7 @@ import { getAllTagSlugs } from "lib/tags"
 
 export const dynamic = "force-static"
 
-const BASE_URL = "https://sozoroto.jp"
+const BASE_URL = "https://sozoroto.reload.co.jp"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const courseSlugs = getAllCourseSlugs()

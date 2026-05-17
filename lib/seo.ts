@@ -5,7 +5,7 @@ import type { Tag } from "types/tag"
 
 const SITE_NAME = "そぞろっと"
 const SITE_DESCRIPTION = "東京近辺の散歩コースを、そぞろっと探す。"
-const BASE_URL = "https://sozoroto.jp"
+const BASE_URL = "https://sozoroto.reload.co.jp"
 
 export function rootMetadata(): Metadata {
   return {

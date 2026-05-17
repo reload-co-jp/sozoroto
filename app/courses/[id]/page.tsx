@@ -66,9 +66,9 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             breadcrumbJsonLd([
-              { name: "そぞろっと", url: "https://sozoroto.jp" },
-              { name: "コース一覧", url: "https://sozoroto.jp/courses" },
-              { name: course.title, url: `https://sozoroto.jp/courses/${course.id}` },
+              { name: "そぞろっと", url: "https://sozoroto.reload.co.jp" },
+              { name: "コース一覧", url: "https://sozoroto.reload.co.jp/courses" },
+              { name: course.title, url: `https://sozoroto.reload.co.jp/courses/${course.id}` },
             ])
           ),
         }}
