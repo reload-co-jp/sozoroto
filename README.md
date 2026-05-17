@@ -1,10 +1,10 @@
-# そぞろっと（sozoroto）仕様書
+# そぞろっと！（sozoroto）仕様書
 
 ## 1. 概要
 
 ### 1.1 サービス名
 
-そぞろっと（sozoroto）
+そぞろっと！（sozoroto）
 
 ### 1.2 コンセプト
 
@@ -131,7 +131,7 @@
 ### キャッチコピー候補
 
 - なんとなく歩きたい日に。
-- 東京の散歩コースを、そぞろっと探す。
+- 東京の散歩コースを、そぞろっと！探す。
 - 目的地より、歩く時間を楽しむ。
 - 知らない道に、少し寄り道。
 
@@ -335,14 +335,14 @@ type Course = {
   endPointId: string
   distanceMeters: number
   durationMinutes: number
-  difficulty: 'very_easy' | 'easy' | 'normal' | 'hard'
+  difficulty: "very_easy" | "easy" | "normal" | "hard"
   estimatedSteps?: number
   routeGeoJson: GeoJSON.LineString
   mainImageUrl?: string
   imageUrls: string[]
   recommendedTimeOfDay: string[]
   cautionNotes?: string
-  status: 'draft' | 'published' | 'archived'
+  status: "draft" | "published" | "archived"
   publishedAt?: string
   createdAt: string
   updatedAt: string
@@ -985,11 +985,10 @@ OpenStreetMapタイルを大量アクセスで利用すると制限に触れる�
 
 ## 25. まとめ
 
-そぞろっとは、東京近辺の散歩コースを紹介するメディア型アプリである。
+そぞろっと！は、東京近辺の散歩コースを紹介するメディア型アプリである。
 
 単なる地図サービスではなく、街の歴史、ランドマーク、建築、文化、地形なども合わせて紹介し、“街を知りながら歩く” 体験を提供する。
 
 運営が質の高い散歩コースを登録し、SEOと地域コンテンツによって流入を増やす構成を採用する。
 
 「東京近辺で散歩したいときに見るサイト」として、軽く、使いやすく、継続的にコースを増やせる構成を目指す。
-

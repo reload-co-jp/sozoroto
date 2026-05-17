@@ -42,12 +42,13 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
               <span
                 style={{
                   fontSize: 18,
-                  fontWeight: 700,
+                  fontWeight: 900,
                   color: colors.primary,
                 }}
               >
-                そぞろっと
+                そぞろっと！
               </span>
+              <p style={{ fontSize: 9 }}>なんとなく、きままな冒険を。</p>
             </Link>
             <nav
               style={{
@@ -83,16 +84,13 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
             }}
           >
             <p style={{ fontWeight: 600, color: colors.primary }}>
-              そぞろっと
+              そぞろっと！
             </p>
             <p style={{ marginTop: 4 }}>
-              東京近辺の散歩コースを、そぞろっと探す。
+              東京近辺の散歩コースを、そぞろっと！探す。
             </p>
             <p style={{ marginTop: 16, fontSize: 12 }}>
-              <Link
-                href="/about"
-                style={{ color: colors.gray500 }}
-              >
+              <Link href="/about" style={{ color: colors.gray500 }}>
                 このサイトについて
               </Link>
             </p>

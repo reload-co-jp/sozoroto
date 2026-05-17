@@ -31,7 +31,7 @@ const Page: FC = () => {
               lineHeight: 1.4,
             }}
           >
-            なんとなく歩きたい日に。
+            なんとなく、きままな冒険を。
           </h1>
           <p
             style={{
@@ -40,7 +40,7 @@ const Page: FC = () => {
               lineHeight: 1.7,
             }}
           >
-            東京近辺の散歩コースを、そぞろっと探す。
+            東京近辺の散歩コースを、そぞろっと！探す。
           </p>
           <Link
             href="/courses"
@@ -126,10 +126,7 @@ const Page: FC = () => {
             >
               エリアから探す
             </h2>
-            <Link
-              href="/areas"
-              style={{ fontSize: 14, color: colors.primary }}
-            >
+            <Link href="/areas" style={{ fontSize: 14, color: colors.primary }}>
               すべて見る →
             </Link>
           </div>
