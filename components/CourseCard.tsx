@@ -4,6 +4,7 @@ import { FC } from "react"
 import Link from "next/link"
 import type { Course } from "types/course"
 import { getAreaById } from "lib/areas"
+import { getTagBySlug } from "lib/tags"
 import DifficultyBadge from "components/DifficultyBadge"
 import { colors, radius, shadow, transition } from "lib/tokens"
 import { useHover } from "lib/useHover"
@@ -138,9 +139,9 @@ const CourseCard: FC<Props> = ({ course }) => {
         </div>
         {course.tags.length > 0 && (
           <div style={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
-            {course.tags.slice(0, 4).map((tag) => (
+            {course.tags.slice(0, 4).map((slug) => (
               <span
-                key={tag}
+                key={slug}
                 style={{
                   background: colors.surface2,
                   borderRadius: 4,
@@ -149,7 +150,7 @@ const CourseCard: FC<Props> = ({ course }) => {
                   color: colors.gray600,
                 }}
               >
-                #{tag}
+                #{getTagBySlug(slug)?.name ?? slug}
               </span>
             ))}
           </div>
