@@ -7,9 +7,10 @@ import { getAllTags } from "lib/tags"
 import { colors } from "lib/tokens"
 
 export const metadata: Metadata = {
-  title: "コース一覧 | そぞろっと",
+  title: "コース一覧",
   description:
     "東京近辺の散歩コース一覧。エリア・所要時間・テーマで絞り込みできます。",
+  alternates: { canonical: "https://sozoroto.jp/courses" },
 }
 
 const CoursesPage: FC = () => {

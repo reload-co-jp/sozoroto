@@ -9,6 +9,7 @@ const BASE_URL = "https://sozoroto.jp"
 
 export function rootMetadata(): Metadata {
   return {
+    metadataBase: new URL(BASE_URL),
     title: {
       template: `%s | ${SITE_NAME}`,
       default: `${SITE_NAME} — なんとなく歩きたい日に。`,
@@ -18,6 +19,16 @@ export function rootMetadata(): Metadata {
       siteName: SITE_NAME,
       locale: "ja_JP",
       type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+    alternates: {
+      canonical: BASE_URL,
     },
   }
 }
@@ -35,6 +46,7 @@ export function courseMetadata(course: Course): Metadata {
       publishedTime: course.publishedAt,
       modifiedTime: course.updatedAt,
     },
+    twitter: { card: "summary_large_image", title, description },
     alternates: {
       canonical: `${BASE_URL}/courses/${course.slug}`,
     },
@@ -47,7 +59,8 @@ export function areaMetadata(area: Area): Metadata {
   return {
     title,
     description,
-    openGraph: { title, description },
+    openGraph: { title, description, type: "website" },
+    twitter: { card: "summary_large_image", title, description },
     alternates: { canonical: `${BASE_URL}/areas/${area.slug}` },
   }
 }
@@ -59,7 +72,8 @@ export function tagMetadata(tag: Tag): Metadata {
   return {
     title,
     description,
-    openGraph: { title, description },
+    openGraph: { title, description, type: "website" },
+    twitter: { card: "summary_large_image", title, description },
     alternates: { canonical: `${BASE_URL}/tags/${tag.slug}` },
   }
 }

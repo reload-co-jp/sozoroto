@@ -5,9 +5,10 @@ import { getAreasWithCourseCount } from "lib/areas"
 import { colors } from "lib/tokens"
 
 export const metadata: Metadata = {
-  title: "エリア一覧 | そぞろっと",
+  title: "エリア一覧",
   description:
     "東京近辺の散歩エリア一覧。秋葉原・谷中・清澄白河など、街ごとの散歩コースを探す。",
+  alternates: { canonical: "https://sozoroto.jp/areas" },
 }
 
 const AreasPage: FC = () => {
