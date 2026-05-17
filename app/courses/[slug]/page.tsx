@@ -325,6 +325,26 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
                                     滞在目安 {cs.stayMinutes}分
                                   </p>
                                 )}
+                                {cs.spot.imageUrl && (
+                                  <div
+                                    style={{
+                                      marginTop: 8,
+                                      borderRadius: radius.md,
+                                      overflow: "hidden",
+                                      aspectRatio: "16/9",
+                                    }}
+                                  >
+                                    <img
+                                      src={cs.spot.imageUrl}
+                                      alt={cs.title ?? cs.spot.name}
+                                      style={{
+                                        width: "100%",
+                                        height: "100%",
+                                        objectFit: "cover",
+                                      }}
+                                    />
+                                  </div>
+                                )}
                               </div>
                             </div>
                             {!isLast && (

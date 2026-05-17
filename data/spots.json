@@ -7,7 +7,7 @@
     "address": "東京都千代田区外神田1丁目",
     "latitude": 35.6984,
     "longitude": 139.7732,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-01.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -20,7 +20,7 @@
     "address": "東京都千代田区外神田2-16-2",
     "latitude": 35.7022,
     "longitude": 139.7668,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-02.jpg",
     "officialUrl": "https://www.kandamyojin.or.jp/",
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -33,7 +33,7 @@
     "address": "東京都千代田区鍛冶町2丁目",
     "latitude": 35.6916,
     "longitude": 139.7707,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-03.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -46,7 +46,7 @@
     "address": "東京都千代田区神田駿河台2丁目",
     "latitude": 35.6996,
     "longitude": 139.7649,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-04.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -59,7 +59,7 @@
     "address": "東京都千代田区神田駿河台",
     "latitude": 35.7004,
     "longitude": 139.7638,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-05.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -72,7 +72,7 @@
     "address": "東京都文京区湯島1-4-25",
     "latitude": 35.7009,
     "longitude": 139.7651,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-06.jpg",
     "officialUrl": "https://www.seido.or.jp/",
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -85,7 +85,7 @@
     "address": "東京都台東区上野公園",
     "latitude": 35.7141,
     "longitude": 139.7741,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-07.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -98,7 +98,7 @@
     "address": "東京都台東区谷中3丁目",
     "latitude": 35.7254,
     "longitude": 139.7688,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-08.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -111,7 +111,7 @@
     "address": "東京都台東区谷中7丁目",
     "latitude": 35.7239,
     "longitude": 139.7652,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-09.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -124,7 +124,7 @@
     "address": "東京都台東区浅草2-3-1",
     "latitude": 35.7148,
     "longitude": 139.7967,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-10.jpg",
     "officialUrl": "https://www.senso-ji.jp/",
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -137,7 +137,7 @@
     "address": "東京都台東区花川戸",
     "latitude": 35.7076,
     "longitude": 139.8021,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-11.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -150,7 +150,7 @@
     "address": "東京都台東区蔵前",
     "latitude": 35.7005,
     "longitude": 139.7951,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-12.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -163,7 +163,7 @@
     "address": "東京都中央区日本橋室町",
     "latitude": 35.6834,
     "longitude": 139.7744,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-13.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -176,7 +176,7 @@
     "address": "東京都中央区日本橋人形町",
     "latitude": 35.6844,
     "longitude": 139.7812,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-14.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -189,7 +189,7 @@
     "address": "東京都江東区清澄2-3-30",
     "latitude": 35.6813,
     "longitude": 139.7985,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-15.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -201,8 +201,8 @@
     "description": "現代アートの国内最大級のコレクションを持つ美術館。",
     "address": "東京都江東区三好4-1-1",
     "latitude": 35.6797,
-    "longitude": 139.8050,
-    "imageUrl": null,
+    "longitude": 139.805,
+    "imageUrl": "/images/spots/spot-16.jpg",
     "officialUrl": "https://www.mot-art-museum.jp/",
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -215,7 +215,7 @@
     "address": "東京都千代田区神田神保町1-7",
     "latitude": 35.6963,
     "longitude": 139.7583,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-17.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -228,7 +228,7 @@
     "address": "東京都千代田区神田神保町",
     "latitude": 35.6958,
     "longitude": 139.7573,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-18.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -240,8 +240,8 @@
     "description": "神田川に架かる万世橋周辺。旧万世橋駅の遺構を活用した商業施設「mAAch ecute 神田万世橋」がある。",
     "address": "東京都千代田区神田須田町",
     "latitude": 35.6975,
-    "longitude": 139.7710,
-    "imageUrl": null,
+    "longitude": 139.771,
+    "imageUrl": "/images/spots/spot-19.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -252,9 +252,9 @@
     "name": "神田高架下横丁",
     "description": "JR高架下に連なる飲食店街。昭和の雰囲気が残る路地に個性的な飲食店が並ぶ。",
     "address": "東京都千代田区神田須田町",
-    "latitude": 35.6940,
+    "latitude": 35.694,
     "longitude": 139.7712,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-20.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -267,7 +267,7 @@
     "address": "東京都台東区上野7丁目",
     "latitude": 35.7141,
     "longitude": 139.7774,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-21.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -279,8 +279,8 @@
     "description": "谷中銀座の入口にある石段。夕日が美しく、谷中を代表するフォトスポット。猫と出会えることでも有名。",
     "address": "東京都荒川区西日暮里3丁目",
     "latitude": 35.7264,
-    "longitude": 139.7700,
-    "imageUrl": null,
+    "longitude": 139.77,
+    "imageUrl": "/images/spots/spot-22.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -293,7 +293,7 @@
     "address": "東京都中央区日本橋室町1-4-1",
     "latitude": 35.6857,
     "longitude": 139.7739,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-23.jpg",
     "officialUrl": "https://www.mitsukoshi.mistore.jp/nihombashi.html",
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -304,9 +304,9 @@
     "name": "清澄白河コーヒーストリート",
     "description": "清澄通り沿いに点在するスペシャルティコーヒーの名店群。ブルーボトルコーヒー日本1号店もこのエリアに。",
     "address": "東京都江東区清澄1丁目",
-    "latitude": 35.6800,
+    "latitude": 35.68,
     "longitude": 139.7998,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-24.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -317,9 +317,9 @@
     "name": "靖国通り古書店街",
     "description": "靖国通り沿いに200軒以上の古書店が軒を連ねる。哲学・文学・音楽・スポーツなど専門書ごとに分かれた書店が並ぶ。",
     "address": "東京都千代田区神田神保町1丁目",
-    "latitude": 35.6960,
+    "latitude": 35.696,
     "longitude": 139.7578,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-25.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -332,7 +332,7 @@
     "address": "東京都台東区浅草1-3",
     "latitude": 35.7109,
     "longitude": 139.7963,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-26.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
@@ -343,9 +343,9 @@
     "name": "木場公園",
     "description": "かつての貯木場跡地に整備された都立公園。清澄白河と現代美術館の中間に位置する。",
     "address": "東京都江東区木場4丁目",
-    "latitude": 35.6780,
+    "latitude": 35.678,
     "longitude": 139.8025,
-    "imageUrl": null,
+    "imageUrl": "/images/spots/spot-27.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
