@@ -4,14 +4,14 @@ export type Difficulty = "very_easy" | "easy" | "normal" | "hard"
 export type CourseStatus = "draft" | "published" | "archived"
 
 export type Course = {
-  id: string
+  id: number
   slug: string
   title: string
   shortDescription: string
   description: string
-  areaId: string
-  startPointId: string
-  endPointId: string
+  areaId: number
+  startPointId: number
+  endPointId: number
   distanceMeters: number
   durationMinutes: number
   difficulty: Difficulty

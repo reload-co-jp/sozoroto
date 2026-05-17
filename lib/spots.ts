@@ -5,13 +5,13 @@ import courseSpotsData from "data/course_spots.json"
 const spots = spotsData as Spot[]
 const courseSpots = courseSpotsData as CourseSpot[]
 
-export function getSpotById(id: string): Spot | undefined {
+export function getSpotById(id: number): Spot | undefined {
   return spots.find((s) => s.id === id)
 }
 
 export type CourseSpotWithSpot = CourseSpot & { spot: Spot }
 
-export function getCourseSpots(courseId: string): CourseSpotWithSpot[] {
+export function getCourseSpots(courseId: number): CourseSpotWithSpot[] {
   return courseSpots
     .filter((cs) => cs.courseId === courseId)
     .sort((a, b) => a.order - b.order)

@@ -4,28 +4,28 @@ import Link from "next/link"
 import type { Metadata } from "next"
 import CourseCard from "components/CourseCard"
 import TagList from "components/TagList"
-import { getAreaBySlug, getAllAreaSlugs } from "lib/areas"
+import { getAreaById, getAllAreaIds } from "lib/areas"
 import { getCoursesByArea } from "lib/courses"
 import { getAllTags } from "lib/tags"
 import { areaMetadata, breadcrumbJsonLd } from "lib/seo"
 import { colors } from "lib/tokens"
 
 export async function generateStaticParams() {
-  return getAllAreaSlugs().map((slug) => ({ slug }))
+  return getAllAreaIds().map((id) => ({ id: String(id) }))
 }
 
-type Props = { params: Promise<{ slug: string }> }
+type Props = { params: Promise<{ id: string }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params
-  const area = getAreaBySlug(slug)
+  const { id } = await params
+  const area = getAreaById(Number(id))
   if (!area) return {}
   return areaMetadata(area)
 }
 
 const AreaDetailPage: FC<Props> = async ({ params }) => {
-  const { slug } = await params
-  const area = getAreaBySlug(slug)
+  const { id } = await params
+  const area = getAreaById(Number(id))
   if (!area) notFound()
 
   const courses = getCoursesByArea(area.id)
@@ -42,7 +42,7 @@ const AreaDetailPage: FC<Props> = async ({ params }) => {
             breadcrumbJsonLd([
               { name: "そぞろっと", url: "https://sozoroto.jp" },
               { name: "エリア一覧", url: "https://sozoroto.jp/areas" },
-              { name: area.name, url: `https://sozoroto.jp/areas/${area.slug}` },
+              { name: area.name, url: `https://sozoroto.jp/areas/${area.id}` },
             ])
           ),
         }}

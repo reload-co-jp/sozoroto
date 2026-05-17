@@ -5,7 +5,7 @@ import type { LineString } from "geojson"
 import "maplibre-gl/dist/maplibre-gl.css"
 
 type Spot = {
-  id: string
+  id: number
   name: string
   latitude: number
   longitude: number

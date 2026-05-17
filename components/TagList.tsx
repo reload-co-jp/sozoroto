@@ -12,7 +12,7 @@ const TagItem: FC<TagItemProps> = ({ tag }) => {
   const { hovered, hoverProps } = useHover()
   return (
     <Link
-      href={`/tags/${tag.slug}`}
+      href={`/tags/${tag.id}`}
       {...hoverProps}
       style={{
         display: "inline-block",

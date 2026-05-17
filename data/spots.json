@@ -1,6 +1,6 @@
 [
   {
-    "id": "spot-01",
+    "id": 1,
     "slug": "akihabara-station-denkigai",
     "name": "秋葉原駅 電気街口",
     "description": "JR秋葉原駅の電気街口。電気街のメインストリートへの玄関口。",
@@ -13,7 +13,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-02",
+    "id": 2,
     "slug": "kanda-myojin",
     "name": "神田明神",
     "description": "1300年の歴史を持つ神社。江戸の総鎮守として知られ、仕事運・商売繁盛のご利益で有名。",
@@ -26,7 +26,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-03",
+    "id": 3,
     "slug": "kanda-station",
     "name": "神田駅",
     "description": "JR神田駅。秋葉原から神田高架下を抜けてすぐのエリア。",
@@ -39,7 +39,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-04",
+    "id": 4,
     "slug": "ochanomizu-station",
     "name": "御茶ノ水駅",
     "description": "JR・東京メトロの駅。神田川に架かる聖橋が美しい。",
@@ -52,7 +52,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-05",
+    "id": 5,
     "slug": "hijiri-bridge",
     "name": "聖橋",
     "description": "神田川に架かるアーチ橋。御茶ノ水の景観を象徴する橋で、丸ノ内線と総武線の鉄道橋も見渡せる絶景ポイント。",
@@ -65,7 +65,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-06",
+    "id": 6,
     "slug": "yushima-seido",
     "name": "湯島聖堂",
     "description": "江戸時代の儒学の聖堂。孔子廟を持ち、静かな境内は都心のオアシスのような場所。",
@@ -78,7 +78,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-07",
+    "id": 7,
     "slug": "ueno-park",
     "name": "上野公園",
     "description": "東京国立博物館や東京都美術館が集まる文化の杜。桜の名所としても有名。",
@@ -91,7 +91,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-08",
+    "id": 8,
     "slug": "yanaka-ginza",
     "name": "谷中銀座商店街",
     "description": "昭和の雰囲気が残る商店街。コロッケや猫グッズなど、ユニークな店が並ぶ。",
@@ -104,7 +104,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-09",
+    "id": 9,
     "slug": "yanaka-cemetery",
     "name": "谷中霊園",
     "description": "明治時代に開設された都立霊園。桜の名所でもあり、散歩コースとして人気。",
@@ -117,7 +117,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-10",
+    "id": 10,
     "slug": "asakusa-sensoji",
     "name": "浅草寺",
     "description": "東京最古の寺院。雷門と仲見世通りで知られる観光名所。",
@@ -130,7 +130,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-11",
+    "id": 11,
     "slug": "sumida-river-walk",
     "name": "隅田川テラス",
     "description": "隅田川沿いの遊歩道。東京スカイツリーを望みながら川沿いを歩ける。",
@@ -143,7 +143,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-12",
+    "id": 12,
     "slug": "kuramae-area",
     "name": "蔵前エリア",
     "description": "職人とクリエイターの街。革製品や文房具のアトリエショップが集まる。",
@@ -156,7 +156,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-13",
+    "id": 13,
     "slug": "nihonbashi-bridge",
     "name": "日本橋",
     "description": "五街道の起点。明治時代の石造りの橋が現存し、上空を首都高速が通る。",
@@ -169,7 +169,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-14",
+    "id": 14,
     "slug": "ningyocho-amazake-yokocho",
     "name": "甘酒横丁",
     "description": "江戸時代から続く人形町の商店街。和菓子店や老舗が並ぶ。",
@@ -182,7 +182,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-15",
+    "id": 15,
     "slug": "kiyosumi-garden",
     "name": "清澄庭園",
     "description": "三菱財閥が整備した回遊式庭園。都内有数の名園で、磯渡りが楽しめる。",
@@ -195,7 +195,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-16",
+    "id": 16,
     "slug": "mot-museum",
     "name": "東京都現代美術館",
     "description": "現代アートの国内最大級のコレクションを持つ美術館。",
@@ -208,7 +208,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-17",
+    "id": 17,
     "slug": "jimbocho-kosho-kaikan",
     "name": "神保町古書会館",
     "description": "古書店街の中心にある施設。古本まつりなどのイベント会場にもなる。",
@@ -221,7 +221,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-18",
+    "id": 18,
     "slug": "jimbocho-station",
     "name": "神保町駅",
     "description": "都営三田線・新宿線・東京メトロ半蔵門線の駅。古書店街の玄関口。",
@@ -234,7 +234,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-19",
+    "id": 19,
     "slug": "manseibashi-area",
     "name": "万世橋エリア",
     "description": "神田川に架かる万世橋周辺。旧万世橋駅の遺構を活用した商業施設「mAAch ecute 神田万世橋」がある。",
@@ -247,7 +247,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-20",
+    "id": 20,
     "slug": "kanda-koukashita",
     "name": "神田高架下横丁",
     "description": "JR高架下に連なる飲食店街。昭和の雰囲気が残る路地に個性的な飲食店が並ぶ。",
@@ -260,7 +260,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-21",
+    "id": 21,
     "slug": "ueno-station",
     "name": "上野駅",
     "description": "JR上野駅。上野公園・アメ横・上野動物園への玄関口。",
@@ -273,7 +273,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-22",
+    "id": 22,
     "slug": "yuyake-dandan",
     "name": "夕やけだんだん",
     "description": "谷中銀座の入口にある石段。夕日が美しく、谷中を代表するフォトスポット。猫と出会えることでも有名。",
@@ -286,7 +286,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-23",
+    "id": 23,
     "slug": "mitsukoshi-nihonbashi",
     "name": "三越日本橋本店",
     "description": "1673年創業の老舗百貨店。ライオン像が目印のネオルネサンス様式の建物は国の重要文化財。",
@@ -299,7 +299,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-24",
+    "id": 24,
     "slug": "kiyosumi-coffee-street",
     "name": "清澄白河コーヒーストリート",
     "description": "清澄通り沿いに点在するスペシャルティコーヒーの名店群。ブルーボトルコーヒー日本1号店もこのエリアに。",
@@ -312,7 +312,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-25",
+    "id": 25,
     "slug": "yasukuni-dori-kosho",
     "name": "靖国通り古書店街",
     "description": "靖国通り沿いに200軒以上の古書店が軒を連ねる。哲学・文学・音楽・スポーツなど専門書ごとに分かれた書店が並ぶ。",
@@ -325,7 +325,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-26",
+    "id": 26,
     "slug": "asakusa-kaminarimon",
     "name": "浅草 雷門",
     "description": "浅草寺の総門。高さ3.9mの大提灯と風神・雷神像が目印。仲見世通りへの入口。",
@@ -338,7 +338,7 @@
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "id": "spot-27",
+    "id": 27,
     "slug": "kiba-park",
     "name": "木場公園",
     "description": "かつての貯木場跡地に整備された都立公園。清澄白河と現代美術館の中間に位置する。",

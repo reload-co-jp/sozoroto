@@ -13,7 +13,7 @@ const AreaCard: FC<Props> = ({ area }) => {
 
   return (
     <Link
-      href={`/areas/${area.slug}`}
+      href={`/areas/${area.id}`}
       {...hoverProps}
       style={{
         display: "flex",

@@ -1,5 +1,5 @@
 export type Area = {
-  id: string
+  id: number
   slug: string
   name: string
   description: string

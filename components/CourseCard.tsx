@@ -16,7 +16,7 @@ const CourseCard: FC<Props> = ({ course }) => {
 
   return (
     <Link
-      href={`/courses/${course.slug}`}
+      href={`/courses/${course.id}`}
       {...hoverProps}
       style={{
         display: "flex",

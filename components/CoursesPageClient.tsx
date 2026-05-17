@@ -41,7 +41,7 @@ const CoursesPageClient: FC<Props> = ({ courses, areas, tags }) => {
           c.shortDescription.toLowerCase().includes(lower)
       )
     }
-    if (areaId) result = result.filter((c) => c.areaId === areaId)
+    if (areaId) result = result.filter((c) => c.areaId === Number(areaId))
     if (durationMax)
       result = result.filter(
         (c) => c.durationMinutes <= parseInt(durationMax)

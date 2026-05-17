@@ -5,7 +5,7 @@ import type { Metadata } from "next"
 import DifficultyBadge from "components/DifficultyBadge"
 import TagList from "components/TagList"
 import CourseMapWrapper from "components/CourseMapWrapper"
-import { getCourseBySlug, getAllCourseSlugs, getAllCourses } from "lib/courses"
+import { getCourseById, getAllCourseIds, getAllCourses } from "lib/courses"
 import { getAreaById } from "lib/areas"
 import { getAllTags } from "lib/tags"
 import { getCourseSpots } from "lib/spots"
@@ -13,21 +13,21 @@ import { courseMetadata, courseJsonLd, breadcrumbJsonLd } from "lib/seo"
 import { colors, radius, shadow } from "lib/tokens"
 
 export async function generateStaticParams() {
-  return getAllCourseSlugs().map((slug) => ({ slug }))
+  return getAllCourseIds().map((id) => ({ id: String(id) }))
 }
 
-type Props = { params: Promise<{ slug: string }> }
+type Props = { params: Promise<{ id: string }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params
-  const course = getCourseBySlug(slug)
+  const { id } = await params
+  const course = getCourseById(Number(id))
   if (!course) return {}
   return courseMetadata(course)
 }
 
 const CourseDetailPage: FC<Props> = async ({ params }) => {
-  const { slug } = await params
-  const course = getCourseBySlug(slug)
+  const { id } = await params
+  const course = getCourseById(Number(id))
   if (!course) notFound()
 
   const area = getAreaById(course.areaId)
@@ -66,7 +66,7 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
             breadcrumbJsonLd([
               { name: "そぞろっと", url: "https://sozoroto.jp" },
               { name: "コース一覧", url: "https://sozoroto.jp/courses" },
-              { name: course.title, url: `https://sozoroto.jp/courses/${course.slug}` },
+              { name: course.title, url: `https://sozoroto.jp/courses/${course.id}` },
             ])
           ),
         }}
@@ -143,7 +143,7 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
           <div style={{ padding: "32px 32px 40px" }}>
             {area && (
               <Link
-                href={`/areas/${area.slug}`}
+                href={`/areas/${area.id}`}
                 style={{ fontSize: 14, color: colors.primary }}
               >
                 {area.name}
@@ -474,7 +474,7 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
               {relatedCourses.map((c) => (
                 <Link
                   key={c.id}
-                  href={`/courses/${c.slug}`}
+                  href={`/courses/${c.id}`}
                   style={{
                     flex: "1 1 200px",
                     borderRadius: radius.lg,

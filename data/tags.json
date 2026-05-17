@@ -1,25 +1,186 @@
 [
-  { "id": "tag-01", "slug": "cafe", "name": "カフェ", "description": "おしゃれなカフェが立ち寄れるコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" },
-  { "id": "tag-02", "slug": "kissaten", "name": "喫茶店", "description": "昔ながらの喫茶店が楽しめるコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" },
-  { "id": "tag-03", "slug": "shotengai", "name": "商店街", "description": "地域の商店街を歩くコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" },
-  { "id": "tag-04", "slug": "jinja", "name": "神社", "description": "神社に立ち寄るコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" },
-  { "id": "tag-05", "slug": "tera", "name": "寺", "description": "お寺に立ち寄るコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" },
-  { "id": "tag-06", "slug": "kawazoi", "name": "川沿い", "description": "川沿いを歩くコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" },
-  { "id": "tag-07", "slug": "park", "name": "公園", "description": "公園を含むコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" },
-  { "id": "tag-08", "slug": "kenchiku", "name": "建築", "description": "建築を楽しめるコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" },
-  { "id": "tag-09", "slug": "retro", "name": "レトロ", "description": "レトロな雰囲気が楽しめるコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" },
-  { "id": "tag-10", "slug": "roji", "name": "路地", "description": "路地裏を歩くコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" },
-  { "id": "tag-11", "slug": "sakamichi", "name": "坂道", "description": "坂道が特徴的なコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" },
-  { "id": "tag-12", "slug": "honya", "name": "本屋", "description": "本屋・書店が楽しめるコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" },
-  { "id": "tag-13", "slug": "art", "name": "アート", "description": "アートスポットを巡るコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" },
-  { "id": "tag-14", "slug": "denkigai", "name": "電気街", "description": "電気街・秋葉原エリアのコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" },
-  { "id": "tag-15", "slug": "rekishi", "name": "歴史", "description": "歴史スポットを巡るコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" },
-  { "id": "tag-16", "slug": "shiseki", "name": "史跡", "description": "史跡・遺跡を巡るコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" },
-  { "id": "tag-17", "slug": "shizen", "name": "自然", "description": "自然を楽しめるコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" },
-  { "id": "tag-18", "slug": "shimamachi", "name": "下町", "description": "下町の雰囲気が楽しめるコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" },
-  { "id": "tag-19", "slug": "shinise", "name": "老舗", "description": "老舗店舗に立ち寄れるコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" },
-  { "id": "tag-20", "slug": "neko", "name": "猫", "description": "猫と出会えるコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" },
-  { "id": "tag-21", "slug": "zakka", "name": "雑貨", "description": "雑貨ショップが楽しめるコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" },
-  { "id": "tag-22", "slug": "furuhon", "name": "古書", "description": "古書店を巡るコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" },
-  { "id": "tag-23", "slug": "hashi", "name": "橋", "description": "橋が魅力的なコース", "createdAt": "2025-01-01T00:00:00Z", "updatedAt": "2025-01-01T00:00:00Z" }
+  {
+    "id": 1,
+    "slug": "cafe",
+    "name": "カフェ",
+    "description": "おしゃれなカフェが立ち寄れるコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 2,
+    "slug": "kissaten",
+    "name": "喫茶店",
+    "description": "昔ながらの喫茶店が楽しめるコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 3,
+    "slug": "shotengai",
+    "name": "商店街",
+    "description": "地域の商店街を歩くコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 4,
+    "slug": "jinja",
+    "name": "神社",
+    "description": "神社に立ち寄るコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 5,
+    "slug": "tera",
+    "name": "寺",
+    "description": "お寺に立ち寄るコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 6,
+    "slug": "kawazoi",
+    "name": "川沿い",
+    "description": "川沿いを歩くコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 7,
+    "slug": "park",
+    "name": "公園",
+    "description": "公園を含むコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 8,
+    "slug": "kenchiku",
+    "name": "建築",
+    "description": "建築を楽しめるコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 9,
+    "slug": "retro",
+    "name": "レトロ",
+    "description": "レトロな雰囲気が楽しめるコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 10,
+    "slug": "roji",
+    "name": "路地",
+    "description": "路地裏を歩くコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 11,
+    "slug": "sakamichi",
+    "name": "坂道",
+    "description": "坂道が特徴的なコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 12,
+    "slug": "honya",
+    "name": "本屋",
+    "description": "本屋・書店が楽しめるコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 13,
+    "slug": "art",
+    "name": "アート",
+    "description": "アートスポットを巡るコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 14,
+    "slug": "denkigai",
+    "name": "電気街",
+    "description": "電気街・秋葉原エリアのコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 15,
+    "slug": "rekishi",
+    "name": "歴史",
+    "description": "歴史スポットを巡るコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 16,
+    "slug": "shiseki",
+    "name": "史跡",
+    "description": "史跡・遺跡を巡るコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 17,
+    "slug": "shizen",
+    "name": "自然",
+    "description": "自然を楽しめるコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 18,
+    "slug": "shimamachi",
+    "name": "下町",
+    "description": "下町の雰囲気が楽しめるコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 19,
+    "slug": "shinise",
+    "name": "老舗",
+    "description": "老舗店舗に立ち寄れるコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 20,
+    "slug": "neko",
+    "name": "猫",
+    "description": "猫と出会えるコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 21,
+    "slug": "zakka",
+    "name": "雑貨",
+    "description": "雑貨ショップが楽しめるコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 22,
+    "slug": "furuhon",
+    "name": "古書",
+    "description": "古書店を巡るコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 23,
+    "slug": "hashi",
+    "name": "橋",
+    "description": "橋が魅力的なコース",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  }
 ]

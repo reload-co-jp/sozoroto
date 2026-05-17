@@ -48,7 +48,7 @@ export function courseMetadata(course: Course): Metadata {
     },
     twitter: { card: "summary_large_image", title, description },
     alternates: {
-      canonical: `${BASE_URL}/courses/${course.slug}`,
+      canonical: `${BASE_URL}/courses/${course.id}`,
     },
   }
 }
@@ -61,7 +61,7 @@ export function areaMetadata(area: Area): Metadata {
     description,
     openGraph: { title, description, type: "website" },
     twitter: { card: "summary_large_image", title, description },
-    alternates: { canonical: `${BASE_URL}/areas/${area.slug}` },
+    alternates: { canonical: `${BASE_URL}/areas/${area.id}` },
   }
 }
 
@@ -74,7 +74,7 @@ export function tagMetadata(tag: Tag): Metadata {
     description,
     openGraph: { title, description, type: "website" },
     twitter: { card: "summary_large_image", title, description },
-    alternates: { canonical: `${BASE_URL}/tags/${tag.slug}` },
+    alternates: { canonical: `${BASE_URL}/tags/${tag.id}` },
   }
 }
 

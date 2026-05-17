@@ -21,6 +21,14 @@ export function getTagsWithCourseCount(): (Tag & { courseCount: number })[] {
     .filter((t) => t.courseCount > 0)
 }
 
+export function getTagById(id: number): Tag | undefined {
+  return tags.find((t) => t.id === id)
+}
+
 export function getAllTagSlugs(): string[] {
   return tags.map((t) => t.slug)
+}
+
+export function getAllTagIds(): number[] {
+  return tags.map((t) => t.id)
 }

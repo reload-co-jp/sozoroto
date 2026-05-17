@@ -8,7 +8,7 @@ export function getAllAreas(): Area[] {
   return areas
 }
 
-export function getAreaById(id: string): Area | undefined {
+export function getAreaById(id: number): Area | undefined {
   return areas.find((a) => a.id === id)
 }
 
@@ -25,4 +25,8 @@ export function getAreasWithCourseCount(): (Area & { courseCount: number })[] {
 
 export function getAllAreaSlugs(): string[] {
   return areas.map((a) => a.slug)
+}
+
+export function getAllAreaIds(): number[] {
+  return areas.map((a) => a.id)
 }

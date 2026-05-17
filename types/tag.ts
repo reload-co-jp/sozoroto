@@ -1,5 +1,5 @@
 export type Tag = {
-  id: string
+  id: number
   slug: string
   name: string
   description?: string
@@ -8,6 +8,6 @@ export type Tag = {
 }
 
 export type CourseTag = {
-  courseId: string
-  tagId: string
+  courseId: number
+  tagId: number
 }

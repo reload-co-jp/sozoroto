@@ -7,11 +7,15 @@ export function getAllCourses(): Course[] {
   return courses.filter((c) => c.status === "published")
 }
 
+export function getCourseById(id: number): Course | undefined {
+  return courses.find((c) => c.id === id && c.status === "published")
+}
+
 export function getCourseBySlug(slug: string): Course | undefined {
   return courses.find((c) => c.slug === slug && c.status === "published")
 }
 
-export function getCoursesByArea(areaId: string): Course[] {
+export function getCoursesByArea(areaId: number): Course[] {
   return getAllCourses().filter((c) => c.areaId === areaId)
 }
 
@@ -21,7 +25,7 @@ export function getCoursesByTag(tagSlug: string): Course[] {
 
 export type CourseFilter = {
   q?: string
-  areaId?: string
+  areaId?: number
   durationMax?: number
   distanceMax?: number
   difficulty?: Difficulty
@@ -40,7 +44,7 @@ export function filterCourses(filter: CourseFilter): Course[] {
         c.description.toLowerCase().includes(q)
     )
   }
-  if (filter.areaId) {
+  if (filter.areaId !== undefined) {
     result = result.filter((c) => c.areaId === filter.areaId)
   }
   if (filter.durationMax) {
@@ -61,4 +65,8 @@ export function filterCourses(filter: CourseFilter): Course[] {
 
 export function getAllCourseSlugs(): string[] {
   return getAllCourses().map((c) => c.slug)
+}
+
+export function getAllCourseIds(): number[] {
+  return getAllCourses().map((c) => c.id)
 }

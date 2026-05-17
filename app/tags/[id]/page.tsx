@@ -3,27 +3,27 @@ import { notFound } from "next/navigation"
 import Link from "next/link"
 import type { Metadata } from "next"
 import CourseCard from "components/CourseCard"
-import { getTagBySlug, getAllTagSlugs } from "lib/tags"
+import { getTagById, getAllTagIds } from "lib/tags"
 import { getCoursesByTag } from "lib/courses"
 import { tagMetadata, breadcrumbJsonLd } from "lib/seo"
 import { colors } from "lib/tokens"
 
 export async function generateStaticParams() {
-  return getAllTagSlugs().map((slug) => ({ slug }))
+  return getAllTagIds().map((id) => ({ id: String(id) }))
 }
 
-type Props = { params: Promise<{ slug: string }> }
+type Props = { params: Promise<{ id: string }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params
-  const tag = getTagBySlug(slug)
+  const { id } = await params
+  const tag = getTagById(Number(id))
   if (!tag) return {}
   return tagMetadata(tag)
 }
 
 const TagPage: FC<Props> = async ({ params }) => {
-  const { slug } = await params
-  const tag = getTagBySlug(slug)
+  const { id } = await params
+  const tag = getTagById(Number(id))
   if (!tag) notFound()
 
   const courses = getCoursesByTag(tag.slug)
@@ -36,7 +36,7 @@ const TagPage: FC<Props> = async ({ params }) => {
           __html: JSON.stringify(
             breadcrumbJsonLd([
               { name: "そぞろっと", url: "https://sozoroto.jp" },
-              { name: tag.name, url: `https://sozoroto.jp/tags/${tag.slug}` },
+              { name: tag.name, url: `https://sozoroto.jp/tags/${tag.id}` },
             ])
           ),
         }}

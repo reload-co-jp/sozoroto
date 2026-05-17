@@ -1,5 +1,5 @@
 export type Spot = {
-  id: string
+  id: number
   slug: string
   name: string
   description?: string
@@ -13,9 +13,9 @@ export type Spot = {
 }
 
 export type CourseSpot = {
-  id: string
-  courseId: string
-  spotId: string
+  id: number
+  courseId: number
+  spotId: number
   order: number
   title?: string
   description?: string
