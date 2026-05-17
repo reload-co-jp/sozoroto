@@ -88,7 +88,15 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
             <p style={{ marginTop: 4 }}>
               東京近辺の散歩コースを、そぞろっと探す。
             </p>
-            <p style={{ marginTop: 16, fontSize: 12 }}>© 2025 sozoroto</p>
+            <p style={{ marginTop: 16, fontSize: 12 }}>
+              <Link
+                href="/about"
+                style={{ color: colors.gray500 }}
+              >
+                このサイトについて
+              </Link>
+            </p>
+            <p style={{ marginTop: 8, fontSize: 12 }}>© 2025 sozoroto</p>
           </div>
         </footer>
       </body>
