@@ -9,6 +9,7 @@ type Spot = {
   name: string
   latitude: number
   longitude: number
+  imageUrl?: string
   type: "start" | "end" | "waypoint"
 }
 
@@ -18,12 +19,15 @@ type Props = {
   height?: string
 }
 
+type MaplibreMarker = { togglePopup: () => void; getLngLat: () => { lng: number; lat: number } }
+
 function useMapInit(
   containerRef: React.RefObject<HTMLDivElement | null>,
   route: LineString,
   spots: Spot[]
 ) {
   const mapRef = useRef<unknown>(null)
+  const markersRef = useRef<Map<number, MaplibreMarker>>(new Map())
 
   useEffect(() => {
     if (!containerRef.current || mapRef.current) return
@@ -88,15 +92,40 @@ function useMapInit(
             box-shadow: 0 1px 4px rgba(0,0,0,0.3);
           `
 
-          new maplibregl.Marker({ element: el })
+          const popupHTML = spot.imageUrl
+            ? `<div style="width:180px">
+                <img src="${spot.imageUrl}" alt="${spot.name}" style="width:100%;height:100px;object-fit:cover;border-radius:6px;display:block;margin-bottom:6px" />
+                <p style="margin:0;font-size:13px;font-weight:bold">${spot.name}</p>
+               </div>`
+            : `<p style="margin:0;font-size:13px;font-weight:bold">${spot.name}</p>`
+
+          const marker = new maplibregl.Marker({ element: el })
             .setLngLat([spot.longitude, spot.latitude])
             .setPopup(
-              new maplibregl.Popup({ offset: 10 }).setHTML(
-                `<p style="margin:0;font-size:13px;font-weight:bold">${spot.name}</p>`
-              )
+              new maplibregl.Popup({ offset: 10 }).setHTML(popupHTML)
             )
             .addTo(map)
+
+          markersRef.current.set(spot.id, marker as unknown as MaplibreMarker)
         })
+
+        const handleSpotClick = (e: Event) => {
+          const { spotId } = (e as CustomEvent<{ spotId: number }>).detail
+          const marker = markersRef.current.get(spotId)
+          if (!marker) return
+          const lngLat = marker.getLngLat()
+          ;(mapRef.current as { flyTo: (opts: unknown) => void }).flyTo({
+            center: [lngLat.lng, lngLat.lat],
+            zoom: 16,
+            duration: 600,
+          })
+          if (!(marker as unknown as { getPopup: () => { isOpen: () => boolean } }).getPopup().isOpen()) {
+            marker.togglePopup()
+          }
+        }
+
+        window.addEventListener("spot-click", handleSpotClick)
+        ;(mapRef.current as { _spotClickHandler?: EventListener })._spotClickHandler = handleSpotClick as EventListener
 
         const bounds = route.coordinates.reduce(
           (b, coord) => b.extend(coord as [number, number]),
@@ -111,9 +140,12 @@ function useMapInit(
 
     return () => {
       if (mapRef.current) {
+        const handler = (mapRef.current as { _spotClickHandler?: EventListener })._spotClickHandler
+        if (handler) window.removeEventListener("spot-click", handler)
         ;(mapRef.current as { remove: () => void }).remove()
         mapRef.current = null
       }
+      markersRef.current.clear()
     }
   }, [route, spots])
 }

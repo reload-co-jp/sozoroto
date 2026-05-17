@@ -11,6 +11,7 @@ import { getAllTags } from "lib/tags"
 import { getCourseSpots } from "lib/spots"
 import { courseMetadata, courseJsonLd, breadcrumbJsonLd } from "lib/seo"
 import { colors, radius, shadow } from "lib/tokens"
+import SpotListItem from "components/SpotListItem"
 
 export async function generateStaticParams() {
   return getAllCourseIds().map((id) => ({ id: String(id) }))
@@ -41,6 +42,7 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
     name: cs.spot.name,
     latitude: cs.spot.latitude,
     longitude: cs.spot.longitude,
+    imageUrl: cs.spot.imageUrl,
     type:
       i === 0
         ? ("start" as const)
@@ -292,16 +294,21 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
                                   flex: 1,
                                 }}
                               >
-                                <p
-                                  style={{
-                                    fontWeight: 700,
-                                    fontSize: 14,
-                                    color: colors.gray900,
-                                    lineHeight: 1.4,
-                                  }}
-                                >
-                                  {cs.title ?? cs.spot.name}
-                                </p>
+                                <SpotListItem spotId={cs.spot.id}>
+                                  <p
+                                    style={{
+                                      fontWeight: 700,
+                                      fontSize: 14,
+                                      color: colors.primary,
+                                      lineHeight: 1.4,
+                                      textDecoration: "underline",
+                                      textDecorationStyle: "dotted",
+                                      textUnderlineOffset: 3,
+                                    }}
+                                  >
+                                    {cs.title ?? cs.spot.name}
+                                  </p>
+                                </SpotListItem>
                                 {cs.description && (
                                   <p
                                     style={{
