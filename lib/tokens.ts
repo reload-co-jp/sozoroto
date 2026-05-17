@@ -39,8 +39,7 @@ export const shadow = {
 }
 
 export const font = {
-  family:
-    '"Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif',
+  family: '"M PLUS U", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif',
 }
 
 export const transition = {
