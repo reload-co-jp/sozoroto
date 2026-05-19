@@ -8,10 +8,19 @@
     "description": "改札を出たらまず電気街方面へ。週末は人が多いので朝早めの出発がおすすめ。"
   },
   {
+    "id": 36,
+    "courseId": 1,
+    "spotId": 35,
+    "order": 2,
+    "title": "ヨドバシカメラ マルチメディアAkiba",
+    "description": "秋葉原の新ランドマーク。ガジェット好きは外観だけでも圧倒される巨大な建物。",
+    "stayMinutes": 10
+  },
+  {
     "id": 2,
     "courseId": 1,
     "spotId": 19,
-    "order": 2,
+    "order": 3,
     "title": "万世橋エリア",
     "description": "電気街を北上し、神田川を渡る。旧万世橋駅の赤レンガ遺構が残るmAAch ecutéに立ち寄るのもよい。",
     "stayMinutes": 10
@@ -20,16 +29,25 @@
     "id": 3,
     "courseId": 1,
     "spotId": 20,
-    "order": 3,
+    "order": 4,
     "title": "神田高架下横丁",
     "description": "JR高架下の路地へ入ると昭和の空気に包まれる。老舗の喫茶店でひと息つくのがおすすめ。",
     "stayMinutes": 15
   },
   {
+    "id": 37,
+    "courseId": 1,
+    "spotId": 36,
+    "order": 5,
+    "title": "柳森神社",
+    "description": "神田明神へ続く路地の途中に佇む小さな神社。1457年創建で、商売繁盛のご利益で知られる。",
+    "stayMinutes": 5
+  },
+  {
     "id": 4,
     "courseId": 1,
     "spotId": 2,
-    "order": 4,
+    "order": 6,
     "title": "到着：神田明神",
     "description": "石段を上り切ると江戸の総鎮守へ。随神門や銭形平次の碑など見どころ多数。",
     "stayMinutes": 20
@@ -43,10 +61,19 @@
     "description": "JR御茶ノ水駅の聖橋口を出る。目の前に神田川と聖橋が広がる。"
   },
   {
+    "id": 38,
+    "courseId": 2,
+    "spotId": 37,
+    "order": 2,
+    "title": "ニコライ堂（東京復活大聖堂）",
+    "description": "御茶ノ水駅からすぐ。ビザンチン様式のドームが異彩を放つ重要文化財。坂の上から見下ろす景色も美しい。",
+    "stayMinutes": 10
+  },
+  {
     "id": 6,
     "courseId": 2,
     "spotId": 5,
-    "order": 2,
+    "order": 3,
     "title": "聖橋",
     "description": "神田川に架かるアーチ橋。丸ノ内線・総武線・中央線の3路線が交差する絶景を楽しめる。",
     "stayMinutes": 10
@@ -55,7 +82,7 @@
     "id": 7,
     "courseId": 2,
     "spotId": 6,
-    "order": 3,
+    "order": 4,
     "title": "湯島聖堂",
     "description": "孔子廟を持つ江戸幕府の学問所。静かな境内は都心とは思えない落ち着きがある。",
     "stayMinutes": 15
@@ -64,16 +91,25 @@
     "id": 8,
     "courseId": 2,
     "spotId": 2,
-    "order": 4,
+    "order": 5,
     "title": "神田明神",
     "description": "湯島聖堂から坂を上ると神田明神。境内のカフェで休憩するのもよい。",
     "stayMinutes": 20
   },
   {
+    "id": 39,
+    "courseId": 2,
+    "spotId": 38,
+    "order": 6,
+    "title": "アーツ千代田 3331",
+    "description": "神田明神から坂を下った先の廃校アートセンター。ギャラリーやカフェが入り、現代アートの空気が漂う。",
+    "stayMinutes": 15
+  },
+  {
     "id": 9,
     "courseId": 2,
     "spotId": 1,
-    "order": 5,
+    "order": 7,
     "title": "到着：秋葉原駅 電気街口",
     "description": "神田明神から坂を下り、電気街を抜けてゴール。途中の路地も楽しみながら歩こう。"
   },
@@ -95,10 +131,28 @@
     "stayMinutes": 20
   },
   {
+    "id": 40,
+    "courseId": 3,
+    "spotId": 39,
+    "order": 3,
+    "title": "上野東照宮",
+    "description": "上野公園内に佇む江戸幕府創建の神社。金色殿の豪華な彫刻と牡丹苑が見どころ。",
+    "stayMinutes": 15
+  },
+  {
+    "id": 41,
+    "courseId": 3,
+    "spotId": 40,
+    "order": 4,
+    "title": "東京芸術大学",
+    "description": "上野公園に隣接する日本最古の芸術系大学。学内の美術館は無料・有料展覧会ともに充実。",
+    "stayMinutes": 15
+  },
+  {
     "id": 12,
     "courseId": 3,
     "spotId": 9,
-    "order": 3,
+    "order": 5,
     "title": "谷中霊園",
     "description": "明治時代開設の都立霊園。徳川慶喜の墓もある。桜並木は地元民の散歩道。",
     "stayMinutes": 15
@@ -107,7 +161,7 @@
     "id": 13,
     "courseId": 3,
     "spotId": 22,
-    "order": 4,
+    "order": 6,
     "title": "夕やけだんだん",
     "description": "谷中銀座へ続く石段。夕方は赤みがかった空と下町の屋根が重なる絶景。猫との遭遇率も高い。",
     "stayMinutes": 10
@@ -116,7 +170,7 @@
     "id": 14,
     "courseId": 3,
     "spotId": 8,
-    "order": 5,
+    "order": 7,
     "title": "到着：谷中銀座商店街",
     "description": "石段を下りれば昭和そのままの商店街。コロッケ・メンチカツを食べ歩きしながらゴール。",
     "stayMinutes": 30
@@ -130,28 +184,64 @@
     "description": "雷門前を起点にスタート。仲見世通りは混雑するのでひとつ脇の道を歩くのがコツ。"
   },
   {
+    "id": 29,
+    "courseId": 4,
+    "spotId": 28,
+    "order": 2,
+    "title": "仲見世通り",
+    "description": "浅草寺への参道。伝統工芸品や和菓子・雷おこしなど食べ歩きの店が連なる約250mの商店街。",
+    "stayMinutes": 15
+  },
+  {
     "id": 16,
     "courseId": 4,
     "spotId": 10,
-    "order": 2,
+    "order": 3,
     "title": "浅草寺",
     "description": "東京最古の寺院。本堂でお参りを済ませたら、境内の奥まで歩いて裏手へ抜ける。",
     "stayMinutes": 20
   },
   {
+    "id": 42,
+    "courseId": 4,
+    "spotId": 41,
+    "order": 4,
+    "title": "浅草花やしき",
+    "description": "浅草寺の裏手にある日本最古の遊園地。乗り物に乗らなくても、昭和レトロな雰囲気を楽しめる。",
+    "stayMinutes": 15
+  },
+  {
+    "id": 30,
+    "courseId": 4,
+    "spotId": 29,
+    "order": 5,
+    "title": "吾妻橋",
+    "description": "隅田川に架かる橋。東京スカイツリーと浅草の街並みを同時に収められる定番フォトスポット。",
+    "stayMinutes": 10
+  },
+  {
     "id": 17,
     "courseId": 4,
     "spotId": 11,
-    "order": 3,
+    "order": 6,
     "title": "隅田川テラス",
     "description": "隅田川沿いの遊歩道。東京スカイツリーを正面に望みながら川風を感じて歩ける。",
     "stayMinutes": 15
   },
   {
+    "id": 43,
+    "courseId": 4,
+    "spotId": 42,
+    "order": 7,
+    "title": "駒形橋",
+    "description": "隅田川テラスから蔵前へ向かう途中の鉄橋。浅草寺の五重塔とスカイツリーが絵になる撮影スポット。",
+    "stayMinutes": 10
+  },
+  {
     "id": 18,
     "courseId": 4,
     "spotId": 12,
-    "order": 4,
+    "order": 8,
     "title": "到着：蔵前エリア",
     "description": "隅田川テラスから西へ入ると蔵前。革製品・文房具・雑貨のアトリエショップを巡ろう。",
     "stayMinutes": 30
@@ -165,19 +255,55 @@
     "description": "五街道の起点・日本橋からスタート。橋の上から首都高速の橋脚越しに周囲を眺めてみよう。"
   },
   {
+    "id": 44,
+    "courseId": 5,
+    "spotId": 43,
+    "order": 2,
+    "title": "日本銀行本店",
+    "description": "日本橋からすぐ。1896年竣工の重要文化財で、辰野金吾設計のネオバロック様式が圧巻。外観だけでも一見の価値あり。",
+    "stayMinutes": 10
+  },
+  {
+    "id": 31,
+    "courseId": 5,
+    "spotId": 30,
+    "order": 3,
+    "title": "コレド室町",
+    "description": "日本橋エリアのランドマーク商業施設。江戸から続く日本橋の商業文化を今に伝える。",
+    "stayMinutes": 10
+  },
+  {
+    "id": 45,
+    "courseId": 5,
+    "spotId": 44,
+    "order": 4,
+    "title": "福徳神社（芽吹稲荷）",
+    "description": "コレド室町の隣に佇む古社。宝くじ発祥の地としても知られ、小さいながらも境内は独特の雰囲気。",
+    "stayMinutes": 5
+  },
+  {
     "id": 20,
     "courseId": 5,
     "spotId": 23,
-    "order": 2,
+    "order": 5,
     "title": "三越日本橋本店",
     "description": "日本橋三越の入口には国指定重要文化財の建物が。館内のライオン像と中央ホールは見逃せない。",
     "stayMinutes": 15
   },
   {
+    "id": 32,
+    "courseId": 5,
+    "spotId": 31,
+    "order": 6,
+    "title": "水天宮",
+    "description": "安産・子授けの神様として知られる神社。人形町エリアを代表するパワースポット。",
+    "stayMinutes": 10
+  },
+  {
     "id": 21,
     "courseId": 5,
     "spotId": 14,
-    "order": 3,
+    "order": 7,
     "title": "到着：甘酒横丁（人形町）",
     "description": "江戸から続く横丁。和菓子屋・鶏料理屋・玩具屋など老舗が密集する。甘酒でひと息。",
     "stayMinutes": 30
@@ -192,19 +318,46 @@
     "stayMinutes": 20
   },
   {
+    "id": 46,
+    "courseId": 6,
+    "spotId": 45,
+    "order": 2,
+    "title": "万年橋",
+    "description": "清澄庭園を出てすぐの小名木川に架かる橋。江戸時代の水辺の景観が今も残る静かなスポット。",
+    "stayMinutes": 5
+  },
+  {
     "id": 23,
     "courseId": 6,
     "spotId": 24,
-    "order": 2,
+    "order": 3,
     "title": "清澄白河コーヒーストリート",
     "description": "清澄通りを中心にスペシャルティコーヒーの名店が点在。テイクアウトして歩きながら飲むのが◎。",
     "stayMinutes": 20
   },
   {
+    "id": 33,
+    "courseId": 6,
+    "spotId": 34,
+    "order": 4,
+    "title": "深川江戸資料館",
+    "description": "江戸時代の深川の街並みを実物大で再現した資料館。長屋や商家など当時の生活を体感できる。",
+    "stayMinutes": 20
+  },
+  {
+    "id": 47,
+    "courseId": 6,
+    "spotId": 46,
+    "order": 5,
+    "title": "仙台堀川公園",
+    "description": "深川江戸資料館から木場公園へ向かう途中の水辺の緑道。桜の季節は特に美しく、地元の散歩道として人気。",
+    "stayMinutes": 10
+  },
+  {
     "id": 24,
     "courseId": 6,
     "spotId": 27,
-    "order": 3,
+    "order": 6,
     "title": "木場公園",
     "description": "かつての貯木場跡の都立公園。芝生広場で一休みして美術館へ向かう。",
     "stayMinutes": 15
@@ -213,7 +366,7 @@
     "id": 25,
     "courseId": 6,
     "spotId": 16,
-    "order": 4,
+    "order": 7,
     "title": "到着：東京都現代美術館",
     "description": "現代アートの国内最大級コレクション。カフェも充実しているので散歩の締めくくりに最適。",
     "stayMinutes": 60
@@ -227,19 +380,55 @@
     "description": "A1出口を出ると目の前が古書店街。まずは靖国通りを東へ歩き始める。"
   },
   {
+    "id": 34,
+    "courseId": 7,
+    "spotId": 32,
+    "order": 2,
+    "title": "書泉グランデ",
+    "description": "鉄道・格闘技・アイドルなど個性的なジャンルに強い神保町の名物専門書店。まずここで目標ジャンルを絞ろう。",
+    "stayMinutes": 15
+  },
+  {
+    "id": 48,
+    "courseId": 7,
+    "spotId": 47,
+    "order": 3,
+    "title": "三省堂書店神保町本店",
+    "description": "地下から4階まで膨大な品揃えを誇る神保町の大型書店。専門書から文庫・雑誌まで何でも揃う。",
+    "stayMinutes": 20
+  },
+  {
     "id": 27,
     "courseId": 7,
     "spotId": 25,
-    "order": 2,
+    "order": 4,
     "title": "靖国通り古書店街",
     "description": "200軒以上の古書店が並ぶ。哲学・文学・音楽・映画・スポーツなど専門別に書店が分かれている。じっくり2〜3軒はしごしよう。",
     "stayMinutes": 30
   },
   {
+    "id": 49,
+    "courseId": 7,
+    "spotId": 48,
+    "order": 5,
+    "title": "東京堂書店",
+    "description": "1890年創業の老舗書店。人文・社会・芸術系の品揃えが充実し、神保町を代表する「本屋らしい本屋」。",
+    "stayMinutes": 15
+  },
+  {
+    "id": 35,
+    "courseId": 7,
+    "spotId": 33,
+    "order": 6,
+    "title": "すずらん通り",
+    "description": "靖国通りから一本入った路地。老舗喫茶店「ラドリオ」や「さぼうる」が並ぶ神保町喫茶の聖地。",
+    "stayMinutes": 20
+  },
+  {
     "id": 28,
     "courseId": 7,
     "spotId": 17,
-    "order": 3,
+    "order": 7,
     "title": "到着：神保町古書会館",
     "description": "古書街のランドマーク。近隣のカレー屋か老舗喫茶店で神保町名物を味わってフィニッシュ。",
     "stayMinutes": 20
