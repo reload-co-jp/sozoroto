@@ -19,7 +19,7 @@ const spotMap = Object.fromEntries(spots.map((s) => [s.id, s]))
 
 async function fetchRoute(coordinates) {
   const res = await fetch(
-    "https://api.openrouteservice.org/v2/directions/foot-walking/geojson",
+    "https://api.heigit.org/openrouteservice/v2/directions/foot-walking/geojson",
     {
       method: "POST",
       headers: {
