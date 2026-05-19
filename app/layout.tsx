@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import Script from "next/script"
 import "./reset.css"
 import "./globals.css"
 import { rootMetadata } from "lib/seo"
@@ -10,6 +11,17 @@ export const metadata: Metadata = rootMetadata()
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="ja">
+      {process.env.NODE_ENV === "production" && (
+        <>
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-051Z05W041"
+            strategy="afterInteractive"
+          />
+          <Script id="ga-init" strategy="afterInteractive">
+            {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-051Z05W041');`}
+          </Script>
+        </>
+      )}
       <body
         style={{
           minHeight: "100dvh",
