@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, createWriteStream, existsSync } from "fs"
+import { readFileSync, createWriteStream, existsSync } from "fs"
 import { fileURLToPath } from "url"
 import { dirname, join } from "path"
 import { pipeline } from "stream/promises"

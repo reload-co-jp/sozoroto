@@ -15,7 +15,10 @@ const SpotListItem: FC<Props> = ({ spotId, children, style }) => {
 
   return (
     <div
+      role="button"
+      tabIndex={0}
       onClick={handleClick}
+      onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") handleClick() }}
       style={{ cursor: "pointer", ...style }}
     >
       {children}

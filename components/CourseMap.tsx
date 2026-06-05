@@ -139,15 +139,17 @@ function useMapInit(
     })
 
     return () => {
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      const markers = markersRef.current
       if (mapRef.current) {
         const handler = (mapRef.current as { _spotClickHandler?: EventListener })._spotClickHandler
         if (handler) window.removeEventListener("spot-click", handler)
         ;(mapRef.current as { remove: () => void }).remove()
         mapRef.current = null
       }
-      markersRef.current.clear()
+      markers.clear()
     }
-  }, [route, spots])
+  }, [route, spots, containerRef])
 }
 
 const MapContainer: FC<{ route: LineString; spots: Spot[]; height: string }> = ({
@@ -237,6 +239,8 @@ const CourseMap: FC<Props> = ({ route, spots = [], height = "400px" }) => {
 
       {expanded && (
         <div
+          role="button"
+          tabIndex={0}
           style={{
             position: "fixed",
             inset: 0,
@@ -246,6 +250,7 @@ const CourseMap: FC<Props> = ({ route, spots = [], height = "400px" }) => {
             flexDirection: "column",
           }}
           onClick={() => setExpanded(false)}
+          onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") setExpanded(false) }}
         >
           <div
             style={{
@@ -285,8 +290,10 @@ const CourseMap: FC<Props> = ({ route, spots = [], height = "400px" }) => {
             </button>
           </div>
           <div
+            role="presentation"
             style={{ flex: 1, margin: 16, borderRadius: 12, overflow: "hidden" }}
             onClick={(e) => e.stopPropagation()}
+            onKeyDown={(e) => e.stopPropagation()}
           >
             <MapContainer route={route} spots={spots} height="100%" />
           </div>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { colors, radius } from "lib/tokens"
+import { colors } from "lib/tokens"
 
 export const metadata: Metadata = {
   title: "このサイトについて | そぞろっと",

@@ -5,9 +5,22 @@ import pluginReactHooks from "eslint-plugin-react-hooks"
 import jsxA11y from "eslint-plugin-jsx-a11y"
 import { fixupConfigRules } from "@eslint/compat"
 
+const nodeGlobals = {
+  URL: "readonly",
+  fetch: "readonly",
+  console: "readonly",
+  setTimeout: "readonly",
+  clearTimeout: "readonly",
+  process: "readonly",
+}
+
 export default [
   { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
   { ignores: [".next", "out", "next-env.d.ts", "next.config.js"] },
+  {
+    files: ["scripts/**/*.mjs"],
+    languageOptions: { globals: nodeGlobals },
+  },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   ...fixupConfigRules(pluginReact.configs.flat.recommended),
