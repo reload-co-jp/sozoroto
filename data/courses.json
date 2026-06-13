@@ -4773,5 +4773,51 @@
       ]
     },
     "routeFetchedAt": "2026-05-19T12:21:46.436Z"
+  },
+  {
+    "id": 8,
+    "slug": "kanda-koukashita-walk",
+    "title": "神田高架下・下町散歩",
+    "shortDescription": "神田駅から高架下の横丁を抜け、万世橋を渡り神田明神へ。昭和の面影と江戸の聖地を巡る40分。",
+    "description": "神田駅を出発し、JR高架下に広がる飲食街へ。昭和の匂いが残る横丁を歩くと、老舗の喫茶店や居酒屋が並ぶ。神田川に架かる万世橋を渡り、旧万世橋駅の赤レンガ遺構「mAAch ecute 神田万世橋」を眺めながら北へ進む。坂道を上れば、1300年の歴史を持つ神田明神の境内へ。",
+    "areaId": 8,
+    "startPointId": 3,
+    "endPointId": 2,
+    "distanceMeters": 2000,
+    "durationMinutes": 40,
+    "difficulty": "easy",
+    "estimatedSteps": 2800,
+    "mainImageUrl": null,
+    "imageUrls": [],
+    "recommendedTimeOfDay": [
+      "午前",
+      "午後"
+    ],
+    "cautionNotes": "神田明神への坂道あり。歩きやすい靴推奨。",
+    "tags": [
+      "shitamachi",
+      "koukashita",
+      "jinja",
+      "kissaten",
+      "rekishi"
+    ],
+    "status": "published",
+    "publishedAt": "2025-01-01T00:00:00Z",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "routeGeoJson": {
+      "type": "LineString",
+      "coordinates": [
+        [139.7707, 35.6916],
+        [139.771, 35.693],
+        [139.7712, 35.694],
+        [139.7711, 35.6955],
+        [139.771, 35.6975],
+        [139.77, 35.699],
+        [139.769, 35.7005],
+        [139.7675, 35.7015],
+        [139.7668, 35.7022]
+      ]
+    }
   }
 ]

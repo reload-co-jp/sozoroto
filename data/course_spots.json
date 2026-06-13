@@ -432,5 +432,40 @@
     "title": "到着：神保町古書会館",
     "description": "古書街のランドマーク。近隣のカレー屋か老舗喫茶店で神保町名物を味わってフィニッシュ。",
     "stayMinutes": 20
+  },
+  {
+    "id": 50,
+    "courseId": 8,
+    "spotId": 3,
+    "order": 1,
+    "title": "出発：神田駅",
+    "description": "JR神田駅の北口を出てスタート。目の前に高架下の横丁が広がる。"
+  },
+  {
+    "id": 51,
+    "courseId": 8,
+    "spotId": 20,
+    "order": 2,
+    "title": "神田高架下横丁",
+    "description": "JR高架下に連なる昭和の飲食街。老舗喫茶店やせんべろ居酒屋が軒を連ねる路地を歩く。",
+    "stayMinutes": 15
+  },
+  {
+    "id": 52,
+    "courseId": 8,
+    "spotId": 19,
+    "order": 3,
+    "title": "万世橋エリア",
+    "description": "神田川に架かる万世橋周辺。旧万世橋駅の赤レンガ遺構「mAAch ecute 神田万世橋」が見どころ。",
+    "stayMinutes": 10
+  },
+  {
+    "id": 53,
+    "courseId": 8,
+    "spotId": 2,
+    "order": 4,
+    "title": "到着：神田明神",
+    "description": "急な坂道を上ると1300年の歴史を持つ江戸の総鎮守。随神門・本殿・銭形平次の碑を巡ってフィニッシュ。",
+    "stayMinutes": 20
   }
 ]
