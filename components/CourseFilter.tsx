@@ -67,7 +67,7 @@ const CourseFilter: FC<Props> = ({ areas, tags }) => {
         <option value="">すべてのエリア</option>
         {areas.map((a) => (
           <option key={a.id} value={a.id}>
-            {a.name}
+            {a.name.join("・")}
           </option>
         ))}
       </select>

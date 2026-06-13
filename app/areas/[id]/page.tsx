@@ -42,7 +42,7 @@ const AreaDetailPage: FC<Props> = async ({ params }) => {
             breadcrumbJsonLd([
               { name: "そぞろっと", url: "https://sozoroto.reload.co.jp" },
               { name: "エリア一覧", url: "https://sozoroto.reload.co.jp/areas" },
-              { name: area.name, url: `https://sozoroto.reload.co.jp/areas/${area.id}` },
+              { name: area.name.join("・"), url: `https://sozoroto.reload.co.jp/areas/${area.id}` },
             ])
           ),
         }}
@@ -62,7 +62,7 @@ const AreaDetailPage: FC<Props> = async ({ params }) => {
           <span>/</span>
           <Link href="/areas">エリア一覧</Link>
           <span>/</span>
-          <span style={{ color: colors.gray600 }}>{area.name}</span>
+          <span style={{ color: colors.gray600 }}>{area.name.join("・")}</span>
         </nav>
 
         <div style={{ marginBottom: 40 }}>
@@ -73,7 +73,7 @@ const AreaDetailPage: FC<Props> = async ({ params }) => {
               color: colors.gray900,
             }}
           >
-            {area.name}
+            {area.name.join("・")}
           </h1>
           <p
             style={{
@@ -99,7 +99,7 @@ const AreaDetailPage: FC<Props> = async ({ params }) => {
             marginBottom: 24,
           }}
         >
-          {area.name}の散歩コース（{courses.length}件）
+          {area.name.join("・")}の散歩コース（{courses.length}件）
         </h2>
         {courses.length === 0 ? (
           <p style={{ color: colors.gray500 }}>現在コースを準備中です。</p>

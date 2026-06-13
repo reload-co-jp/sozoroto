@@ -1,7 +1,7 @@
 export type Area = {
   id: number
   slug: string
-  name: string
+  name: string[]
   description: string
   prefecture: string
   city?: string

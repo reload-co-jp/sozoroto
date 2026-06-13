@@ -156,7 +156,7 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
                 href={`/areas/${area.id}`}
                 style={{ fontSize: 14, color: colors.primary }}
               >
-                {area.name}
+                {area.name.join("・")}
               </Link>
             )}
             <h1

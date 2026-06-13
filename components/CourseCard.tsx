@@ -92,7 +92,7 @@ const CourseCard: FC<Props> = ({ course }) => {
       >
         {area && (
           <span style={{ fontSize: 12, color: colors.primary }}>
-            {area.name}
+            {area.name.join("・")}
           </span>
         )}
         <h3

@@ -38,7 +38,7 @@ const AreaCard: FC<Props> = ({ area }) => {
         {area.mainImageUrl ? (
           <img
             src={area.mainImageUrl}
-            alt={area.name}
+            alt={area.name.join("・")}
             style={{
               width: "100%",
               height: "100%",
@@ -91,7 +91,7 @@ const AreaCard: FC<Props> = ({ area }) => {
             transition: transition.default,
           }}
         >
-          {area.name}
+          {area.name.join("・")}
         </h3>
         <p
           style={{

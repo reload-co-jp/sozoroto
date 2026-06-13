@@ -54,8 +54,8 @@ export function courseMetadata(course: Course): Metadata {
 }
 
 export function areaMetadata(area: Area): Metadata {
-  const title = `${area.name}の散歩コース | ${SITE_NAME}`
-  const description = `${area.name}エリアの散歩コース一覧。${area.description}`
+  const title = `${area.name.join("・")}の散歩コース | ${SITE_NAME}`
+  const description = `${area.name.join("・")}エリアの散歩コース一覧。${area.description}`
   return {
     title,
     description,
