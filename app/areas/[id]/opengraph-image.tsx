@@ -1,13 +1,17 @@
+import fs from "node:fs"
+import path from "node:path"
 import { ImageResponse } from "next/og"
 import { getAreaById, getAllAreaIds } from "lib/areas"
 import { getCoursesByArea } from "lib/courses"
 
-const BASE_URL = "https://sozoroto.reload.co.jp"
-
-function toAbsoluteUrl(url: string | undefined): string | undefined {
+function toDataUri(url: string | undefined): string | undefined {
   if (!url) return undefined
-  if (url.startsWith("http")) return url
-  return `${BASE_URL}${url}`
+  const filePath = path.join(process.cwd(), "public", url)
+  if (!fs.existsSync(filePath)) return undefined
+  const ext = path.extname(filePath).slice(1)
+  const mime = ext === "jpg" ? "jpeg" : ext
+  const data = fs.readFileSync(filePath).toString("base64")
+  return `data:image/${mime};base64,${data}`
 }
 
 export const dynamic = "force-static"
@@ -57,9 +61,9 @@ export default async function OgImage({ params }: Props) {
         overflow: "hidden",
       }}
     >
-      {toAbsoluteUrl(area.mainImageUrl) && (
+      {toDataUri(area.mainImageUrl) && (
         <img
-          src={toAbsoluteUrl(area.mainImageUrl)}
+          src={toDataUri(area.mainImageUrl)}
           style={{
             position: "absolute",
             top: 0,

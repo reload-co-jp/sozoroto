@@ -2,6 +2,7 @@ import { FC } from "react"
 import type { Metadata } from "next"
 import AreaCard from "components/AreaCard"
 import { getAreasWithCourseCount } from "lib/areas"
+import { breadcrumbJsonLd } from "lib/seo"
 import { colors } from "lib/tokens"
 
 export const metadata: Metadata = {
@@ -15,43 +16,59 @@ const AreasPage: FC = () => {
   const areas = getAreasWithCourseCount()
 
   return (
-    <div
-      style={{
-        maxWidth: 1024,
-        margin: "0 auto",
-        padding: "40px 24px",
-      }}
-    >
-      <h1
-        style={{
-          fontSize: 24,
-          fontWeight: 700,
-          color: colors.gray900,
-          marginBottom: 8,
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbJsonLd([
+              { name: "そぞろっと！", url: "https://sozoroto.reload.co.jp" },
+              {
+                name: "エリア一覧",
+                url: "https://sozoroto.reload.co.jp/areas",
+              },
+            ])
+          ),
         }}
-      >
-        エリア一覧
-      </h1>
-      <p
-        style={{
-          color: colors.gray600,
-          marginBottom: 40,
-        }}
-      >
-        東京近辺の散歩エリアを探す。
-      </p>
+      />
       <div
         style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: 24,
+          maxWidth: 1024,
+          margin: "0 auto",
+          padding: "40px 24px",
         }}
       >
-        {areas.map((area) => (
-          <AreaCard key={area.id} area={area} />
-        ))}
+        <h1
+          style={{
+            fontSize: 24,
+            fontWeight: 700,
+            color: colors.gray900,
+            marginBottom: 8,
+          }}
+        >
+          エリア一覧
+        </h1>
+        <p
+          style={{
+            color: colors.gray600,
+            marginBottom: 40,
+          }}
+        >
+          東京近辺の散歩エリアを探す。
+        </p>
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 24,
+          }}
+        >
+          {areas.map((area) => (
+            <AreaCard key={area.id} area={area} />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 

@@ -19,6 +19,7 @@ export function rootMetadata(): Metadata {
       siteName: SITE_NAME,
       locale: "ja_JP",
       type: "website",
+      url: BASE_URL,
     },
     twitter: {
       card: "summary_large_image",
@@ -43,10 +44,17 @@ export function courseMetadata(course: Course): Metadata {
       title,
       description,
       type: "article",
+      url: `${BASE_URL}/courses/${course.id}`,
       publishedTime: course.publishedAt,
       modifiedTime: course.updatedAt,
+      images: course.mainImageUrl ? [{ url: course.mainImageUrl }] : undefined,
     },
-    twitter: { card: "summary_large_image", title, description },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: course.mainImageUrl ? [course.mainImageUrl] : undefined,
+    },
     alternates: {
       canonical: `${BASE_URL}/courses/${course.id}`,
     },
@@ -59,8 +67,19 @@ export function areaMetadata(area: Area): Metadata {
   return {
     title,
     description,
-    openGraph: { title, description, type: "website" },
-    twitter: { card: "summary_large_image", title, description },
+    openGraph: {
+      title,
+      description,
+      type: "website",
+      url: `${BASE_URL}/areas/${area.id}`,
+      images: area.mainImageUrl ? [{ url: area.mainImageUrl }] : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: area.mainImageUrl ? [area.mainImageUrl] : undefined,
+    },
     alternates: { canonical: `${BASE_URL}/areas/${area.id}` },
   }
 }
@@ -72,20 +91,45 @@ export function tagMetadata(tag: Tag): Metadata {
   return {
     title,
     description,
-    openGraph: { title, description, type: "website" },
+    openGraph: {
+      title,
+      description,
+      type: "website",
+      url: `${BASE_URL}/tags/${tag.id}`,
+    },
     twitter: { card: "summary_large_image", title, description },
     alternates: { canonical: `${BASE_URL}/tags/${tag.id}` },
+  }
+}
+
+export function websiteJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE_NAME,
+    url: BASE_URL,
+  }
+}
+
+export function organizationJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "株式会社Reload",
+    url: "https://reload.co.jp",
   }
 }
 
 export function courseJsonLd(course: Course) {
   return {
     "@context": "https://schema.org",
-    "@type": "Article",
-    headline: course.title,
+    "@type": "TouristTrip",
+    name: course.title,
     description: course.shortDescription,
-    datePublished: course.publishedAt,
-    dateModified: course.updatedAt,
+    url: `${BASE_URL}/courses/${course.id}`,
+    ...(course.mainImageUrl && {
+      image: `${BASE_URL}${course.mainImageUrl}`,
+    }),
   }
 }
 

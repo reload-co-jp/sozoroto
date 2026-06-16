@@ -3,7 +3,7 @@ import Link from "next/link"
 import Script from "next/script"
 import "./reset.css"
 import "./globals.css"
-import { rootMetadata } from "lib/seo"
+import { rootMetadata, websiteJsonLd, organizationJsonLd } from "lib/seo"
 import { colors, font } from "lib/tokens"
 
 export const metadata: Metadata = rootMetadata()
@@ -11,6 +11,16 @@ export const metadata: Metadata = rootMetadata()
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="ja">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd()) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(organizationJsonLd()),
+        }}
+      />
       {process.env.NODE_ENV === "production" && (
         <>
           <Script

@@ -4,6 +4,7 @@ import CoursesPageClient from "components/CoursesPageClient"
 import { getAllCourses } from "lib/courses"
 import { getAllAreas } from "lib/areas"
 import { getAllTags } from "lib/tags"
+import { breadcrumbJsonLd } from "lib/seo"
 import { colors } from "lib/tokens"
 
 export const metadata: Metadata = {
@@ -19,25 +20,41 @@ const CoursesPage: FC = () => {
   const tags = getAllTags()
 
   return (
-    <div
-      style={{
-        maxWidth: 1024,
-        margin: "0 auto",
-        padding: "40px 24px",
-      }}
-    >
-      <h1
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbJsonLd([
+              { name: "そぞろっと！", url: "https://sozoroto.reload.co.jp" },
+              {
+                name: "コース一覧",
+                url: "https://sozoroto.reload.co.jp/courses",
+              },
+            ])
+          ),
+        }}
+      />
+      <div
         style={{
-          fontSize: 24,
-          fontWeight: 700,
-          color: colors.gray900,
-          marginBottom: 32,
+          maxWidth: 1024,
+          margin: "0 auto",
+          padding: "40px 24px",
         }}
       >
-        コース一覧
-      </h1>
-      <CoursesPageClient courses={courses} areas={areas} tags={tags} />
-    </div>
+        <h1
+          style={{
+            fontSize: 24,
+            fontWeight: 700,
+            color: colors.gray900,
+            marginBottom: 32,
+          }}
+        >
+          コース一覧
+        </h1>
+        <CoursesPageClient courses={courses} areas={areas} tags={tags} />
+      </div>
+    </>
   )
 }
 
