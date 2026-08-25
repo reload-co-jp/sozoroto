@@ -27,9 +27,13 @@ const SEARCH_QUERIES = {
   "fukutoku-shrine": "Fukutoku shrine Nihonbashi Tokyo",
   "mannenbashi": "Mannenbashi bridge Fukagawa Tokyo",
   "sendaibori-river-park": "Sendaibori River Park Koto Tokyo",
+  "suidobashi-station": "Suidobashi station Tokyo",
+  "ochanomizu-bridge": "Ochanomizubashi bridge Kanda river Tokyo",
+  "shohei-bridge": "Shoheibashi bridge Tokyo",
+  "yanagibashi": "Yanagibashi bridge Kanda river Tokyo",
 }
 
-const TARGET_IDS = [28, 29, 30, 31, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46]
+const TARGET_IDS = [28, 29, 30, 31, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 49, 50, 51, 52]
 
 async function searchWikimedia(query) {
   const url = new URL("https://commons.wikimedia.org/w/api.php")

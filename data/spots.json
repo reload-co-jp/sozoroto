@@ -622,5 +622,57 @@
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 49,
+    "slug": "suidobashi-station",
+    "name": "水道橋駅",
+    "description": "JR水道橋駅。神田川に架かる水道橋のたもとにあり、川沿い散策の起点となる駅。",
+    "address": "東京都千代田区神田三崎町2丁目",
+    "latitude": 35.7018,
+    "longitude": 139.7538,
+    "imageUrl": "/images/spots/spot-49.jpg",
+    "officialUrl": null,
+    "createdAt": "2026-08-25T00:00:00Z",
+    "updatedAt": "2026-08-25T00:00:00Z"
+  },
+  {
+    "id": 50,
+    "slug": "ochanomizu-bridge",
+    "name": "お茶の水橋",
+    "description": "神田川に架かる橋で、両岸に切り立つ「お茶の水渓谷」を見渡せる。神保町方面と本郷台地を結ぶ。",
+    "address": "東京都千代田区神田駿河台4丁目",
+    "latitude": 35.6996,
+    "longitude": 139.7635,
+    "imageUrl": "/images/spots/spot-50.jpg",
+    "officialUrl": null,
+    "createdAt": "2026-08-25T00:00:00Z",
+    "updatedAt": "2026-08-25T00:00:00Z"
+  },
+  {
+    "id": 51,
+    "slug": "shohei-bridge",
+    "name": "昌平橋",
+    "description": "神田川に架かる橋。旧万世橋駅跡やJRの高架を望みながら、川沿いの遊歩道を歩ける。",
+    "address": "東京都千代田区神田淡路町2丁目",
+    "latitude": 35.6984,
+    "longitude": 139.7683,
+    "imageUrl": "/images/spots/spot-51.jpg",
+    "officialUrl": null,
+    "createdAt": "2026-08-25T00:00:00Z",
+    "updatedAt": "2026-08-25T00:00:00Z"
+  },
+  {
+    "id": 52,
+    "slug": "yanagibashi",
+    "name": "柳橋",
+    "description": "神田川が隅田川へ注ぐ河口に架かる橋。かつての花街の名残と屋形船の船宿が並ぶ、川旅の終着点。",
+    "address": "東京都台東区柳橋1丁目",
+    "latitude": 35.6957,
+    "longitude": 139.7862,
+    "imageUrl": "/images/spots/spot-52.jpg",
+    "officialUrl": null,
+    "createdAt": "2026-08-25T00:00:00Z",
+    "updatedAt": "2026-08-25T00:00:00Z"
   }
 ]

@@ -467,5 +467,66 @@
     "title": "到着：神田明神",
     "description": "急な坂道を上ると1300年の歴史を持つ江戸の総鎮守。随神門・本殿・銭形平次の碑を巡ってフィニッシュ。",
     "stayMinutes": 20
+  },
+  {
+    "id": 54,
+    "courseId": 9,
+    "spotId": 49,
+    "order": 1,
+    "title": "出発：水道橋駅",
+    "description": "JR水道橋駅から神田川沿いの遊歩道へ。下流へ向かって歩き始める。"
+  },
+  {
+    "id": 55,
+    "courseId": 9,
+    "spotId": 50,
+    "order": 2,
+    "title": "お茶の水橋",
+    "description": "切り立つお茶の水渓谷を見渡せる橋。両岸の緑と電車の行き交う姿が見どころ。",
+    "stayMinutes": 5
+  },
+  {
+    "id": 56,
+    "courseId": 9,
+    "spotId": 5,
+    "order": 3,
+    "title": "聖橋",
+    "description": "丸ノ内線・総武線・中央線の3路線が交差する絶景を楽しめるアーチ橋。",
+    "stayMinutes": 10
+  },
+  {
+    "id": 57,
+    "courseId": 9,
+    "spotId": 51,
+    "order": 4,
+    "title": "昌平橋",
+    "description": "旧万世橋駅跡やJRの高架を望みながら、川沿いの遊歩道を進む。",
+    "stayMinutes": 5
+  },
+  {
+    "id": 58,
+    "courseId": 9,
+    "spotId": 19,
+    "order": 5,
+    "title": "万世橋エリア",
+    "description": "旧万世橋駅の赤レンガ遺構が残るmAAch ecutéに立ち寄るのもよい。",
+    "stayMinutes": 10
+  },
+  {
+    "id": 59,
+    "courseId": 9,
+    "spotId": 1,
+    "order": 6,
+    "title": "秋葉原駅 電気街口",
+    "description": "電気街口を横目に、神田川沿いの遊歩道をさらに下流へ進む。",
+    "stayMinutes": 5
+  },
+  {
+    "id": 60,
+    "courseId": 9,
+    "spotId": 52,
+    "order": 7,
+    "title": "到着：柳橋",
+    "description": "神田川が隅田川に注ぐ河口の橋。屋形船の船宿が並ぶ景色でフィニッシュ。"
   }
 ]
