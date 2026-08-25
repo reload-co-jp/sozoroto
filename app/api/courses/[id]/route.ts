@@ -6,14 +6,14 @@ import { getCourseSpots } from "lib/spots"
 export const dynamic = "force-static"
 
 export function generateStaticParams() {
-  return getAllCourseIds().map((id) => ({ id: String(id) }))
+  return getAllCourseIds().map((id) => ({ id: `${id}.json` }))
 }
 
 type Props = { params: Promise<{ id: string }> }
 
 export async function GET(_req: Request, { params }: Props) {
   const { id } = await params
-  const course = getCourseById(Number(id))
+  const course = getCourseById(Number(id.replace(/\.json$/, "")))
   if (!course) {
     return NextResponse.json({ error: "Not Found" }, { status: 404 })
   }
