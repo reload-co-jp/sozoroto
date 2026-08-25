@@ -64,6 +64,7 @@ export default async function OgImage({ params }: Props) {
       {toDataUri(area.mainImageUrl) && (
         <img
           src={toDataUri(area.mainImageUrl)}
+          alt=""
           style={{
             position: "absolute",
             top: 0,
