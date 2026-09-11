@@ -43,6 +43,7 @@ const CourseCard: FC<Props> = ({ course }) => {
           <img
             src={course.mainImageUrl}
             alt={course.title}
+            loading="lazy"
             style={{
               width: "100%",
               height: "100%",

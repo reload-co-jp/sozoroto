@@ -44,6 +44,7 @@ const TagPage: FC<Props> = async ({ params }) => {
 
       <div style={{ maxWidth: 1024, margin: "0 auto", padding: "40px 24px" }}>
         <nav
+          aria-label="パンくずリスト"
           style={{
             display: "flex",
             gap: 8,

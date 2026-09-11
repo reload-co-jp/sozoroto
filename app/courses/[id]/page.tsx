@@ -84,6 +84,7 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
 
       <div style={{ maxWidth: 896, margin: "0 auto", padding: "40px 24px" }}>
         <nav
+          aria-label="パンくずリスト"
           style={{
             display: "flex",
             gap: 8,
@@ -354,6 +355,7 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
                                     <img
                                       src={cs.spot.imageUrl}
                                       alt={cs.title ?? cs.spot.name}
+                                      loading="lazy"
                                       style={{
                                         width: "100%",
                                         height: "100%",
