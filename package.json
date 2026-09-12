@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "lint": "eslint",
-    "build": "next build",
+    "build": "node scripts/build.mjs",
     "start": "next start",
     "format": "prettier --write .",
     "typecheck": "tsc --noEmit",
