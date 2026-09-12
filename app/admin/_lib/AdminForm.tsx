@@ -3,6 +3,16 @@
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import type { ResourceSchema, FieldDef } from "app/admin/_lib/schema"
+import { colors, radius } from "lib/tokens"
+
+const inputStyle: React.CSSProperties = {
+  width: "100%",
+  padding: "8px 10px",
+  border: `1px solid ${colors.gray300}`,
+  borderRadius: radius.sm,
+  color: colors.gray900,
+  background: colors.white,
+}
 
 type Props = {
   schema: ResourceSchema
@@ -34,11 +44,37 @@ export default function AdminForm({ schema, initialValues, recordId }: Props) {
   )
   const [error, setError] = useState<string | null>(null)
   const [saving, setSaving] = useState(false)
+  const [geocoding, setGeocoding] = useState(false)
 
   const isNew = recordId === null
 
   function handleChange(key: string, value: string) {
     setValues((prev) => ({ ...prev, [key]: value }))
+  }
+
+  async function handleGeocode() {
+    const address = values.address?.trim()
+    if (!address) {
+      setError("住所を入力してください")
+      return
+    }
+    setError(null)
+    setGeocoding(true)
+    try {
+      const res = await fetch(`/api/admin/geocode?address=${encodeURIComponent(address)}`)
+      const data = await res.json()
+      if (!res.ok) {
+        setError(data.error ?? "ジオコーディングに失敗しました")
+        return
+      }
+      setValues((prev) => ({
+        ...prev,
+        latitude: String(data.latitude),
+        longitude: String(data.longitude),
+      }))
+    } finally {
+      setGeocoding(false)
+    }
   }
 
   type PayloadResult =
@@ -130,35 +166,61 @@ export default function AdminForm({ schema, initialValues, recordId }: Props) {
   }
 
   return (
-    <form onSubmit={handleSubmit} style={{ maxWidth: 640 }}>
+    <form
+      onSubmit={handleSubmit}
+      style={{
+        maxWidth: 640,
+        background: colors.white,
+        padding: 24,
+        borderRadius: radius.md,
+        boxShadow: "0 1px 3px rgba(0,0,0,0.08)",
+      }}
+    >
       {error && (
-        <p style={{ color: "crimson", fontWeight: "bold" }}>{error}</p>
+        <p
+          style={{
+            color: colors.orange700,
+            background: colors.orange100,
+            padding: "8px 12px",
+            borderRadius: radius.sm,
+            fontWeight: "bold",
+          }}
+        >
+          {error}
+        </p>
       )}
       {schema.fields.map((field) => (
         <div key={field.key} style={{ marginBottom: 16 }}>
-          <label style={{ display: "block", fontWeight: "bold", marginBottom: 4 }}>
+          <label
+            style={{
+              display: "block",
+              fontWeight: "bold",
+              marginBottom: 4,
+              color: colors.gray700,
+            }}
+          >
             {field.label}
-            {field.required && <span style={{ color: "crimson" }}> *</span>}
+            {field.required && <span style={{ color: colors.orange700 }}> *</span>}
           </label>
           {field.type === "readonly" ? (
             <textarea
               value={values[field.key]}
               readOnly
               rows={field.key === "routeGeoJson" ? 6 : 1}
-              style={{ width: "100%", background: "#f2f2f2", color: "#666" }}
+              style={{ ...inputStyle, background: colors.surface2, color: colors.gray500 }}
             />
           ) : field.type === "textarea" ? (
             <textarea
               value={values[field.key]}
               onChange={(e) => handleChange(field.key, e.target.value)}
               rows={4}
-              style={{ width: "100%" }}
+              style={inputStyle}
             />
           ) : field.type === "select" ? (
             <select
               value={values[field.key]}
               onChange={(e) => handleChange(field.key, e.target.value)}
-              style={{ width: "100%" }}
+              style={inputStyle}
             >
               <option value="">選択してください</option>
               {field.options?.map((opt) => (
@@ -172,14 +234,43 @@ export default function AdminForm({ schema, initialValues, recordId }: Props) {
               type="text"
               value={values[field.key]}
               onChange={(e) => handleChange(field.key, e.target.value)}
-              style={{ width: "100%" }}
+              style={inputStyle}
             />
+          )}
+          {schema.resource === "spots" && field.key === "address" && (
+            <button
+              type="button"
+              onClick={handleGeocode}
+              disabled={geocoding}
+              style={{
+                marginTop: 8,
+                padding: "6px 12px",
+                borderRadius: radius.sm,
+                border: `1px solid ${colors.primary}`,
+                background: colors.white,
+                color: colors.primary,
+                fontWeight: "bold",
+              }}
+            >
+              {geocoding ? "取得中..." : "住所から緯度経度を取得"}
+            </button>
           )}
         </div>
       ))}
 
       <div style={{ display: "flex", gap: 12 }}>
-        <button type="submit" disabled={saving}>
+        <button
+          type="submit"
+          disabled={saving}
+          style={{
+            padding: "10px 20px",
+            borderRadius: radius.sm,
+            border: "none",
+            background: colors.primary,
+            color: colors.white,
+            fontWeight: "bold",
+          }}
+        >
           {saving ? "保存中..." : "保存"}
         </button>
         {!isNew && (
@@ -187,7 +278,14 @@ export default function AdminForm({ schema, initialValues, recordId }: Props) {
             type="button"
             onClick={handleDelete}
             disabled={saving}
-            style={{ color: "crimson" }}
+            style={{
+              padding: "10px 20px",
+              borderRadius: radius.sm,
+              border: `1px solid ${colors.orange700}`,
+              background: colors.white,
+              color: colors.orange700,
+              fontWeight: "bold",
+            }}
           >
             削除
           </button>

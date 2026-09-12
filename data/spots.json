@@ -5,12 +5,12 @@
     "name": "秋葉原駅 電気街口",
     "description": "JR秋葉原駅の電気街口。電気街のメインストリートへの玄関口。",
     "address": "東京都千代田区外神田1丁目",
-    "latitude": 35.6984,
-    "longitude": 139.7732,
+    "latitude": 35.698406,
+    "longitude": 139.770889,
     "imageUrl": "/images/spots/spot-01.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-12T12:57:09.548Z"
   },
   {
     "id": 2,
@@ -18,12 +18,12 @@
     "name": "神田明神",
     "description": "1300年の歴史を持つ神社。江戸の総鎮守として知られ、仕事運・商売繁盛のご利益で有名。",
     "address": "東京都千代田区外神田2-16-2",
-    "latitude": 35.7022,
-    "longitude": 139.7668,
+    "latitude": 35.70145,
+    "longitude": 139.767517,
     "imageUrl": "/images/spots/spot-02.jpg",
     "officialUrl": "https://www.kandamyojin.or.jp/",
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-12T12:57:19.632Z"
   },
   {
     "id": 3,
@@ -31,12 +31,12 @@
     "name": "神田駅",
     "description": "JR神田駅。秋葉原から神田高架下を抜けてすぐのエリア。",
     "address": "東京都千代田区鍛冶町2丁目",
-    "latitude": 35.6916,
-    "longitude": 139.7707,
+    "latitude": 35.692581,
+    "longitude": 139.772018,
     "imageUrl": "/images/spots/spot-03.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-12T12:57:29.690Z"
   },
   {
     "id": 4,
@@ -44,12 +44,12 @@
     "name": "御茶ノ水駅",
     "description": "JR・東京メトロの駅。神田川に架かる聖橋が美しい。",
     "address": "東京都千代田区神田駿河台2丁目",
-    "latitude": 35.6996,
-    "longitude": 139.7649,
+    "latitude": 35.700069,
+    "longitude": 139.762009,
     "imageUrl": "/images/spots/spot-04.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-12T12:57:34.945Z"
   },
   {
     "id": 5,
