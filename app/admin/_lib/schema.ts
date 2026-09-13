@@ -1,6 +1,6 @@
 export type ResourceName = "spots" | "areas" | "courses" | "tags"
 
-export type FieldType = "text" | "textarea" | "number" | "select" | "list" | "readonly"
+export type FieldType = "text" | "textarea" | "number" | "select" | "list" | "readonly" | "json"
 
 export type FieldDef = {
   key: string
@@ -92,7 +92,7 @@ export const resourceSchemas: ResourceSchema[] = [
       { key: "distanceMeters", label: "距離m（編集不可）", type: "readonly" },
       { key: "durationMinutes", label: "所要分（編集不可）", type: "readonly" },
       { key: "estimatedSteps", label: "推定歩数（編集不可）", type: "readonly" },
-      { key: "routeGeoJson", label: "ルートGeoJSON（編集不可）", type: "readonly" },
+      { key: "routeGeoJson", label: "ルートGeoJSON（道順）", type: "json", required: true },
     ],
   },
 ]
