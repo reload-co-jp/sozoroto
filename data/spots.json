@@ -603,12 +603,12 @@
     "name": "三省堂書店神保町本店",
     "description": "神保町を代表する大型書店。地下から4階まで専門書から一般書まで膨大な品揃えを誇る。",
     "address": "東京都千代田区神田神保町1-1",
-    "latitude": 35.6962,
-    "longitude": 139.7589,
+    "latitude": 35.695671,
+    "longitude": 139.760635,
     "imageUrl": "/images/spots/spot-47.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-14T07:46:56.605Z"
   },
   {
     "id": 48,
@@ -616,12 +616,12 @@
     "name": "東京堂書店",
     "description": "1890年創業の老舗書店。人文・社会・芸術系の品揃えが充実し、「神保町らしい本屋」として長く愛される。",
     "address": "東京都千代田区神田神保町1-17",
-    "latitude": 35.6961,
-    "longitude": 139.7596,
+    "latitude": 35.69524,
+    "longitude": 139.759903,
     "imageUrl": "/images/spots/spot-48.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-14T07:46:41.771Z"
   },
   {
     "id": 49,
@@ -642,12 +642,12 @@
     "name": "お茶の水橋",
     "description": "神田川に架かる橋で、両岸に切り立つ「お茶の水渓谷」を見渡せる。神保町方面と本郷台地を結ぶ。",
     "address": "東京都千代田区神田駿河台4丁目",
-    "latitude": 35.6996,
-    "longitude": 139.7635,
+    "latitude": 35.698593,
+    "longitude": 139.765854,
     "imageUrl": "/images/spots/spot-50.jpg",
     "officialUrl": null,
     "createdAt": "2026-08-25T00:00:00Z",
-    "updatedAt": "2026-08-25T00:00:00Z"
+    "updatedAt": "2026-09-14T07:46:26.619Z"
   },
   {
     "id": 51,
@@ -655,12 +655,12 @@
     "name": "昌平橋",
     "description": "神田川に架かる橋。旧万世橋駅跡やJRの高架を望みながら、川沿いの遊歩道を歩ける。",
     "address": "東京都千代田区神田淡路町2丁目",
-    "latitude": 35.6984,
-    "longitude": 139.7683,
+    "latitude": 35.697517,
+    "longitude": 139.767838,
     "imageUrl": "/images/spots/spot-51.jpg",
     "officialUrl": null,
     "createdAt": "2026-08-25T00:00:00Z",
-    "updatedAt": "2026-08-25T00:00:00Z"
+    "updatedAt": "2026-09-14T07:46:16.208Z"
   },
   {
     "id": 52,
@@ -668,11 +668,11 @@
     "name": "柳橋",
     "description": "神田川が隅田川へ注ぐ河口に架かる橋。かつての花街の名残と屋形船の船宿が並ぶ、川旅の終着点。",
     "address": "東京都台東区柳橋1丁目",
-    "latitude": 35.6957,
-    "longitude": 139.7862,
+    "latitude": 35.696503,
+    "longitude": 139.787827,
     "imageUrl": "/images/spots/spot-52.jpg",
     "officialUrl": null,
     "createdAt": "2026-08-25T00:00:00Z",
-    "updatedAt": "2026-08-25T00:00:00Z"
+    "updatedAt": "2026-09-14T07:46:07.666Z"
   }
 ]

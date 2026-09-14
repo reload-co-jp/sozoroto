@@ -24,7 +24,7 @@ type Props = {
 
 function toInputValue(field: FieldDef, value: unknown): string {
   if (value === undefined || value === null) return ""
-  if (field.type === "list" && Array.isArray(value)) return value.join(", ")
+  if ((field.type === "list" || field.type === "imageList") && Array.isArray(value)) return value.join(", ")
   if (field.type === "readonly" || field.type === "json") {
     return typeof value === "string" ? value : JSON.stringify(value, null, 2)
   }
@@ -66,11 +66,69 @@ export default function AdminForm({ schema, initialValues, recordId }: Props) {
   const [error, setError] = useState<string | null>(null)
   const [saving, setSaving] = useState(false)
   const [geocoding, setGeocoding] = useState(false)
+  const [uploadingKey, setUploadingKey] = useState<string | null>(null)
 
   const isNew = recordId === null
 
   function handleChange(key: string, value: string) {
     setValues((prev) => ({ ...prev, [key]: value }))
+  }
+
+  function listFromValue(value: string): string[] {
+    return value
+      .split(",")
+      .map((s) => s.trim())
+      .filter((s) => s !== "")
+  }
+
+  async function uploadImage(file: File): Promise<string | null> {
+    const body = new FormData()
+    body.append("resource", schema.resource)
+    body.append("file", file)
+    const res = await fetch("/api/admin/upload", { method: "POST", body })
+    const data = await res.json()
+    if (!res.ok) {
+      setError(data.error ?? "画像のアップロードに失敗しました")
+      return null
+    }
+    return data.url as string
+  }
+
+  async function handleImageUpload(key: string, file: File | null) {
+    if (!file) return
+    setError(null)
+    setUploadingKey(key)
+    try {
+      const url = await uploadImage(file)
+      if (url) handleChange(key, url)
+    } finally {
+      setUploadingKey(null)
+    }
+  }
+
+  async function handleImageListUpload(key: string, files: FileList | null) {
+    if (!files || files.length === 0) return
+    setError(null)
+    setUploadingKey(key)
+    try {
+      const urls: string[] = []
+      for (const file of Array.from(files)) {
+        const url = await uploadImage(file)
+        if (url) urls.push(url)
+      }
+      if (urls.length > 0) {
+        const merged = [...listFromValue(values[key] ?? ""), ...urls]
+        handleChange(key, merged.join(", "))
+      }
+    } finally {
+      setUploadingKey(null)
+    }
+  }
+
+  function removeFromImageList(key: string, index: number) {
+    const list = listFromValue(values[key] ?? "")
+    list.splice(index, 1)
+    handleChange(key, list.join(", "))
   }
 
   async function handleGeocode() {
@@ -135,7 +193,7 @@ export default function AdminForm({ schema, initialValues, recordId }: Props) {
           }
         }
         payload[field.key] = parsed
-      } else if (field.type === "list") {
+      } else if (field.type === "list" || field.type === "imageList") {
         payload[field.key] = raw
           .split(",")
           .map((s) => s.trim())
@@ -271,6 +329,92 @@ export default function AdminForm({ schema, initialValues, recordId }: Props) {
                 style={{ ...inputStyle, fontFamily: "monospace", marginTop: 8 }}
               />
             </>
+          ) : field.type === "image" ? (
+            <div>
+              {values[field.key] && (
+                <img
+                  src={values[field.key]}
+                  alt=""
+                  style={{
+                    maxWidth: 200,
+                    maxHeight: 150,
+                    display: "block",
+                    marginBottom: 8,
+                    borderRadius: radius.sm,
+                    objectFit: "cover",
+                  }}
+                />
+              )}
+              <input
+                type="text"
+                value={values[field.key]}
+                onChange={(e) => handleChange(field.key, e.target.value)}
+                placeholder="画像URL、またはファイルを選択してアップロード"
+                style={inputStyle}
+              />
+              <input
+                type="file"
+                accept="image/*"
+                onChange={(e) => handleImageUpload(field.key, e.target.files?.[0] ?? null)}
+                disabled={uploadingKey === field.key}
+                style={{ marginTop: 8 }}
+              />
+              {uploadingKey === field.key && (
+                <span style={{ marginLeft: 8, color: colors.gray500 }}>アップロード中...</span>
+              )}
+            </div>
+          ) : field.type === "imageList" ? (
+            <div>
+              {listFromValue(values[field.key]).length > 0 && (
+                <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 8 }}>
+                  {listFromValue(values[field.key]).map((url, i) => (
+                    <div key={`${url}-${i}`} style={{ position: "relative" }}>
+                      <img
+                        src={url}
+                        alt=""
+                        style={{ width: 100, height: 75, objectFit: "cover", borderRadius: radius.sm }}
+                      />
+                      <button
+                        type="button"
+                        onClick={() => removeFromImageList(field.key, i)}
+                        style={{
+                          position: "absolute",
+                          top: -6,
+                          right: -6,
+                          width: 20,
+                          height: 20,
+                          borderRadius: "50%",
+                          border: "none",
+                          background: colors.orange700,
+                          color: colors.white,
+                          lineHeight: 1,
+                          cursor: "pointer",
+                        }}
+                      >
+                        ×
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              )}
+              <input
+                type="file"
+                accept="image/*"
+                multiple
+                onChange={(e) => handleImageListUpload(field.key, e.target.files)}
+                disabled={uploadingKey === field.key}
+              />
+              {uploadingKey === field.key && (
+                <span style={{ marginLeft: 8, color: colors.gray500 }}>アップロード中...</span>
+              )}
+              <textarea
+                value={values[field.key]}
+                onChange={(e) => handleChange(field.key, e.target.value)}
+                rows={2}
+                placeholder="カンマ区切りで直接編集も可能"
+                style={{ ...inputStyle, marginTop: 8, fontSize: 12 }}
+              />
+            </div>
           ) : field.type === "select" ? (
             <select
               value={values[field.key]}

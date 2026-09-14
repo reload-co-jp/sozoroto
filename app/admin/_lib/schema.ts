@@ -1,6 +1,15 @@
 export type ResourceName = "spots" | "areas" | "courses" | "tags"
 
-export type FieldType = "text" | "textarea" | "number" | "select" | "list" | "readonly" | "json"
+export type FieldType =
+  | "text"
+  | "textarea"
+  | "number"
+  | "select"
+  | "list"
+  | "readonly"
+  | "json"
+  | "image"
+  | "imageList"
 
 export type FieldDef = {
   key: string
@@ -29,7 +38,7 @@ export const resourceSchemas: ResourceSchema[] = [
       { key: "address", label: "住所", type: "text" },
       { key: "latitude", label: "緯度", type: "number", required: true },
       { key: "longitude", label: "経度", type: "number", required: true },
-      { key: "imageUrl", label: "画像URL", type: "text" },
+      { key: "imageUrl", label: "画像", type: "image" },
       { key: "officialUrl", label: "公式URL", type: "text" },
     ],
   },
@@ -43,7 +52,7 @@ export const resourceSchemas: ResourceSchema[] = [
       { key: "description", label: "説明文", type: "textarea", required: true },
       { key: "prefecture", label: "都道府県", type: "text", required: true },
       { key: "city", label: "市区町村", type: "text" },
-      { key: "mainImageUrl", label: "メイン画像URL", type: "text" },
+      { key: "mainImageUrl", label: "メイン画像", type: "image" },
       { key: "latitude", label: "緯度", type: "number", required: true },
       { key: "longitude", label: "経度", type: "number", required: true },
     ],
@@ -84,8 +93,8 @@ export const resourceSchemas: ResourceSchema[] = [
       { key: "cautionNotes", label: "注意事項", type: "textarea" },
       { key: "tags", label: "タグ（カンマ区切り、slug）", type: "list" },
       { key: "recommendedTimeOfDay", label: "おすすめ時間帯（カンマ区切り）", type: "list" },
-      { key: "mainImageUrl", label: "メイン画像URL", type: "text" },
-      { key: "imageUrls", label: "画像URL一覧（カンマ区切り）", type: "list" },
+      { key: "mainImageUrl", label: "メイン画像", type: "image" },
+      { key: "imageUrls", label: "画像一覧", type: "imageList" },
       { key: "areaId", label: "エリアID（編集不可）", type: "readonly" },
       { key: "startPointId", label: "開始スポットID（編集不可）", type: "readonly" },
       { key: "endPointId", label: "終了スポットID（編集不可）", type: "readonly" },
