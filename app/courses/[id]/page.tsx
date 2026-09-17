@@ -119,6 +119,7 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
               <img
                 src={course.mainImageUrl}
                 alt={course.title}
+                fetchPriority="high"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
             ) : (
