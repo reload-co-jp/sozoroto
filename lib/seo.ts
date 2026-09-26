@@ -5,7 +5,7 @@ import type { Tag } from "types/tag"
 
 const SITE_NAME = "そぞろっと"
 const SITE_DESCRIPTION = "東京近辺の散歩コースを、そぞろっと探す。"
-const BASE_URL = "https://sozoroto.reload.co.jp"
+export const BASE_URL = "https://sozoroto.reload.co.jp"
 
 export function rootMetadata(): Metadata {
   return {
@@ -19,7 +19,6 @@ export function rootMetadata(): Metadata {
       siteName: SITE_NAME,
       locale: "ja_JP",
       type: "website",
-      url: BASE_URL,
     },
     twitter: {
       card: "summary_large_image",
@@ -38,7 +37,7 @@ export function courseMetadata(course: Course): Metadata {
   const title = `${course.title} | ${SITE_NAME}`
   const description = course.shortDescription
   return {
-    title,
+    title: { absolute: title },
     description,
     openGraph: {
       title,
@@ -65,7 +64,7 @@ export function areaMetadata(area: Area): Metadata {
   const title = `${area.name.join("・")}の散歩コース | ${SITE_NAME}`
   const description = `${area.name.join("・")}エリアの散歩コース一覧。${area.description}`
   return {
-    title,
+    title: { absolute: title },
     description,
     openGraph: {
       title,
@@ -89,7 +88,7 @@ export function tagMetadata(tag: Tag): Metadata {
   const description =
     tag.description ?? `${tag.name}をテーマにした東京近辺の散歩コース一覧。`
   return {
-    title,
+    title: { absolute: title },
     description,
     openGraph: {
       title,
@@ -143,7 +142,7 @@ export function breadcrumbJsonLd(
       "@type": "ListItem",
       position: i + 1,
       name: item.name,
-      item: item.url,
+      item: item.url.endsWith("/") ? item.url : `${item.url}/`,
     })),
   }
 }

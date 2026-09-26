@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { colors } from "lib/tokens"
 
 export const metadata: Metadata = {
-  title: "このサイトについて | そぞろっと",
+  title: "このサイトについて",
   description:
     "なんとなく、きままな冒険を。そぞろっとは、東京近辺の散歩コースを探せるサービスです。サイトのコンセプトや使い方をご紹介します。",
   alternates: { canonical: "https://sozoroto.reload.co.jp/about" },
