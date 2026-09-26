@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import type { Course } from "types/course"
 import type { Area } from "types/area"
 import type { Tag } from "types/tag"
+import type { Spot } from "types/spot"
 
 const SITE_NAME = "そぞろっと"
 const SITE_DESCRIPTION = "東京近辺の散歩コースを、そぞろっと探す。"
@@ -119,7 +120,7 @@ export function organizationJsonLd() {
   }
 }
 
-export function courseJsonLd(course: Course) {
+export function courseJsonLd(course: Course, spots: Spot[] = []) {
   return {
     "@context": "https://schema.org",
     "@type": "TouristTrip",
@@ -129,12 +130,29 @@ export function courseJsonLd(course: Course) {
     ...(course.mainImageUrl && {
       image: `${BASE_URL}${course.mainImageUrl}`,
     }),
+    ...(spots.length > 0 && {
+      itinerary: {
+        "@type": "ItemList",
+        itemListElement: spots.map((spot, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          item: {
+            "@type": "TouristAttraction",
+            name: spot.name,
+            ...(spot.address && { address: spot.address }),
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: spot.latitude,
+              longitude: spot.longitude,
+            },
+          },
+        })),
+      },
+    }),
   }
 }
 
-export function breadcrumbJsonLd(
-  items: { name: string; url: string }[]
-) {
+export function breadcrumbJsonLd(items: { name: string; url: string }[]) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { colors } from "lib/tokens"
+import { breadcrumbJsonLd } from "lib/seo"
 
 export const metadata: Metadata = {
   title: "このサイトについて",
@@ -30,86 +31,102 @@ const section = (title: string, body: React.ReactNode) => (
 
 export default function AboutPage() {
   return (
-    <div style={{ maxWidth: 720, margin: "0 auto", padding: "64px 24px" }}>
-      <h1
-        style={{
-          fontSize: 28,
-          fontWeight: 700,
-          color: colors.gray900,
-          marginBottom: 8,
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbJsonLd([
+              { name: "そぞろっと！", url: "https://sozoroto.reload.co.jp" },
+              {
+                name: "このサイトについて",
+                url: "https://sozoroto.reload.co.jp/about",
+              },
+            ])
+          ),
         }}
-      >
-        このサイトについて
-      </h1>
-      <p
-        style={{
-          color: colors.primary,
-          fontSize: 15,
-          fontWeight: 600,
-          marginBottom: 8,
-        }}
-      >
-        なんとなく、きままな冒険を。
-      </p>
-      <p style={{ color: colors.gray500, fontSize: 14, marginBottom: 48 }}>
-        About sozoroto
-      </p>
-
-      {section(
-        "そぞろっととは",
-        <>
-          <p>
-            「そぞろっと」は、東京近辺の散歩コースをゆっくり探せるウェブサービスです。
-            目的地ではなく、歩くこと自体を楽しみたいとき——そんな気分のお供になれたら、と思って作りました。
-            エリアやテーマからコースを絞り込んだり、地図でルートを確認したりしながら、今日歩きたい場所を見つけてみてください。
-          </p>
-          <p style={{ marginTop: 12 }}>
-            名前は「そぞろ歩き」に由来しています。そぞろ歩きとは、あてもなくぶらぶらと歩くこと。急がず、目的を決めすぎず、ただ歩くことを楽しむ——そんな散歩のあり方をそのままサービス名にしました。
-          </p>
-        </>
-      )}
-
-      {section(
-        "コンテンツについて",
-        <>
-          <p>
-            掲載しているコースはすべて編集部が実際に歩いて確認したものです。距離・所要時間・難易度などの情報は取材時点のものであり、道路状況や施設の変化により実際と異なる場合があります。
-          </p>
-          <p style={{ marginTop: 12 }}>
-            コースの情報に誤りや変化を見つけた場合は、お問い合わせよりご連絡ください。
-          </p>
-        </>
-      )}
-
-      {section(
-        "運営",
-        <p>
-          このサイトは{" "}
-          <a
-            href="https://reload.co.jp"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: colors.primary }}
-          >
-            株式会社Reload
-          </a>{" "}
-          が運営しています。
+      />
+      <div style={{ maxWidth: 720, margin: "0 auto", padding: "64px 24px" }}>
+        <h1
+          style={{
+            fontSize: 28,
+            fontWeight: 700,
+            color: colors.gray900,
+            marginBottom: 8,
+          }}
+        >
+          このサイトについて
+        </h1>
+        <p
+          style={{
+            color: colors.primary,
+            fontSize: 15,
+            fontWeight: 600,
+            marginBottom: 8,
+          }}
+        >
+          なんとなく、きままな冒険を。
         </p>
-      )}
-
-      {section(
-        "お問い合わせ",
-        <p>
-          ご意見・ご要望・掲載情報の誤りなどは{" "}
-          <a
-            href="mailto:info@reload.co.jp"
-            style={{ color: colors.primary }}
-          >
-            info@reload.co.jp
-          </a>{" "}
-          までお送りください。
+        <p style={{ color: colors.gray500, fontSize: 14, marginBottom: 48 }}>
+          About sozoroto
         </p>
-      )}
-    </div>
+
+        {section(
+          "そぞろっととは",
+          <>
+            <p>
+              「そぞろっと」は、東京近辺の散歩コースをゆっくり探せるウェブサービスです。
+              目的地ではなく、歩くこと自体を楽しみたいとき——そんな気分のお供になれたら、と思って作りました。
+              エリアやテーマからコースを絞り込んだり、地図でルートを確認したりしながら、今日歩きたい場所を見つけてみてください。
+            </p>
+            <p style={{ marginTop: 12 }}>
+              名前は「そぞろ歩き」に由来しています。そぞろ歩きとは、あてもなくぶらぶらと歩くこと。急がず、目的を決めすぎず、ただ歩くことを楽しむ——そんな散歩のあり方をそのままサービス名にしました。
+            </p>
+          </>
+        )}
+
+        {section(
+          "コンテンツについて",
+          <>
+            <p>
+              掲載しているコースはすべて編集部が実際に歩いて確認したものです。距離・所要時間・難易度などの情報は取材時点のものであり、道路状況や施設の変化により実際と異なる場合があります。
+            </p>
+            <p style={{ marginTop: 12 }}>
+              コースの情報に誤りや変化を見つけた場合は、お問い合わせよりご連絡ください。
+            </p>
+          </>
+        )}
+
+        {section(
+          "運営",
+          <p>
+            このサイトは{" "}
+            <a
+              href="https://reload.co.jp"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: colors.primary }}
+            >
+              株式会社Reload
+            </a>{" "}
+            が運営しています。
+          </p>
+        )}
+
+        {section(
+          "お問い合わせ",
+          <p>
+            ご意見・ご要望・掲載情報の誤りなどは{" "}
+            <a
+              href="mailto:info@reload.co.jp"
+              style={{ color: colors.primary }}
+            >
+              info@reload.co.jp
+            </a>{" "}
+            までお送りください。
+          </p>
+        )}
+      </div>
+    </>
   )
 }

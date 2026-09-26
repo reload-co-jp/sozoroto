@@ -60,7 +60,12 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(courseJsonLd(course)),
+          __html: JSON.stringify(
+            courseJsonLd(
+              course,
+              courseSpots.map((cs) => cs.spot)
+            )
+          ),
         }}
       />
       <script
