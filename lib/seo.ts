@@ -8,6 +8,16 @@ const SITE_NAME = "そぞろっと"
 const SITE_DESCRIPTION = "東京近辺の散歩コースを、そぞろっと探す。"
 export const BASE_URL = "https://sozoroto.reload.co.jp"
 
+// 検索結果で1〜2件しかない一覧ページは薄いのでnoindex・sitemap除外
+export const MIN_INDEXABLE_COURSES = 3
+
+// trailingSlash: true に合わせた正規URL
+export function pageUrl(path: string): string {
+  return `${BASE_URL}${path.endsWith("/") ? path : `${path}/`}`
+}
+
+const km = (m: number) => `${Number((m / 1000).toFixed(1))}km`
+
 export function rootMetadata(): Metadata {
   return {
     metadataBase: new URL(BASE_URL),
@@ -29,14 +39,16 @@ export function rootMetadata(): Metadata {
       follow: true,
     },
     alternates: {
-      canonical: BASE_URL,
+      canonical: pageUrl("/"),
     },
   }
 }
 
-export function courseMetadata(course: Course): Metadata {
-  const title = `${course.title} | ${SITE_NAME}`
-  const description = course.shortDescription
+export function courseMetadata(course: Course, area?: Area): Metadata {
+  const title = `${course.seo?.title ?? `${course.title}｜${course.durationMinutes}分・${km(course.distanceMeters)}の散歩コース`} | ${SITE_NAME}`
+  const description =
+    course.seo?.description ??
+    `${area ? `${area.name.join("・")}エリアの` : ""}${course.durationMinutes}分・${km(course.distanceMeters)}の散歩コース。${course.shortDescription}`
   return {
     title: { absolute: title },
     description,
@@ -44,7 +56,7 @@ export function courseMetadata(course: Course): Metadata {
       title,
       description,
       type: "article",
-      url: `${BASE_URL}/courses/${course.id}`,
+      url: pageUrl(`/courses/${course.id}`),
       publishedTime: course.publishedAt,
       modifiedTime: course.updatedAt,
       images: course.mainImageUrl ? [{ url: course.mainImageUrl }] : undefined,
@@ -55,15 +67,21 @@ export function courseMetadata(course: Course): Metadata {
       description,
       images: course.mainImageUrl ? [course.mainImageUrl] : undefined,
     },
+    keywords: course.seo?.keywords,
     alternates: {
-      canonical: `${BASE_URL}/courses/${course.id}`,
+      canonical: pageUrl(`/courses/${course.id}`),
     },
   }
 }
 
-export function areaMetadata(area: Area): Metadata {
-  const title = `${area.name.join("・")}の散歩コース | ${SITE_NAME}`
-  const description = `${area.name.join("・")}エリアの散歩コース一覧。${area.description}`
+export function areaMetadata(
+  area: Area,
+  courseCount: number,
+  tagNames: string[]
+): Metadata {
+  const name = area.name.join("・")
+  const title = `${name}の散歩コース${tagNames.length > 0 ? `｜${tagNames.slice(0, 3).join("・")}を巡る街歩き` : ""} | ${SITE_NAME}`
+  const description = `${name}エリアの散歩コース${courseCount}件。${area.description}`
   return {
     title: { absolute: title },
     description,
@@ -71,7 +89,7 @@ export function areaMetadata(area: Area): Metadata {
       title,
       description,
       type: "website",
-      url: `${BASE_URL}/areas/${area.id}`,
+      url: pageUrl(`/areas/${area.id}`),
       images: area.mainImageUrl ? [{ url: area.mainImageUrl }] : undefined,
     },
     twitter: {
@@ -80,14 +98,14 @@ export function areaMetadata(area: Area): Metadata {
       description,
       images: area.mainImageUrl ? [area.mainImageUrl] : undefined,
     },
-    alternates: { canonical: `${BASE_URL}/areas/${area.id}` },
+    alternates: { canonical: pageUrl(`/areas/${area.id}`) },
+    ...(courseCount === 0 && { robots: { index: false, follow: true } }),
   }
 }
 
-export function tagMetadata(tag: Tag): Metadata {
-  const title = `${tag.name}の散歩コース | ${SITE_NAME}`
-  const description =
-    tag.description ?? `${tag.name}をテーマにした東京近辺の散歩コース一覧。`
+export function tagMetadata(tag: Tag, courseCount: number): Metadata {
+  const title = `東京の${tag.name}散歩コース｜${tag.name}を巡りながら歩く街歩き | ${SITE_NAME}`
+  const description = `${tag.name}をテーマにした東京近辺の散歩コース${courseCount}件。${tag.description ?? ""}`
   return {
     title: { absolute: title },
     description,
@@ -95,10 +113,34 @@ export function tagMetadata(tag: Tag): Metadata {
       title,
       description,
       type: "website",
-      url: `${BASE_URL}/tags/${tag.id}`,
+      url: pageUrl(`/tags/${tag.id}`),
     },
     twitter: { card: "summary_large_image", title, description },
-    alternates: { canonical: `${BASE_URL}/tags/${tag.id}` },
+    alternates: { canonical: pageUrl(`/tags/${tag.id}`) },
+    ...(courseCount < MIN_INDEXABLE_COURSES && {
+      robots: { index: false, follow: true },
+    }),
+  }
+}
+
+// 所要時間・距離別などの一覧ページ用
+export function listMetadata(
+  path: string,
+  title: string,
+  description: string
+): Metadata {
+  const fullTitle = `${title} | ${SITE_NAME}`
+  return {
+    title: { absolute: fullTitle },
+    description,
+    openGraph: {
+      title: fullTitle,
+      description,
+      type: "website",
+      url: pageUrl(path),
+    },
+    twitter: { card: "summary_large_image", title: fullTitle, description },
+    alternates: { canonical: pageUrl(path) },
   }
 }
 
@@ -107,7 +149,8 @@ export function websiteJsonLd() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: SITE_NAME,
-    url: BASE_URL,
+    url: pageUrl("/"),
+    inLanguage: "ja",
   }
 }
 
@@ -126,7 +169,7 @@ export function courseJsonLd(course: Course, spots: Spot[] = []) {
     "@type": "TouristTrip",
     name: course.title,
     description: course.shortDescription,
-    url: `${BASE_URL}/courses/${course.id}`,
+    url: pageUrl(`/courses/${course.id}`),
     ...(course.mainImageUrl && {
       image: `${BASE_URL}${course.mainImageUrl}`,
     }),
@@ -152,7 +195,8 @@ export function courseJsonLd(course: Course, spots: Spot[] = []) {
   }
 }
 
-export function breadcrumbJsonLd(items: { name: string; url: string }[]) {
+// path は "/areas/1" のようなサイト内パス
+export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -160,7 +204,7 @@ export function breadcrumbJsonLd(items: { name: string; url: string }[]) {
       "@type": "ListItem",
       position: i + 1,
       name: item.name,
-      item: item.url.endsWith("/") ? item.url : `${item.url}/`,
+      item: pageUrl(item.path),
     })),
   }
 }

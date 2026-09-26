@@ -30,3 +30,13 @@ export function getAllAreaSlugs(): string[] {
 export function getAllAreaIds(): number[] {
   return areas.map((a) => a.id)
 }
+
+// 周辺エリア: 中心座標の近い順（簡易平面距離）
+export function getNearbyAreas(area: Area, limit = 4): Area[] {
+  const d = (a: Area) =>
+    (a.latitude - area.latitude) ** 2 + (a.longitude - area.longitude) ** 2
+  return areas
+    .filter((a) => a.id !== area.id)
+    .sort((a, b) => d(a) - d(b))
+    .slice(0, limit)
+}

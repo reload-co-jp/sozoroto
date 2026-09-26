@@ -34,7 +34,13 @@ async function main() {
   })
 
   await restore()
-  process.exit(exitCode)
+  if (exitCode !== 0) process.exit(exitCode)
+
+  const seoExit = await new Promise((resolve) => {
+    const child = spawn("node", ["scripts/check-seo.mjs"], { stdio: "inherit" })
+    child.on("close", (code) => resolve(code ?? 1))
+  })
+  process.exit(seoExit)
 }
 
 main().catch(async (err) => {

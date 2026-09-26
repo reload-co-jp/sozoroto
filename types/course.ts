@@ -23,6 +23,12 @@ export type Course = {
   recommendedTimeOfDay: string[]
   cautionNotes?: string
   tags: string[]
+  // 未指定時は lib/seo.ts で自動生成
+  seo?: {
+    title?: string
+    description?: string
+    keywords?: string[]
+  }
   status: CourseStatus
   publishedAt?: string
   createdAt: string

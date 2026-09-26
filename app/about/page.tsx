@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "このサイトについて",
   description:
     "なんとなく、きままな冒険を。そぞろっとは、東京近辺の散歩コースを探せるサービスです。サイトのコンセプトや使い方をご紹介します。",
-  alternates: { canonical: "https://sozoroto.reload.co.jp/about" },
+  alternates: { canonical: "https://sozoroto.reload.co.jp/about/" },
 }
 
 const section = (title: string, body: React.ReactNode) => (
@@ -37,10 +37,10 @@ export default function AboutPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             breadcrumbJsonLd([
-              { name: "そぞろっと！", url: "https://sozoroto.reload.co.jp" },
+              { name: "そぞろっと！", path: "/" },
               {
                 name: "このサイトについて",
-                url: "https://sozoroto.reload.co.jp/about",
+                path: "/about",
               },
             ])
           ),

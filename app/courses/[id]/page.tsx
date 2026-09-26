@@ -5,11 +5,21 @@ import type { Metadata } from "next"
 import DifficultyBadge from "components/DifficultyBadge"
 import TagList from "components/TagList"
 import CourseMapWrapper from "components/CourseMapWrapper"
-import { getCourseById, getAllCourseIds, getAllCourses } from "lib/courses"
-import { getAreaById } from "lib/areas"
+import {
+  getCourseById,
+  getAllCourseIds,
+  getRelatedCourses,
+  getDurationPageBands,
+  getDistancePageBands,
+  getCoursesByDuration,
+  getCoursesByDistance,
+} from "lib/courses"
+import { getAreaById, getNearbyAreas } from "lib/areas"
 import { getAllTags } from "lib/tags"
 import { getCourseSpots } from "lib/spots"
-import { courseMetadata, courseJsonLd, breadcrumbJsonLd } from "lib/seo"
+import { courseMetadata, courseJsonLd } from "lib/seo"
+import Breadcrumb from "components/Breadcrumb"
+import { Faq, LinkList, SectionTitle } from "components/SeoSections"
 import { colors, radius, shadow } from "lib/tokens"
 import SpotListItem from "components/SpotListItem"
 
@@ -23,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params
   const course = getCourseById(Number(id))
   if (!course) return {}
-  return courseMetadata(course)
+  return courseMetadata(course, getAreaById(course.areaId))
 }
 
 const CourseDetailPage: FC<Props> = async ({ params }) => {
@@ -51,9 +61,68 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
           : ("waypoint" as const),
   }))
 
-  const relatedCourses = getAllCourses()
-    .filter((c) => c.id !== course.id && c.areaId === course.areaId)
-    .slice(0, 3)
+  const relatedCourses = getRelatedCourses(course)
+  const nearbyAreas = area ? getNearbyAreas(area, 3) : []
+  const km = Number((course.distanceMeters / 1000).toFixed(1))
+  const durationBand = getDurationPageBands().find((b) =>
+    getCoursesByDuration(b).includes(course)
+  )
+  const distanceBand = getDistancePageBands().find((b) =>
+    getCoursesByDistance(b).includes(course)
+  )
+
+  // こんな人におすすめ: タグ・難易度から機械的に作る（推測で情報を足さない）
+  const recommendFor = [
+    courseTags.length > 0 &&
+      `${courseTags
+        .slice(0, 3)
+        .map((t) => t.name)
+        .join("・")}が好きな人`,
+    (course.difficulty === "very_easy" || course.difficulty === "easy") &&
+      "散歩に慣れていない人・気軽に歩きたい人",
+    course.durationMinutes <= 60 && "1時間以内で軽く歩きたい人",
+    course.recommendedTimeOfDay.length > 0 &&
+      `${course.recommendedTimeOfDay.join("・")}に出かけたい人`,
+  ].filter((x): x is string => !!x)
+
+  const faq = [
+    {
+      q: "このコースは何分かかりますか？",
+      a: `所要時間の目安は約${course.durationMinutes}分です。`,
+    },
+    {
+      q: "距離はどのくらいですか？",
+      a: `約${km}kmです。${
+        course.estimatedSteps
+          ? `歩数にすると約${course.estimatedSteps.toLocaleString()}歩です。`
+          : ""
+      }`,
+    },
+    ...(courseSpots.length >= 2
+      ? [
+          {
+            q: "どこからどこまで歩きますか？",
+            a: `${courseSpots[0].spot.name}から${courseSpots[courseSpots.length - 1].spot.name}まで、${courseSpots.length}か所のスポットを巡ります。`,
+          },
+        ]
+      : []),
+    ...(courseTags.some((t) => t.slug === "cafe" || t.slug === "kissaten")
+      ? [
+          {
+            q: "途中でカフェに寄れますか？",
+            a: "はい。コース上にカフェ・喫茶店があり、休憩しながら歩けます。",
+          },
+        ]
+      : []),
+    ...(course.recommendedTimeOfDay.length > 0
+      ? [
+          {
+            q: "おすすめの時間帯は？",
+            a: `${course.recommendedTimeOfDay.join("・")}がおすすめです。`,
+          },
+        ]
+      : []),
+  ]
 
   return (
     <>
@@ -68,42 +137,15 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
           ),
         }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            breadcrumbJsonLd([
-              { name: "そぞろっと！", url: "https://sozoroto.reload.co.jp" },
-              {
-                name: "コース一覧",
-                url: "https://sozoroto.reload.co.jp/courses",
-              },
-              {
-                name: course.title,
-                url: `https://sozoroto.reload.co.jp/courses/${course.id}`,
-              },
-            ])
-          ),
-        }}
-      />
-
       <div style={{ maxWidth: 896, margin: "0 auto", padding: "40px 24px" }}>
-        <nav
-          aria-label="パンくずリスト"
-          style={{
-            display: "flex",
-            gap: 8,
-            fontSize: 14,
-            color: colors.gray400,
-            marginBottom: 24,
-          }}
-        >
-          <Link href="/">ホーム</Link>
-          <span>/</span>
-          <Link href="/courses">コース一覧</Link>
-          <span>/</span>
-          <span style={{ color: colors.gray600 }}>{course.title}</span>
-        </nav>
+        <Breadcrumb
+          items={[
+            area
+              ? { name: area.name.join("・"), path: `/areas/${area.id}` }
+              : { name: "コース一覧", path: "/courses" },
+            { name: course.title, path: `/courses/${course.id}` },
+          ]}
+        />
 
         <div
           style={{
@@ -249,6 +291,25 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
                 <p style={{ color: colors.gray700, lineHeight: 1.8 }}>
                   {course.description}
                 </p>
+
+                {recommendFor.length > 0 && (
+                  <div style={{ marginTop: 32 }}>
+                    <SectionTitle>こんな人におすすめ</SectionTitle>
+                    <ul
+                      style={{
+                        paddingLeft: 20,
+                        color: colors.gray700,
+                        lineHeight: 1.8,
+                      }}
+                    >
+                      {recommendFor.map((r) => (
+                        <li key={r} style={{ listStyle: "disc" }}>
+                          {r}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
 
                 {courseSpots.length > 0 && (
                   <div style={{ marginTop: 32 }}>
@@ -493,7 +554,7 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
                 marginBottom: 24,
               }}
             >
-              同じエリアのコース
+              関連する散歩コース
             </h2>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 24 }}>
               {relatedCourses.map((c) => (
@@ -536,6 +597,38 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
             </div>
           </section>
         )}
+
+        {(nearbyAreas.length > 0 || durationBand || distanceBand) && (
+          <section style={{ marginTop: 48 }}>
+            <SectionTitle>近くのエリア・似た条件から探す</SectionTitle>
+            <LinkList
+              links={[
+                ...nearbyAreas.map((a) => ({
+                  href: `/areas/${a.id}`,
+                  label: `${a.name.join("・")}の散歩コース`,
+                })),
+                ...(durationBand
+                  ? [
+                      {
+                        href: `/duration/${durationBand}`,
+                        label: `${durationBand}分前後の散歩コース`,
+                      },
+                    ]
+                  : []),
+                ...(distanceBand
+                  ? [
+                      {
+                        href: `/distance/${distanceBand}km`,
+                        label: `${distanceBand}km前後の散歩コース`,
+                      },
+                    ]
+                  : []),
+              ]}
+            />
+          </section>
+        )}
+
+        <Faq items={faq} />
       </div>
     </>
   )

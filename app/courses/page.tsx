@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "コース一覧",
   description:
     "東京近辺の散歩コース一覧。エリア・所要時間・テーマで絞り込みできます。",
-  alternates: { canonical: "https://sozoroto.reload.co.jp/courses" },
+  alternates: { canonical: "https://sozoroto.reload.co.jp/courses/" },
 }
 
 const CoursesPage: FC = () => {
@@ -26,10 +26,10 @@ const CoursesPage: FC = () => {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             breadcrumbJsonLd([
-              { name: "そぞろっと！", url: "https://sozoroto.reload.co.jp" },
+              { name: "そぞろっと！", path: "/" },
               {
                 name: "コース一覧",
-                url: "https://sozoroto.reload.co.jp/courses",
+                path: "/courses",
               },
             ])
           ),

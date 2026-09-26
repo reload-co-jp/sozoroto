@@ -1,12 +1,10 @@
 import { FC } from "react"
 import { notFound } from "next/navigation"
-import Link from "next/link"
 import type { Metadata } from "next"
-import CourseCard from "components/CourseCard"
-import { getTagById, getAllTagIds } from "lib/tags"
+import { ListLanding } from "components/SeoSections"
+import { getTagById, getAllTagIds, getTagsWithCourseCount } from "lib/tags"
 import { getCoursesByTag } from "lib/courses"
-import { tagMetadata, breadcrumbJsonLd } from "lib/seo"
-import { colors } from "lib/tokens"
+import { tagMetadata, MIN_INDEXABLE_COURSES } from "lib/seo"
 
 export async function generateStaticParams() {
   return getAllTagIds().map((id) => ({ id: String(id) }))
@@ -18,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params
   const tag = getTagById(Number(id))
   if (!tag) return {}
-  return tagMetadata(tag)
+  return tagMetadata(tag, getCoursesByTag(tag.slug).length)
 }
 
 const TagPage: FC<Props> = async ({ params }) => {
@@ -27,70 +25,27 @@ const TagPage: FC<Props> = async ({ params }) => {
   if (!tag) notFound()
 
   const courses = getCoursesByTag(tag.slug)
+  const otherTags = getTagsWithCourseCount().filter(
+    (t) => t.id !== tag.id && t.courseCount >= MIN_INDEXABLE_COURSES
+  )
 
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            breadcrumbJsonLd([
-              { name: "そぞろっと！", url: "https://sozoroto.reload.co.jp" },
-              { name: tag.name, url: `https://sozoroto.reload.co.jp/tags/${tag.id}` },
-            ])
-          ),
-        }}
-      />
-
-      <div style={{ maxWidth: 1024, margin: "0 auto", padding: "40px 24px" }}>
-        <nav
-          aria-label="パンくずリスト"
-          style={{
-            display: "flex",
-            gap: 8,
-            fontSize: 14,
-            color: colors.gray400,
-            marginBottom: 24,
-          }}
-        >
-          <Link href="/">ホーム</Link>
-          <span>/</span>
-          <span style={{ color: colors.gray600 }}>{tag.name}</span>
-        </nav>
-
-        <div style={{ marginBottom: 32 }}>
-          <h1
-            style={{
-              fontSize: 24,
-              fontWeight: 700,
-              color: colors.gray900,
-            }}
-          >
-            「{tag.name}」の散歩コース
-          </h1>
-          {tag.description && (
-            <p style={{ marginTop: 8, color: colors.gray600 }}>
-              {tag.description}
-            </p>
-          )}
-        </div>
-
-        {courses.length === 0 ? (
-          <p style={{ color: colors.gray500 }}>該当するコースがありません。</p>
-        ) : (
-          <>
-            <p style={{ marginBottom: 24, fontSize: 13, color: colors.gray500 }}>
-              {courses.length}件
-            </p>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 24 }}>
-              {courses.map((course) => (
-                <CourseCard key={course.id} course={course} />
-              ))}
-            </div>
-          </>
-        )}
-      </div>
-    </>
+    <ListLanding
+      breadcrumb={[
+        { name: `${tag.name}の散歩コース`, path: `/tags/${tag.id}` },
+      ]}
+      heading={`東京の${tag.name}散歩コース`}
+      lead={
+        tag.description ??
+        `${tag.name}をテーマに歩ける東京近辺の散歩コースを集めました。`
+      }
+      courses={courses}
+      otherLinksTitle="ほかのテーマから探す"
+      otherLinks={otherTags.map((t) => ({
+        href: `/tags/${t.id}`,
+        label: `${t.name}（${t.courseCount}）`,
+      }))}
+    />
   )
 }
 
