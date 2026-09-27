@@ -182,5 +182,29 @@
     "description": "橋が魅力的なコース",
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 24,
+    "slug": "museum",
+    "name": "美術館・博物館",
+    "description": "美術館や博物館に立ち寄れるコース",
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 25,
+    "slug": "teien",
+    "name": "庭園",
+    "description": "大名屋敷や財閥ゆかりの日本庭園を歩けるコース",
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 26,
+    "slug": "gourmet",
+    "name": "食べ歩き",
+    "description": "市場や商店街で食べ歩きを楽しめるコース",
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
   }
 ]

@@ -40,6 +40,9 @@ export const resourceSchemas: ResourceSchema[] = [
       { key: "longitude", label: "経度", type: "number", required: true },
       { key: "imageUrl", label: "画像", type: "image" },
       { key: "officialUrl", label: "公式URL", type: "text" },
+      { key: "areaId", label: "エリアID", type: "number" },
+      { key: "categories", label: "カテゴリ（カンマ区切り、types/spot.ts SPOT_CATEGORIES）", type: "list" },
+      { key: "tags", label: "タグ（カンマ区切り、slug）", type: "list" },
     ],
   },
   {

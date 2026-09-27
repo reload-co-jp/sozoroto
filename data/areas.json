@@ -2,7 +2,9 @@
   {
     "id": 1,
     "slug": "akihabara",
-    "name": ["秋葉原"],
+    "name": [
+      "秋葉原"
+    ],
     "description": "電気街として知られるエリア。高架下の路地や多彩なショップが立ち並ぶ、現代カルチャーの発信地。",
     "prefecture": "東京都",
     "city": "千代田区",
@@ -15,7 +17,9 @@
   {
     "id": 2,
     "slug": "ochanomizu",
-    "name": ["御茶ノ水"],
+    "name": [
+      "御茶ノ水"
+    ],
     "description": "神田川に沿った坂道と橋が印象的なエリア。聖橋や湯島聖堂など歴史的スポットが点在し、起伏ある街歩きが楽しめる。",
     "prefecture": "東京都",
     "city": "千代田区",
@@ -28,7 +32,9 @@
   {
     "id": 3,
     "slug": "ueno",
-    "name": ["上野"],
+    "name": [
+      "上野"
+    ],
     "description": "博物館・美術館が集まる上野公園を擁するエリア。東京でもっとも「古い東京」を感じられる場所のひとつ。",
     "prefecture": "東京都",
     "city": "台東区",
@@ -41,7 +47,9 @@
   {
     "id": 4,
     "slug": "asakusa",
-    "name": ["浅草"],
+    "name": [
+      "浅草"
+    ],
     "description": "浅草寺周辺の伝統的な観光地。江戸文化が色濃く残る、東京を代表する下町エリア。",
     "prefecture": "東京都",
     "city": "台東区",
@@ -54,7 +62,9 @@
   {
     "id": 5,
     "slug": "nihonbashi",
-    "name": ["日本橋"],
+    "name": [
+      "日本橋"
+    ],
     "description": "江戸時代から続く老舗が並ぶ東京の歴史的中心地。近代建築と老舗商店が融合したエリア。",
     "prefecture": "東京都",
     "city": "中央区",
@@ -67,20 +77,25 @@
   {
     "id": 6,
     "slug": "kiyosumi-shirakawa",
-    "name": ["清澄白河"],
-    "description": "コーヒーの街として知られるようになった清澄白河。隅田川沿いの公園や深川江戸資料館、東京都現代美術館など、水辺と文化が共存するエリア。",
+    "name": [
+      "清澄白河",
+      "深川"
+    ],
+    "description": "清澄庭園や深川江戸資料館がある江戸情緒の残る街。倉庫を改装したカフェが点在し、門前仲町の富岡八幡宮・深川不動堂まで歩いて巡れる。",
     "prefecture": "東京都",
     "city": "江東区",
     "mainImageUrl": "/images/areas/area-06.jpg",
     "latitude": 35.6795,
     "longitude": 139.8019,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z"
   },
   {
     "id": 7,
     "slug": "jimbocho",
-    "name": ["神保町"],
+    "name": [
+      "神保町"
+    ],
     "description": "世界最大の古書店街として知られる神保町。古書店、楽器店、スポーツ用品店、老舗喫茶店が共存する、東京随一の「本と文化の街」。",
     "prefecture": "東京都",
     "city": "千代田区",
@@ -93,33 +108,41 @@
   {
     "id": 8,
     "slug": "kanda",
-    "name": ["神田"],
+    "name": [
+      "神田"
+    ],
     "description": "古くから商業の中心地として栄えた街。老舗の喫茶店や神田明神が残る、下町情緒漂うエリア。",
     "prefecture": "東京都",
     "city": "千代田区",
     "mainImageUrl": "/images/areas/area-08.jpg",
     "latitude": 35.6938,
-    "longitude": 139.7710,
+    "longitude": 139.771,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
     "id": 9,
     "slug": "yanaka",
-    "name": ["谷中"],
-    "description": "昭和レトロな商店街と寺町が続くエリア。昔ながらの街並みと生活感が残る、東京の下町。",
+    "name": [
+      "谷中",
+      "根津",
+      "千駄木"
+    ],
+    "description": "「谷根千」と呼ばれる寺町と下町の街並みが残るエリア。谷中銀座商店街や谷中霊園、根津神社、文豪ゆかりの千駄木の坂道を歩いて巡れる。",
     "prefecture": "東京都",
     "city": "台東区",
     "mainImageUrl": "/images/areas/area-09.jpg",
     "latitude": 35.7265,
     "longitude": 139.7681,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z"
   },
   {
     "id": 10,
     "slug": "kuramae",
-    "name": ["蔵前"],
+    "name": [
+      "蔵前"
+    ],
     "description": "クリエイターや職人の街として注目される新たなホットスポット。隅田川沿いの風景と手仕事のショップが魅力。",
     "prefecture": "東京都",
     "city": "台東区",
@@ -132,7 +155,9 @@
   {
     "id": 11,
     "slug": "ningyocho",
-    "name": ["人形町"],
+    "name": [
+      "人形町"
+    ],
     "description": "甘酒横丁で知られる下町情緒あふれるエリア。老舗が軒を連ね、東京の歴史を肌で感じられる。",
     "prefecture": "東京都",
     "city": "中央区",
@@ -141,5 +166,65 @@
     "longitude": 139.7846,
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 12,
+    "slug": "marunouchi",
+    "name": [
+      "丸の内",
+      "東京駅",
+      "皇居"
+    ],
+    "description": "赤レンガの東京駅丸の内駅舎から皇居外苑へ続くエリア。明治から昭和の近代建築と高層ビルが並び、皇居の緑と堀沿いの景色を楽しめる。",
+    "prefecture": "東京都",
+    "city": "千代田区",
+    "latitude": 35.68,
+    "longitude": 139.762,
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 13,
+    "slug": "ryogoku",
+    "name": [
+      "両国"
+    ],
+    "description": "国技館や江戸東京博物館がある相撲と江戸の街。旧安田庭園や回向院など、江戸時代から続く史跡が駅の周りに集まっている。",
+    "prefecture": "東京都",
+    "city": "墨田区",
+    "latitude": 35.6967,
+    "longitude": 139.7936,
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 14,
+    "slug": "ginza-tsukiji",
+    "name": [
+      "銀座",
+      "築地"
+    ],
+    "description": "老舗と百貨店が並ぶ銀座から、歌舞伎座を経て築地場外市場・築地本願寺へ続くエリア。建築と食べ歩きを一度に楽しめる。",
+    "prefecture": "東京都",
+    "city": "中央区",
+    "latitude": 35.669,
+    "longitude": 139.768,
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 15,
+    "slug": "tsukishima",
+    "name": [
+      "月島",
+      "佃"
+    ],
+    "description": "隅田川の河口に広がる埋め立て地の下町。佃煮発祥の地・佃島の路地と、もんじゃ焼きの店が並ぶ月島西仲通りを歩ける。",
+    "prefecture": "東京都",
+    "city": "中央区",
+    "latitude": 35.665,
+    "longitude": 139.782,
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
   }
 ]

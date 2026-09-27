@@ -7,6 +7,7 @@ import { CourseGrid, Faq, LinkList, SectionTitle } from "components/SeoSections"
 import { getAreaById, getAllAreaIds, getNearbyAreas } from "lib/areas"
 import { getCoursesByArea } from "lib/courses"
 import { getAllTags } from "lib/tags"
+import { getSpotPagesByArea } from "lib/spots"
 import { areaMetadata } from "lib/seo"
 import { colors } from "lib/tokens"
 
@@ -44,6 +45,7 @@ const AreaDetailPage: FC<Props> = async ({ params }) => {
 
   const name = area.name.join("・")
   const nearbyAreas = getNearbyAreas(area)
+  const areaSpots = getSpotPagesByArea(area.id)
   const minutes = courses.map((c) => c.durationMinutes)
   const kms = courses.map((c) => Number((c.distanceMeters / 1000).toFixed(1)))
   const range = (xs: number[], unit: string) =>
@@ -109,6 +111,18 @@ const AreaDetailPage: FC<Props> = async ({ params }) => {
         <p style={{ color: colors.gray500 }}>現在コースを準備中です。</p>
       ) : (
         <CourseGrid courses={courses} />
+      )}
+
+      {areaSpots.length > 0 && (
+        <section style={{ marginTop: 48 }}>
+          <SectionTitle>{name}の主なスポット</SectionTitle>
+          <LinkList
+            links={areaSpots.map((s) => ({
+              href: `/spots/${s.slug}`,
+              label: s.name,
+            }))}
+          />
+        </section>
       )}
 
       {nearbyAreas.length > 0 && (

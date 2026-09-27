@@ -90,6 +90,8 @@ type ListLandingProps = {
   heading: string
   lead: string
   courses: Course[]
+  spotLinksTitle?: string
+  spotLinks?: { href: string; label: string }[]
   otherLinksTitle: string
   otherLinks: { href: string; label: string }[]
 }
@@ -100,6 +102,8 @@ export const ListLanding: FC<ListLandingProps> = ({
   heading,
   lead,
   courses,
+  spotLinksTitle,
+  spotLinks = [],
   otherLinksTitle,
   otherLinks,
 }) => (
@@ -122,6 +126,12 @@ export const ListLanding: FC<ListLandingProps> = ({
         </p>
         <CourseGrid courses={courses} />
       </>
+    )}
+    {spotLinks.length > 0 && (
+      <section style={{ marginTop: 48 }}>
+        <SectionTitle>{spotLinksTitle}</SectionTitle>
+        <LinkList links={spotLinks} />
+      </section>
     )}
     {otherLinks.length > 0 && (
       <section style={{ marginTop: 48 }}>

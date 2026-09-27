@@ -616,5 +616,677 @@
     "order": 10,
     "title": "到着：秋葉原UDX・大型モニター",
     "description": "穂乃果がA-RISEに憧れ、千歌がμ'sに憧れた、すべての物語が始まった大型ビジョン前でフィニッシュ。"
+  },
+  {
+    "id": 71,
+    "courseId": 11,
+    "spotId": 60,
+    "order": 1,
+    "title": "出発：日暮里駅",
+    "description": "北改札から東口へ出て、線路の北側にある下御隠殿橋を目指す。"
+  },
+  {
+    "id": 72,
+    "courseId": 11,
+    "spotId": 61,
+    "order": 2,
+    "description": "橋の上から山手線・京浜東北線・京成線が行き交う様子を眺められる。渡った先が谷中7丁目。"
+  },
+  {
+    "id": 73,
+    "courseId": 11,
+    "spotId": 9,
+    "order": 3,
+    "description": "中央のさくら通りを西へ。途中に天王寺五重塔跡があり、隣接地には徳川慶喜の墓所もある。",
+    "stayMinutes": 15
+  },
+  {
+    "id": 74,
+    "courseId": 11,
+    "spotId": 62,
+    "order": 4,
+    "description": "霊園を出て初音の道方面へ。瓦を重ねた土塀が続く路地は谷中らしい風景のひとつ。"
+  },
+  {
+    "id": 75,
+    "courseId": 11,
+    "spotId": 22,
+    "order": 5,
+    "description": "36段の石段の上から谷中銀座を見下ろす。"
+  },
+  {
+    "id": 76,
+    "courseId": 11,
+    "spotId": 8,
+    "order": 6,
+    "description": "惣菜店や和菓子店が並ぶ約170mの商店街で食べ歩き。",
+    "stayMinutes": 20
+  },
+  {
+    "id": 77,
+    "courseId": 11,
+    "spotId": 63,
+    "order": 7,
+    "description": "谷中銀座の突き当たりを左へ。藍染川を暗渠にした上にできた商店街を南へ歩く。"
+  },
+  {
+    "id": 78,
+    "courseId": 11,
+    "spotId": 64,
+    "order": 8,
+    "description": "権現造の社殿と楼門は国の重要文化財。朱色の千本鳥居をくぐって参拝する。",
+    "stayMinutes": 20
+  },
+  {
+    "id": 79,
+    "courseId": 11,
+    "spotId": 65,
+    "order": 9,
+    "title": "ゴール：千駄木駅",
+    "description": "不忍通りを北へ戻り千駄木駅へ。団子坂の上には森鷗外記念館もある。"
+  },
+  {
+    "id": 80,
+    "courseId": 12,
+    "spotId": 66,
+    "order": 1,
+    "title": "出発：根津駅",
+    "description": "言問通りを西へ。弥生坂を上ると東京大学の敷地が見えてくる。"
+  },
+  {
+    "id": 81,
+    "courseId": 12,
+    "spotId": 67,
+    "order": 2,
+    "description": "明治から昭和の挿絵や雑誌の口絵を展示。高畠華宵のコレクションが充実している。",
+    "stayMinutes": 30
+  },
+  {
+    "id": 82,
+    "courseId": 12,
+    "spotId": 68,
+    "order": 3,
+    "description": "弥生美術館と同じ建物にある、竹久夢二の作品を展示する美術館。",
+    "stayMinutes": 20
+  },
+  {
+    "id": 83,
+    "courseId": 12,
+    "spotId": 64,
+    "order": 4,
+    "description": "坂を下りて根津神社へ。境内の乙女稲荷の千本鳥居が人気。",
+    "stayMinutes": 15
+  },
+  {
+    "id": 84,
+    "courseId": 12,
+    "spotId": 69,
+    "order": 5,
+    "description": "団子坂を上った先、鷗外の旧居「観潮楼」跡に建つ記念館。観潮楼の門柱跡や大銀杏が残る。",
+    "stayMinutes": 30
+  },
+  {
+    "id": 85,
+    "courseId": 12,
+    "spotId": 70,
+    "order": 6,
+    "description": "大正時代の住宅と庭が残る東京都指定名勝。公開日（水曜・土曜）に合わせて訪ねたい。",
+    "stayMinutes": 20
+  },
+  {
+    "id": 86,
+    "courseId": 12,
+    "spotId": 71,
+    "order": 7,
+    "description": "高低差のある池と滝、中島の弁財天が見られる区立公園。"
+  },
+  {
+    "id": 87,
+    "courseId": 12,
+    "spotId": 65,
+    "order": 8,
+    "title": "ゴール：千駄木駅",
+    "description": "須藤公園から坂を下りればすぐ千駄木駅。"
+  },
+  {
+    "id": 88,
+    "courseId": 13,
+    "spotId": 72,
+    "order": 1,
+    "title": "出発：東京駅 丸の内駅舎",
+    "description": "丸の内中央口を出て駅前広場へ。赤レンガの駅舎と南北のドームを眺める。",
+    "stayMinutes": 10
+  },
+  {
+    "id": 89,
+    "courseId": 13,
+    "spotId": 73,
+    "order": 2,
+    "description": "皇居へまっすぐ延びる並木道。途中で振り返ると駅舎が正面に見える。"
+  },
+  {
+    "id": 90,
+    "courseId": 13,
+    "spotId": 74,
+    "order": 3,
+    "description": "内堀通りを渡ると皇居前広場。広い芝生の先に皇居の石垣が広がる。"
+  },
+  {
+    "id": 91,
+    "courseId": 13,
+    "spotId": 75,
+    "order": 4,
+    "description": "石橋と奥の鉄橋が重なる、皇居を代表する撮影スポット。伏見櫓もあわせて眺められる。",
+    "stayMinutes": 10
+  },
+  {
+    "id": 92,
+    "courseId": 13,
+    "spotId": 76,
+    "order": 5,
+    "description": "高麗門と渡櫓門を組み合わせた江戸城の枡形門。桜田門外の変の舞台。"
+  },
+  {
+    "id": 93,
+    "courseId": 13,
+    "spotId": 77,
+    "order": 6,
+    "title": "ゴール：日比谷公園",
+    "description": "心字池や噴水のある洋風公園。園内のベンチでひと休みしてゴール。",
+    "stayMinutes": 15
+  },
+  {
+    "id": 94,
+    "courseId": 14,
+    "spotId": 72,
+    "order": 1,
+    "title": "出発：東京駅 丸の内駅舎",
+    "description": "赤レンガの駅舎を眺めてから南へ。"
+  },
+  {
+    "id": 95,
+    "courseId": 14,
+    "spotId": 81,
+    "order": 2,
+    "description": "旧東京中央郵便局の外観を残した商業施設。屋上庭園から駅舎を一望できる。",
+    "stayMinutes": 15
+  },
+  {
+    "id": 96,
+    "courseId": 14,
+    "spotId": 78,
+    "order": 3,
+    "description": "街路樹と石畳の通りを南へ。ビルの足元に並ぶショップやカフェを眺めながら歩く。"
+  },
+  {
+    "id": 97,
+    "courseId": 14,
+    "spotId": 79,
+    "order": 4,
+    "description": "ジョサイア・コンドル設計の赤レンガ建築を復元した美術館。",
+    "stayMinutes": 40
+  },
+  {
+    "id": 98,
+    "courseId": 14,
+    "spotId": 80,
+    "order": 5,
+    "description": "昭和の建造物で初めて重要文化財に指定された建物。1・2階の一部が一般公開されている。",
+    "stayMinutes": 15
+  },
+  {
+    "id": 99,
+    "courseId": 14,
+    "spotId": 74,
+    "order": 6,
+    "title": "ゴール：皇居外苑",
+    "description": "日比谷通りを渡って皇居外苑へ。お堀越しに丸の内のビル群を振り返る。"
+  },
+  {
+    "id": 100,
+    "courseId": 15,
+    "spotId": 26,
+    "order": 1,
+    "title": "出発：浅草 雷門",
+    "description": "大提灯と風神・雷神像の前からスタート。"
+  },
+  {
+    "id": 101,
+    "courseId": 15,
+    "spotId": 28,
+    "order": 2,
+    "description": "土産物や菓子の店が並ぶ参道を北へ。"
+  },
+  {
+    "id": 102,
+    "courseId": 15,
+    "spotId": 10,
+    "order": 3,
+    "description": "本堂と五重塔を参拝。境内の奥から隅田川方面へ抜ける。",
+    "stayMinutes": 20
+  },
+  {
+    "id": 103,
+    "courseId": 15,
+    "spotId": 82,
+    "order": 4,
+    "description": "川沿いの散歩道から対岸のスカイツリーを眺める。"
+  },
+  {
+    "id": 104,
+    "courseId": 15,
+    "spotId": 29,
+    "order": 5,
+    "description": "昭和6年に架け替えられたアーチ橋。スカイツリーとアサヒビール本社を同時に眺められる。"
+  },
+  {
+    "id": 105,
+    "courseId": 15,
+    "spotId": 83,
+    "order": 6,
+    "description": "橋全体に馬を連想させるレリーフが施された3連アーチ橋。"
+  },
+  {
+    "id": 106,
+    "courseId": 15,
+    "spotId": 12,
+    "order": 7,
+    "description": "革製品や文房具の工房兼ショップ、カフェが点在。気になる店に立ち寄りたい。",
+    "stayMinutes": 20
+  },
+  {
+    "id": 107,
+    "courseId": 15,
+    "spotId": 84,
+    "order": 8,
+    "description": "蔵前橋を渡って両国へ。池を中心にした静かな回遊式庭園を散策する。",
+    "stayMinutes": 15
+  },
+  {
+    "id": 108,
+    "courseId": 15,
+    "spotId": 85,
+    "order": 9,
+    "title": "ゴール：両国駅",
+    "description": "国技館の脇を抜けて両国駅へ。"
+  },
+  {
+    "id": 109,
+    "courseId": 16,
+    "spotId": 85,
+    "order": 1,
+    "title": "出発：両国駅",
+    "description": "西口を出ると国技館の大屋根が見える。"
+  },
+  {
+    "id": 110,
+    "courseId": 16,
+    "spotId": 86,
+    "order": 2,
+    "description": "大相撲の本場所が開かれる国技館。1階に相撲博物館がある。",
+    "stayMinutes": 10
+  },
+  {
+    "id": 111,
+    "courseId": 16,
+    "spotId": 84,
+    "order": 3,
+    "description": "国技館の北隣にある回遊式庭園。都会の中の静かな池をひと回り。",
+    "stayMinutes": 15
+  },
+  {
+    "id": 112,
+    "courseId": 16,
+    "spotId": 88,
+    "order": 4,
+    "description": "旧安田庭園に隣接する日本刀の博物館。屋上庭園からの庭園の眺めもよい。",
+    "stayMinutes": 40
+  },
+  {
+    "id": 113,
+    "courseId": 16,
+    "spotId": 89,
+    "order": 5,
+    "description": "東京都慰霊堂と復興記念館で、関東大震災と東京大空襲の記憶に触れる。",
+    "stayMinutes": 15
+  },
+  {
+    "id": 114,
+    "courseId": 16,
+    "spotId": 87,
+    "order": 6,
+    "description": "原寸大の日本橋や町並みの模型で、江戸から東京への移り変わりをたどる。",
+    "stayMinutes": 60
+  },
+  {
+    "id": 115,
+    "courseId": 16,
+    "spotId": 90,
+    "order": 7,
+    "title": "ゴール：回向院",
+    "description": "江戸時代に勧進相撲が開かれた寺で、力塚が残る。両国駅はすぐ北。",
+    "stayMinutes": 15
+  },
+  {
+    "id": 116,
+    "courseId": 17,
+    "spotId": 91,
+    "order": 1,
+    "title": "出発：清澄白河駅",
+    "description": "A3出口から深川資料館通りへ。"
+  },
+  {
+    "id": 117,
+    "courseId": 17,
+    "spotId": 92,
+    "order": 2,
+    "description": "呉服店や豆腐店など昔ながらの店にカフェが交じる商店街。通りをのぞいてから清澄庭園へ引き返す。"
+  },
+  {
+    "id": 118,
+    "courseId": 17,
+    "spotId": 15,
+    "order": 3,
+    "description": "大泉水のまわりに名石が並ぶ回遊式林泉庭園。磯渡りで池の縁を歩く。",
+    "stayMinutes": 30
+  },
+  {
+    "id": 119,
+    "courseId": 17,
+    "spotId": 93,
+    "order": 4,
+    "description": "芭蕉ゆかりの資料を展示。近くの隅田川沿いには史跡展望庭園がある。",
+    "stayMinutes": 20
+  },
+  {
+    "id": 120,
+    "courseId": 17,
+    "spotId": 45,
+    "order": 5,
+    "description": "小名木川が隅田川に注ぐ場所に架かる橋。葛飾北斎も浮世絵に描いた。"
+  },
+  {
+    "id": 121,
+    "courseId": 17,
+    "spotId": 94,
+    "order": 6,
+    "description": "梵字の真言に覆われた本堂の外壁が印象的。参道の商店街も歩きたい。",
+    "stayMinutes": 15
+  },
+  {
+    "id": 122,
+    "courseId": 17,
+    "spotId": 95,
+    "order": 7,
+    "description": "江戸勧進相撲発祥の地。境内の横綱力士碑を見てから参拝する。",
+    "stayMinutes": 15
+  },
+  {
+    "id": 123,
+    "courseId": 17,
+    "spotId": 96,
+    "order": 8,
+    "title": "ゴール：門前仲町駅",
+    "description": "永代通りに出れば門前仲町駅。"
+  },
+  {
+    "id": 124,
+    "courseId": 18,
+    "spotId": 4,
+    "order": 1,
+    "title": "出発：御茶ノ水駅",
+    "description": "聖橋口を出て聖橋を渡り、湯島方面へ。"
+  },
+  {
+    "id": 125,
+    "courseId": 18,
+    "spotId": 2,
+    "order": 2,
+    "description": "江戸総鎮守として尊崇された神社に参拝する。",
+    "stayMinutes": 15
+  },
+  {
+    "id": 126,
+    "courseId": 18,
+    "spotId": 56,
+    "order": 3,
+    "description": "本殿の南東から外神田へ下りる急な石段。"
+  },
+  {
+    "id": 127,
+    "courseId": 18,
+    "spotId": 37,
+    "order": 4,
+    "description": "ビザンチン様式のドームが特徴の大聖堂。国の重要文化財。",
+    "stayMinutes": 10
+  },
+  {
+    "id": 128,
+    "courseId": 18,
+    "spotId": 25,
+    "order": 5,
+    "description": "専門分野ごとに分かれた古書店が並ぶ。店頭の均一棚ものぞいてみたい。",
+    "stayMinutes": 30
+  },
+  {
+    "id": 129,
+    "courseId": 18,
+    "spotId": 18,
+    "order": 6,
+    "title": "ゴール：神保町駅",
+    "description": "すずらん通りの裏手には老舗の喫茶店が点在する。"
+  },
+  {
+    "id": 130,
+    "courseId": 19,
+    "spotId": 1,
+    "order": 1,
+    "title": "出発：秋葉原駅 電気街口",
+    "description": "中央通りを渡って神田明神通りへ。"
+  },
+  {
+    "id": 131,
+    "courseId": 19,
+    "spotId": 2,
+    "order": 2,
+    "description": "江戸総鎮守として尊崇された神社。",
+    "stayMinutes": 15
+  },
+  {
+    "id": 132,
+    "courseId": 19,
+    "spotId": 3,
+    "order": 3,
+    "description": "昌平橋を渡って神田の街へ。駅周辺の高架下には飲食店が並ぶ。"
+  },
+  {
+    "id": 133,
+    "courseId": 19,
+    "spotId": 43,
+    "order": 4,
+    "description": "明治29年竣工、辰野金吾設計の本館は国の重要文化財。",
+    "stayMinutes": 10
+  },
+  {
+    "id": 134,
+    "courseId": 19,
+    "spotId": 30,
+    "order": 5,
+    "description": "福徳神社がある日本橋室町の商業施設。"
+  },
+  {
+    "id": 135,
+    "courseId": 19,
+    "spotId": 13,
+    "order": 6,
+    "title": "ゴール：日本橋",
+    "description": "五街道の起点。橋の中央の日本国道路元標と麒麟像を見てゴール。"
+  },
+  {
+    "id": 136,
+    "courseId": 20,
+    "spotId": 13,
+    "order": 1,
+    "title": "出発：日本橋",
+    "description": "麒麟像の欄干を見てから中央通りを南へ。"
+  },
+  {
+    "id": 137,
+    "courseId": 20,
+    "spotId": 97,
+    "order": 2,
+    "description": "和光の時計塔と三越銀座店が向かい合う銀座の中心。"
+  },
+  {
+    "id": 138,
+    "courseId": 20,
+    "spotId": 98,
+    "order": 3,
+    "description": "桃山様式の外観を正面から眺める。",
+    "stayMinutes": 10
+  },
+  {
+    "id": 139,
+    "courseId": 20,
+    "spotId": 99,
+    "order": 4,
+    "description": "卵焼きや海鮮、乾物の店が並ぶ。食べ歩きをしながら路地をひと回り。",
+    "stayMinutes": 40
+  },
+  {
+    "id": 140,
+    "courseId": 20,
+    "spotId": 100,
+    "order": 5,
+    "title": "ゴール：築地本願寺",
+    "description": "古代インド様式を取り入れた本堂は国の重要文化財。",
+    "stayMinutes": 15
+  },
+  {
+    "id": 141,
+    "courseId": 21,
+    "spotId": 99,
+    "order": 1,
+    "title": "出発：築地場外市場",
+    "description": "朝食代わりに卵焼きや海鮮をつまんでからスタート。",
+    "stayMinutes": 30
+  },
+  {
+    "id": 142,
+    "courseId": 21,
+    "spotId": 101,
+    "order": 2,
+    "description": "佃の渡しに代わって架けられた橋。橋の上から隅田川の広い流れを眺める。"
+  },
+  {
+    "id": 143,
+    "courseId": 21,
+    "spotId": 102,
+    "order": 3,
+    "description": "佃堀に架かる佃小橋の周りの路地を歩く。"
+  },
+  {
+    "id": 144,
+    "courseId": 21,
+    "spotId": 103,
+    "order": 4,
+    "description": "摂津国佃村から移り住んだ漁民が創建した神社。",
+    "stayMinutes": 10
+  },
+  {
+    "id": 145,
+    "courseId": 21,
+    "spotId": 104,
+    "order": 5,
+    "description": "もんじゃ焼きの店が並ぶ西仲通り。裏通りには狭い路地も残る。",
+    "stayMinutes": 40
+  },
+  {
+    "id": 146,
+    "courseId": 21,
+    "spotId": 105,
+    "order": 6,
+    "title": "ゴール：勝どき駅",
+    "description": "清澄通りを南へ歩けば勝どき駅。"
+  },
+  {
+    "id": 147,
+    "courseId": 22,
+    "spotId": 21,
+    "order": 1,
+    "title": "出発：上野駅",
+    "description": "不忍口を出て、線路沿いのアメ横へ。"
+  },
+  {
+    "id": 148,
+    "courseId": 22,
+    "spotId": 106,
+    "order": 2,
+    "description": "鮮魚や乾物、菓子の店が並ぶ商店街。",
+    "stayMinutes": 20
+  },
+  {
+    "id": 149,
+    "courseId": 22,
+    "spotId": 107,
+    "order": 3,
+    "description": "調理器具や食器、食品サンプルの専門店が約800m続く問屋街。",
+    "stayMinutes": 20
+  },
+  {
+    "id": 150,
+    "courseId": 22,
+    "spotId": 10,
+    "order": 4,
+    "description": "境内の西側から入り、本堂と五重塔を参拝する。",
+    "stayMinutes": 20
+  },
+  {
+    "id": 151,
+    "courseId": 22,
+    "spotId": 28,
+    "order": 5,
+    "description": "土産物店が並ぶ参道を南へ歩いて雷門方面へ。"
+  },
+  {
+    "id": 152,
+    "courseId": 22,
+    "spotId": 82,
+    "order": 6,
+    "title": "ゴール：隅田公園",
+    "description": "川沿いから東京スカイツリーを眺めてゴール。浅草駅はすぐそば。"
+  },
+  {
+    "id": 153,
+    "courseId": 23,
+    "spotId": 1,
+    "order": 1,
+    "title": "出発：秋葉原駅 電気街口",
+    "description": "中央通りを北へ進み、JRの高架沿いの道へ。"
+  },
+  {
+    "id": 154,
+    "courseId": 23,
+    "spotId": 108,
+    "order": 2,
+    "description": "高架下にアトリエや工房を構える店が並ぶ。ものづくりを体験できる店もある。",
+    "stayMinutes": 30
+  },
+  {
+    "id": 155,
+    "courseId": 23,
+    "spotId": 106,
+    "order": 3,
+    "description": "御徒町駅からアメ横へ。鮮魚や乾物の店が並ぶ商店街を上野方面へ歩く。",
+    "stayMinutes": 20
+  },
+  {
+    "id": 156,
+    "courseId": 23,
+    "spotId": 7,
+    "order": 4,
+    "title": "ゴール：上野公園",
+    "description": "上野駅の公園口側へ上がり、博物館や美術館が集まる文化の森でゴール。",
+    "stayMinutes": 20
   }
 ]

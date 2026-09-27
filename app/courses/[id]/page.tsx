@@ -16,7 +16,7 @@ import {
 } from "lib/courses"
 import { getAreaById, getNearbyAreas } from "lib/areas"
 import { getAllTags } from "lib/tags"
-import { getCourseSpots } from "lib/spots"
+import { getCourseSpots, hasSpotPage } from "lib/spots"
 import { courseMetadata, courseJsonLd } from "lib/seo"
 import Breadcrumb from "components/Breadcrumb"
 import { Faq, LinkList, SectionTitle } from "components/SeoSections"
@@ -398,6 +398,19 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
                                   >
                                     {cs.description}
                                   </p>
+                                )}
+                                {hasSpotPage(cs.spot) && (
+                                  <Link
+                                    href={`/spots/${cs.spot.slug}`}
+                                    style={{
+                                      display: "inline-block",
+                                      marginTop: 4,
+                                      fontSize: 12,
+                                      color: colors.primary,
+                                    }}
+                                  >
+                                    {cs.spot.name}の見どころ・周辺スポット →
+                                  </Link>
                                 )}
                                 {cs.stayMinutes && (
                                   <p

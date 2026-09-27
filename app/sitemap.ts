@@ -6,6 +6,7 @@ import {
   getDistancePageBands,
 } from "lib/courses"
 import { getAllAreas } from "lib/areas"
+import { getSpotPages } from "lib/spots"
 import { getTagsWithCourseCount } from "lib/tags"
 import { pageUrl, MIN_INDEXABLE_COURSES } from "lib/seo"
 
@@ -23,6 +24,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: course.updatedAt,
       changeFrequency: "weekly" as const,
       priority: 0.8,
+    })),
+    ...getSpotPages().map((s) => ({
+      url: pageUrl(`/spots/${s.slug}`),
+      lastModified: s.updatedAt,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
     })),
     ...getAllAreas()
       .filter((a) => getCoursesByArea(a.id).length > 0)

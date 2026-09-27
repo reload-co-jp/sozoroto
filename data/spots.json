@@ -10,20 +10,32 @@
     "imageUrl": "/images/spots/spot-01.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2026-09-12T12:57:09.548Z"
+    "updatedAt": "2026-09-12T12:57:09.548Z",
+    "categories": [],
+    "tags": [],
+    "areaId": 1
   },
   {
     "id": 2,
     "slug": "kanda-myojin",
     "name": "神田明神",
-    "description": "1300年の歴史を持つ神社。江戸の総鎮守として知られ、仕事運・商売繁盛のご利益で有名。",
+    "description": "天平2年（730年）創建と伝わる神社。江戸総鎮守として尊崇された。隔年で開かれる神田祭は江戸三大祭りのひとつに数えられる。",
     "address": "東京都千代田区外神田2-16-2",
     "latitude": 35.70145,
     "longitude": 139.767517,
     "imageUrl": "/images/spots/spot-02.jpg",
     "officialUrl": "https://www.kandamyojin.or.jp/",
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2026-09-12T12:57:19.632Z"
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "tags": [
+      "jinja",
+      "rekishi"
+    ],
+    "categories": [
+      "神社",
+      "歴史"
+    ],
+    "areaId": 1
   },
   {
     "id": 3,
@@ -36,7 +48,10 @@
     "imageUrl": "/images/spots/spot-03.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2026-09-12T12:57:29.690Z"
+    "updatedAt": "2026-09-12T12:57:29.690Z",
+    "categories": [],
+    "tags": [],
+    "areaId": 8
   },
   {
     "id": 4,
@@ -49,7 +64,10 @@
     "imageUrl": "/images/spots/spot-04.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2026-09-12T12:57:34.945Z"
+    "updatedAt": "2026-09-12T12:57:34.945Z",
+    "categories": [],
+    "tags": [],
+    "areaId": 2
   },
   {
     "id": 5,
@@ -62,7 +80,12 @@
     "imageUrl": "/images/spots/spot-05.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "categories": [
+      "橋"
+    ],
+    "tags": [],
+    "areaId": 2
   },
   {
     "id": 6,
@@ -75,59 +98,104 @@
     "imageUrl": "/images/spots/spot-06.jpg",
     "officialUrl": "https://www.seido.or.jp/",
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "categories": [
+      "歴史",
+      "建築"
+    ],
+    "tags": [],
+    "areaId": 2
   },
   {
     "id": 7,
     "slug": "ueno-park",
     "name": "上野公園",
-    "description": "東京国立博物館や東京都美術館が集まる文化の杜。桜の名所としても有名。",
+    "description": "明治6年（1873年）に日本初の公園のひとつとして指定された上野恩賜公園。東京国立博物館や国立西洋美術館、上野動物園などが集まる文化の森で、春は花見の名所になる。",
     "address": "東京都台東区上野公園",
     "latitude": 35.7141,
     "longitude": 139.7741,
     "imageUrl": "/images/spots/spot-07.jpg",
-    "officialUrl": null,
+    "officialUrl": "https://www.tokyo-park.or.jp/park/ueno/",
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "tags": [
+      "park",
+      "museum",
+      "shizen"
+    ],
+    "categories": [
+      "公園",
+      "博物館"
+    ],
+    "areaId": 3
   },
   {
     "id": 8,
     "slug": "yanaka-ginza",
     "name": "谷中銀座商店街",
-    "description": "昭和の雰囲気が残る商店街。コロッケや猫グッズなど、ユニークな店が並ぶ。",
+    "description": "日暮里駅と千駄木駅の間、約170mの通りに約60の店が並ぶ商店街。精肉店や惣菜店、和菓子店などの個人商店が中心で、食べ歩きをしながら昭和の雰囲気が残る下町の買い物風景を楽しめる。",
     "address": "東京都台東区谷中3丁目",
-    "latitude": 35.7254,
-    "longitude": 139.7688,
+    "latitude": 35.7276,
+    "longitude": 139.766,
     "imageUrl": "/images/spots/spot-08.jpg",
-    "officialUrl": null,
+    "officialUrl": "https://yanakaginza.com/",
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "tags": [
+      "shotengai",
+      "shimamachi",
+      "retro",
+      "neko"
+    ],
+    "categories": [
+      "商店街",
+      "グルメ"
+    ],
+    "areaId": 3
   },
   {
     "id": 9,
     "slug": "yanaka-cemetery",
     "name": "谷中霊園",
-    "description": "明治時代に開設された都立霊園。桜の名所でもあり、散歩コースとして人気。",
+    "description": "明治7年（1874年）に天王寺の寺域の一部を公共墓地として開設した都立霊園。横山大観や渋沢栄一などが眠り、隣接地には徳川慶喜の墓所がある。中央園路は通称「さくら通り」と呼ばれ、春は桜のトンネルになる。幸田露伴『五重塔』のモデルとなった天王寺五重塔の跡も残る。",
     "address": "東京都台東区谷中7丁目",
-    "latitude": 35.7239,
-    "longitude": 139.7652,
+    "latitude": 35.7241,
+    "longitude": 139.77,
     "imageUrl": "/images/spots/spot-09.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "tags": [
+      "rekishi",
+      "shiseki",
+      "shizen"
+    ],
+    "categories": [
+      "歴史"
+    ],
+    "areaId": 3
   },
   {
     "id": 10,
     "slug": "asakusa-sensoji",
     "name": "浅草寺",
-    "description": "東京最古の寺院。雷門と仲見世通りで知られる観光名所。",
+    "description": "推古天皇36年（628年）創建と伝わる都内最古の寺。雷門から仲見世を抜けた先に本堂と五重塔が立ち、観音様を本尊とする下町の信仰の中心として一年中参拝者が絶えない。",
     "address": "東京都台東区浅草2-3-1",
     "latitude": 35.7148,
     "longitude": 139.7967,
     "imageUrl": "/images/spots/spot-10.jpg",
     "officialUrl": "https://www.senso-ji.jp/",
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "tags": [
+      "tera",
+      "rekishi"
+    ],
+    "categories": [
+      "寺",
+      "歴史"
+    ],
+    "areaId": 4
   },
   {
     "id": 11,
@@ -140,72 +208,123 @@
     "imageUrl": "/images/spots/spot-11.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "categories": [
+      "川・水辺"
+    ],
+    "tags": [],
+    "areaId": 4
   },
   {
     "id": 12,
     "slug": "kuramae-area",
     "name": "蔵前エリア",
-    "description": "職人とクリエイターの街。革製品や文房具のアトリエショップが集まる。",
+    "description": "かつて江戸幕府の米蔵が並んだ隅田川沿いの街。現在は革製品や文房具、雑貨の工房兼ショップやカフェが点在し、ものづくりの街として知られる。",
     "address": "東京都台東区蔵前",
     "latitude": 35.7005,
     "longitude": 139.7951,
     "imageUrl": "/images/spots/spot-12.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "tags": [
+      "zakka",
+      "cafe",
+      "art"
+    ],
+    "categories": [
+      "街並み"
+    ],
+    "areaId": 4
   },
   {
     "id": 13,
     "slug": "nihonbashi-bridge",
     "name": "日本橋",
-    "description": "五街道の起点。明治時代の石造りの橋が現存し、上空を首都高速が通る。",
+    "description": "慶長8年（1603年）に架けられ、五街道の起点となった橋。現在の石造二連アーチ橋は明治44年（1911年）完成で国の重要文化財。橋の中央に日本国道路元標があり、麒麟と獅子の像が欄干を飾る。",
     "address": "東京都中央区日本橋室町",
     "latitude": 35.6834,
     "longitude": 139.7744,
     "imageUrl": "/images/spots/spot-13.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "tags": [
+      "hashi",
+      "rekishi",
+      "shiseki"
+    ],
+    "categories": [
+      "橋",
+      "歴史"
+    ],
+    "areaId": 5
   },
   {
     "id": 14,
     "slug": "ningyocho-amazake-yokocho",
     "name": "甘酒横丁",
-    "description": "江戸時代から続く人形町の商店街。和菓子店や老舗が並ぶ。",
+    "description": "人形町交差点から浜町方面へ延びる通り。明治初期、通りの入り口近くに「尾張屋」という甘酒屋があったことが名前の由来とされる。和菓子店などの老舗が並び、食べ歩きを楽しめる。",
     "address": "東京都中央区日本橋人形町",
-    "latitude": 35.6844,
-    "longitude": 139.7812,
+    "latitude": 35.6861,
+    "longitude": 139.7851,
     "imageUrl": "/images/spots/spot-14.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "tags": [
+      "shinise",
+      "shotengai",
+      "gourmet"
+    ],
+    "categories": [
+      "商店街",
+      "グルメ"
+    ],
+    "areaId": 5
   },
   {
     "id": 15,
     "slug": "kiyosumi-garden",
     "name": "清澄庭園",
-    "description": "三菱財閥が整備した回遊式庭園。都内有数の名園で、磯渡りが楽しめる。",
+    "description": "三菱財閥の創業者・岩崎弥太郎が明治11年（1878年）に土地を買い取り、社員の慰安や賓客の接待の場として整備した回遊式林泉庭園。池の周りに岩崎家が全国から集めた名石が配され、池の端を石伝いに歩く磯渡りが楽しめる。東京都指定名勝。",
     "address": "東京都江東区清澄2-3-30",
     "latitude": 35.6813,
     "longitude": 139.7985,
     "imageUrl": "/images/spots/spot-15.jpg",
-    "officialUrl": null,
+    "officialUrl": "https://www.tokyo-park.or.jp/park/kiyosumi/",
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "tags": [
+      "teien",
+      "shizen",
+      "rekishi"
+    ],
+    "categories": [
+      "庭園"
+    ],
+    "areaId": 6
   },
   {
     "id": 16,
     "slug": "mot-museum",
     "name": "東京都現代美術館",
-    "description": "現代アートの国内最大級のコレクションを持つ美術館。",
+    "description": "1995年に開館した都立の現代美術館。木場公園の北端に建ち、清澄白河駅から歩いて行ける。現代美術の企画展とコレクション展を開いている。",
     "address": "東京都江東区三好4-1-1",
-    "latitude": 35.6797,
-    "longitude": 139.805,
+    "latitude": 35.6798,
+    "longitude": 139.8088,
     "imageUrl": "/images/spots/spot-16.jpg",
     "officialUrl": "https://www.mot-art-museum.jp/",
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "tags": [
+      "art",
+      "museum"
+    ],
+    "categories": [
+      "美術館"
+    ],
+    "areaId": 6
   },
   {
     "id": 17,
@@ -218,7 +337,12 @@
     "imageUrl": "/images/spots/spot-17.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "categories": [
+      "街並み"
+    ],
+    "tags": [],
+    "areaId": 7
   },
   {
     "id": 18,
@@ -231,7 +355,10 @@
     "imageUrl": "/images/spots/spot-18.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "categories": [],
+    "tags": [],
+    "areaId": 7
   },
   {
     "id": 19,
@@ -244,7 +371,12 @@
     "imageUrl": "/images/spots/spot-19.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "categories": [
+      "街並み"
+    ],
+    "tags": [],
+    "areaId": 1
   },
   {
     "id": 20,
@@ -257,7 +389,13 @@
     "imageUrl": "/images/spots/spot-20.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "categories": [
+      "街並み",
+      "グルメ"
+    ],
+    "tags": [],
+    "areaId": 1
   },
   {
     "id": 21,
@@ -270,33 +408,53 @@
     "imageUrl": "/images/spots/spot-21.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "categories": [],
+    "tags": [],
+    "areaId": 3
   },
   {
     "id": 22,
     "slug": "yuyake-dandan",
     "name": "夕やけだんだん",
-    "description": "谷中銀座の入口にある石段。夕日が美しく、谷中を代表するフォトスポット。猫と出会えることでも有名。",
+    "description": "谷中銀座商店街へ下りる36段の石段で、高低差は約4m。1990年に石段が改装された際、作家・森まゆみが「夕やけだんだん」と名付けた。階段の上から谷中銀座の商店街を見下ろせる。",
     "address": "東京都荒川区西日暮里3丁目",
-    "latitude": 35.7264,
-    "longitude": 139.77,
+    "latitude": 35.7277,
+    "longitude": 139.7671,
     "imageUrl": "/images/spots/spot-22.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "tags": [
+      "sakamichi",
+      "retro",
+      "neko"
+    ],
+    "categories": [
+      "街並み"
+    ],
+    "areaId": 3
   },
   {
     "id": 23,
     "slug": "mitsukoshi-nihonbashi",
     "name": "三越日本橋本店",
-    "description": "1673年創業の老舗百貨店。ライオン像が目印のネオルネサンス様式の建物は国の重要文化財。",
+    "description": "延宝元年（1673年）創業の呉服商「越後屋」を起源とする百貨店。昭和10年（1935年）に増改築を終えた本館は、2016年に国の重要文化財に指定された。正面玄関のライオン像と中央ホールの天女像「まごころ」で知られる。",
     "address": "東京都中央区日本橋室町1-4-1",
     "latitude": 35.6857,
     "longitude": 139.7739,
     "imageUrl": "/images/spots/spot-23.jpg",
     "officialUrl": "https://www.mitsukoshi.mistore.jp/nihombashi.html",
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "tags": [
+      "kenchiku",
+      "shinise"
+    ],
+    "categories": [
+      "建築"
+    ],
+    "areaId": 5
   },
   {
     "id": 24,
@@ -309,72 +467,121 @@
     "imageUrl": "/images/spots/spot-24.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "categories": [
+      "カフェ"
+    ],
+    "tags": [],
+    "areaId": 6
   },
   {
     "id": 25,
     "slug": "yasukuni-dori-kosho",
     "name": "靖国通り古書店街",
-    "description": "靖国通り沿いに200軒以上の古書店が軒を連ねる。哲学・文学・音楽・スポーツなど専門書ごとに分かれた書店が並ぶ。",
+    "description": "世界最大の古書店街ともいわれる神保町の古書店街。店の数には諸説あるが、靖国通り沿いを中心に文学・歴史・美術など専門分野ごとに分かれた古書店が集まり、店頭の均一棚をのぞきながら歩くのも楽しみのひとつ。",
     "address": "東京都千代田区神田神保町1丁目",
     "latitude": 35.696,
     "longitude": 139.7578,
     "imageUrl": "/images/spots/spot-25.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "tags": [
+      "furuhon",
+      "honya"
+    ],
+    "categories": [
+      "商店街"
+    ],
+    "areaId": 7
   },
   {
     "id": 26,
     "slug": "asakusa-kaminarimon",
     "name": "浅草 雷門",
-    "description": "浅草寺の総門。高さ3.9mの大提灯と風神・雷神像が目印。仲見世通りへの入口。",
+    "description": "浅草寺の総門で、正式名称は風雷神門。高さ約3.9mの大提灯と、左右に安置された風神・雷神像が目印。ここから仲見世通りを通って浅草寺の本堂へ向かう。",
     "address": "東京都台東区浅草1-3",
     "latitude": 35.7109,
     "longitude": 139.7963,
     "imageUrl": "/images/spots/spot-26.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "tags": [
+      "tera",
+      "rekishi"
+    ],
+    "categories": [
+      "寺",
+      "歴史"
+    ],
+    "areaId": 4
   },
   {
     "id": 27,
     "slug": "kiba-park",
     "name": "木場公園",
-    "description": "かつての貯木場跡地に整備された都立公園。清澄白河と現代美術館の中間に位置する。",
+    "description": "貯木場の機能が新木場へ移転した跡地に整備された都立公園。仙台堀川などで分かれた地区を木場公園大橋が結び、都市緑化植物園やドッグランがある。北端には東京都現代美術館が建つ。",
     "address": "東京都江東区木場4丁目",
     "latitude": 35.678,
     "longitude": 139.8025,
     "imageUrl": "/images/spots/spot-27.jpg",
-    "officialUrl": null,
+    "officialUrl": "https://www.tokyo-park.or.jp/park/kiba/",
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "tags": [
+      "park",
+      "shizen"
+    ],
+    "categories": [
+      "公園"
+    ],
+    "areaId": 6
   },
   {
     "id": 28,
     "slug": "nakamise-dori",
     "name": "仲見世通り",
-    "description": "浅草寺への参道。約250mの商店街に伝統工芸品や食べ歩きの店が並ぶ。雷門から浅草寺へ続く参拝の道。",
+    "description": "雷門から浅草寺の宝蔵門まで約250m続く参道の商店街。貞享2年（1685年）頃、参道の清掃を担った地元住民に出店が許されたのが始まりとされ、日本で最も古い商店街のひとつといわれる。",
     "address": "東京都台東区浅草1丁目",
     "latitude": 35.7127,
     "longitude": 139.7965,
     "imageUrl": "/images/spots/spot-28.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "tags": [
+      "shotengai",
+      "shinise",
+      "gourmet"
+    ],
+    "categories": [
+      "商店街",
+      "グルメ"
+    ],
+    "areaId": 4
   },
   {
     "id": 29,
     "slug": "azuma-bridge",
     "name": "吾妻橋",
-    "description": "隅田川に架かる橋。東京スカイツリーと浅草の街並みを同時に眺められる定番の撮影スポット。",
+    "description": "隅田川に架かる3径間の鋼アーチ橋。現在の橋は関東大震災後の昭和6年（1931年）に架け替えられた。浅草側からは東京スカイツリーとアサヒビール本社の建物を同時に眺められる撮影スポットになっている。",
     "address": "東京都台東区吾妻橋1丁目",
     "latitude": 35.7105,
     "longitude": 139.7993,
     "imageUrl": "/images/spots/spot-29.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "tags": [
+      "hashi",
+      "kawazoi"
+    ],
+    "categories": [
+      "橋",
+      "川・水辺"
+    ],
+    "areaId": 4
   },
   {
     "id": 30,
@@ -387,20 +594,32 @@
     "imageUrl": "/images/spots/spot-30.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "categories": [
+      "グルメ"
+    ],
+    "tags": [],
+    "areaId": 5
   },
   {
     "id": 31,
     "slug": "suitengu",
     "name": "水天宮",
-    "description": "安産・子授けの神様として知られる神社。人形町エリアのランドマーク的存在。",
+    "description": "久留米藩主の有馬家が文政元年（1818年）に江戸の藩邸へ分霊したのが始まりの神社。安産・子授けの神様として知られ、戌の日には多くの参拝者が訪れる。",
     "address": "東京都中央区日本橋蛎殻町2-4-1",
-    "latitude": 35.6806,
-    "longitude": 139.782,
+    "latitude": 35.6835,
+    "longitude": 139.7852,
     "imageUrl": "/images/spots/spot-31.jpg",
-    "officialUrl": null,
+    "officialUrl": "https://www.suitengu.or.jp/",
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "tags": [
+      "jinja"
+    ],
+    "categories": [
+      "神社"
+    ],
+    "areaId": 5
   },
   {
     "id": 32,
@@ -413,7 +632,10 @@
     "imageUrl": "/images/spots/spot-32.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "categories": [],
+    "tags": [],
+    "areaId": 7
   },
   {
     "id": 33,
@@ -426,7 +648,12 @@
     "imageUrl": "/images/spots/spot-33.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "categories": [
+      "商店街"
+    ],
+    "tags": [],
+    "areaId": 7
   },
   {
     "id": 34,
@@ -439,7 +666,13 @@
     "imageUrl": "/images/spots/spot-34.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "categories": [
+      "博物館",
+      "歴史"
+    ],
+    "tags": [],
+    "areaId": 6
   },
   {
     "id": 35,
@@ -452,7 +685,10 @@
     "imageUrl": "/images/spots/spot-35.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "categories": [],
+    "tags": [],
+    "areaId": 1
   },
   {
     "id": 36,
@@ -465,20 +701,34 @@
     "imageUrl": "/images/spots/spot-36.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "categories": [
+      "神社"
+    ],
+    "tags": [],
+    "areaId": 1
   },
   {
     "id": 37,
     "slug": "nikolai-cathedral",
     "name": "ニコライ堂（東京復活大聖堂）",
-    "description": "19世紀末建立のロシア正教会。国指定重要文化財で、ビザンチン様式のドームが御茶ノ水の街並みに映える。",
+    "description": "明治24年（1891年）に完成した日本ハリストス正教会の大聖堂。日本で初めての本格的なビザンティン様式の教会建築といわれ、国の重要文化財。関東大震災で大きな被害を受け、昭和2〜4年（1927〜1929年）に岡田信一郎の設計で修復された。",
     "address": "東京都千代田区神田駿河台4-1-3",
-    "latitude": 35.6979,
-    "longitude": 139.7621,
+    "latitude": 35.698,
+    "longitude": 139.7655,
     "imageUrl": "/images/spots/spot-37.jpg",
-    "officialUrl": null,
+    "officialUrl": "https://nikolaido.org/",
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "tags": [
+      "kenchiku",
+      "rekishi"
+    ],
+    "categories": [
+      "建築",
+      "歴史"
+    ],
+    "areaId": 2
   },
   {
     "id": 38,
@@ -491,7 +741,12 @@
     "imageUrl": "/images/spots/spot-38.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "categories": [
+      "美術館"
+    ],
+    "tags": [],
+    "areaId": 2
   },
   {
     "id": 39,
@@ -504,7 +759,13 @@
     "imageUrl": "/images/spots/spot-39.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "categories": [
+      "神社",
+      "歴史"
+    ],
+    "tags": [],
+    "areaId": 3
   },
   {
     "id": 40,
@@ -517,7 +778,12 @@
     "imageUrl": "/images/spots/spot-40.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "categories": [
+      "建築"
+    ],
+    "tags": [],
+    "areaId": 3
   },
   {
     "id": 41,
@@ -530,7 +796,10 @@
     "imageUrl": "/images/spots/spot-41.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "categories": [],
+    "tags": [],
+    "areaId": 4
   },
   {
     "id": 42,
@@ -543,20 +812,34 @@
     "imageUrl": "/images/spots/spot-42.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "categories": [
+      "橋"
+    ],
+    "tags": [],
+    "areaId": 4
   },
   {
     "id": 43,
     "slug": "bank-of-japan",
     "name": "日本銀行本店",
-    "description": "1896年竣工の国指定重要文化財。建築家・辰野金吾設計のネオバロック様式の外観は日本橋を代表する景観。",
+    "description": "明治29年（1896年）竣工の本館は辰野金吾の設計で、国の重要文化財。バロック様式のドームや柱に、ルネサンス様式の規則正しい窓を取り入れた外観が特徴。事前予約制の本店見学が行われている。",
     "address": "東京都中央区日本橋本石町2-1-1",
     "latitude": 35.6862,
-    "longitude": 139.7741,
+    "longitude": 139.7715,
     "imageUrl": "/images/spots/spot-43.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "tags": [
+      "kenchiku",
+      "rekishi"
+    ],
+    "categories": [
+      "建築",
+      "歴史"
+    ],
+    "areaId": 5
   },
   {
     "id": 44,
@@ -569,7 +852,12 @@
     "imageUrl": "/images/spots/spot-44.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "categories": [
+      "神社"
+    ],
+    "tags": [],
+    "areaId": 5
   },
   {
     "id": 45,
@@ -577,12 +865,18 @@
     "name": "万年橋",
     "description": "小名木川と隅田川の合流点付近に架かる橋。江戸時代から続く水辺の景観を今に伝える。",
     "address": "東京都江東区清澄1丁目",
-    "latitude": 35.682,
-    "longitude": 139.802,
+    "latitude": 35.6835,
+    "longitude": 139.7947,
     "imageUrl": "/images/spots/spot-45.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "categories": [
+      "橋",
+      "川・水辺"
+    ],
+    "tags": [],
+    "areaId": 6
   },
   {
     "id": 46,
@@ -595,7 +889,13 @@
     "imageUrl": "/images/spots/spot-46.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-01-01T00:00:00Z"
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "categories": [
+      "公園",
+      "川・水辺"
+    ],
+    "tags": [],
+    "areaId": 6
   },
   {
     "id": 47,
@@ -608,7 +908,10 @@
     "imageUrl": "/images/spots/spot-47.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2026-09-14T07:46:56.605Z"
+    "updatedAt": "2026-09-14T07:46:56.605Z",
+    "categories": [],
+    "tags": [],
+    "areaId": 7
   },
   {
     "id": 48,
@@ -621,7 +924,10 @@
     "imageUrl": "/images/spots/spot-48.jpg",
     "officialUrl": null,
     "createdAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2026-09-14T07:46:41.771Z"
+    "updatedAt": "2026-09-14T07:46:41.771Z",
+    "categories": [],
+    "tags": [],
+    "areaId": 7
   },
   {
     "id": 49,
@@ -634,7 +940,10 @@
     "imageUrl": "/images/spots/spot-49.jpg",
     "officialUrl": null,
     "createdAt": "2026-08-25T00:00:00Z",
-    "updatedAt": "2026-08-25T00:00:00Z"
+    "updatedAt": "2026-08-25T00:00:00Z",
+    "categories": [],
+    "tags": [],
+    "areaId": 2
   },
   {
     "id": 50,
@@ -647,7 +956,12 @@
     "imageUrl": "/images/spots/spot-50.jpg",
     "officialUrl": null,
     "createdAt": "2026-08-25T00:00:00Z",
-    "updatedAt": "2026-09-14T07:46:26.619Z"
+    "updatedAt": "2026-09-14T07:46:26.619Z",
+    "categories": [
+      "橋"
+    ],
+    "tags": [],
+    "areaId": 2
   },
   {
     "id": 51,
@@ -660,7 +974,12 @@
     "imageUrl": "/images/spots/spot-51.jpg",
     "officialUrl": null,
     "createdAt": "2026-08-25T00:00:00Z",
-    "updatedAt": "2026-09-14T07:46:16.208Z"
+    "updatedAt": "2026-09-14T07:46:16.208Z",
+    "categories": [
+      "橋"
+    ],
+    "tags": [],
+    "areaId": 2
   },
   {
     "id": 52,
@@ -673,7 +992,12 @@
     "imageUrl": "/images/spots/spot-52.jpg",
     "officialUrl": null,
     "createdAt": "2026-08-25T00:00:00Z",
-    "updatedAt": "2026-09-14T07:46:07.666Z"
+    "updatedAt": "2026-09-14T07:46:07.666Z",
+    "categories": [
+      "橋"
+    ],
+    "tags": [],
+    "areaId": 2
   },
   {
     "id": 53,
@@ -686,7 +1010,10 @@
     "imageUrl": "/images/spots/spot-53.jpg",
     "officialUrl": "http://www.akihabara-radiokaikan.co.jp/",
     "createdAt": "2026-09-17T00:00:00Z",
-    "updatedAt": "2026-09-17T00:00:00Z"
+    "updatedAt": "2026-09-17T00:00:00Z",
+    "categories": [],
+    "tags": [],
+    "areaId": 1
   },
   {
     "id": 54,
@@ -699,7 +1026,10 @@
     "imageUrl": "/images/spots/spot-54.jpg",
     "officialUrl": "https://www.gamers.co.jp/shop/shop_detail/2434/",
     "createdAt": "2026-09-17T00:00:00Z",
-    "updatedAt": "2026-09-17T00:00:00Z"
+    "updatedAt": "2026-09-17T00:00:00Z",
+    "categories": [],
+    "tags": [],
+    "areaId": 1
   },
   {
     "id": 55,
@@ -712,20 +1042,31 @@
     "imageUrl": "/images/spots/spot-55.jpg",
     "officialUrl": null,
     "createdAt": "2026-09-17T00:00:00Z",
-    "updatedAt": "2026-09-17T00:00:00Z"
+    "updatedAt": "2026-09-17T00:00:00Z",
+    "categories": [],
+    "tags": [],
+    "areaId": 1
   },
   {
     "id": 56,
     "slug": "myojin-otokozaka",
     "name": "明神男坂",
-    "description": "神田明神南側に続く石段。上りきると視界が開ける、アニメでも印象的な急な階段。",
+    "description": "神田明神の本殿の南東にある急な石段。天保年間に神田の町火消が石坂を献納したと伝わり、高台で見晴らしがよいことから錦絵にも描かれた。今は秋葉原側から神田明神へ参拝する近道になっている。",
     "address": "東京都千代田区外神田2丁目",
     "latitude": 35.700847,
     "longitude": 139.767517,
     "imageUrl": "/images/spots/spot-56.jpg",
     "officialUrl": null,
     "createdAt": "2026-09-17T00:00:00Z",
-    "updatedAt": "2026-09-17T00:00:00Z"
+    "updatedAt": "2026-09-27T00:00:00Z",
+    "tags": [
+      "sakamichi",
+      "jinja"
+    ],
+    "categories": [
+      "歴史"
+    ],
+    "areaId": 1
   },
   {
     "id": 57,
@@ -738,7 +1079,12 @@
     "imageUrl": "/images/spots/spot-57.jpg",
     "officialUrl": null,
     "createdAt": "2026-09-17T00:00:00Z",
-    "updatedAt": "2026-09-17T00:00:00Z"
+    "updatedAt": "2026-09-17T00:00:00Z",
+    "categories": [
+      "グルメ"
+    ],
+    "tags": [],
+    "areaId": 1
   },
   {
     "id": 58,
@@ -751,7 +1097,12 @@
     "imageUrl": "/images/spots/spot-58.jpg",
     "officialUrl": "http://udx.jp/",
     "createdAt": "2026-09-17T00:00:00Z",
-    "updatedAt": "2026-09-17T00:00:00Z"
+    "updatedAt": "2026-09-17T00:00:00Z",
+    "categories": [
+      "街並み"
+    ],
+    "tags": [],
+    "areaId": 1
   },
   {
     "id": 59,
@@ -764,6 +1115,1014 @@
     "imageUrl": "/images/spots/spot-59.jpg",
     "officialUrl": "http://udx.jp/",
     "createdAt": "2026-09-17T00:00:00Z",
-    "updatedAt": "2026-09-17T00:00:00Z"
+    "updatedAt": "2026-09-17T00:00:00Z",
+    "categories": [],
+    "tags": [],
+    "areaId": 1
+  },
+  {
+    "id": 60,
+    "slug": "nippori-station",
+    "name": "日暮里駅",
+    "description": "JR・京成線・日暮里舎人ライナーの駅。西側の改札を出ると、谷中の寺町と谷中霊園がすぐそばに広がる。",
+    "address": "東京都荒川区西日暮里2丁目",
+    "latitude": 35.72801,
+    "longitude": 139.77138,
+    "officialUrl": null,
+    "areaId": 9,
+    "categories": [],
+    "tags": [],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 61,
+    "slug": "shimo-goinden-bridge",
+    "name": "下御隠殿橋",
+    "description": "日暮里駅の北改札口前で線路をまたぎ、駅の東西を結ぶ跨線橋。橋の中ほどのバルコニー「トレインミュージアム」から、山手線や京浜東北線、新幹線、京成線など多くの電車が行き交う様子を眺められる。",
+    "address": "東京都台東区谷中7丁目",
+    "latitude": 35.72838,
+    "longitude": 139.77024,
+    "officialUrl": null,
+    "areaId": 9,
+    "categories": [
+      "橋"
+    ],
+    "tags": [
+      "hashi"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 62,
+    "slug": "kannonji-tsuijibei",
+    "name": "観音寺築地塀",
+    "description": "谷中の観音寺の南面に続く長さ約37.6mの土塀。瓦と土を交互に積み重ねる練り塀の工法で造られ、2000年に国の登録有形文化財に登録された。寺町・谷中らしい景観として知られる。",
+    "address": "東京都台東区谷中5-8-28",
+    "latitude": 35.72566,
+    "longitude": 139.76843,
+    "officialUrl": null,
+    "areaId": 9,
+    "categories": [
+      "寺",
+      "歴史",
+      "街並み"
+    ],
+    "tags": [
+      "tera",
+      "rekishi",
+      "roji"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 63,
+    "slug": "yomise-dori",
+    "name": "よみせ通り",
+    "description": "谷中銀座商店街と直角に交わる商店街。かつて流れていた藍染川を暗渠にした上にできた通りで、夜店が並んだことが名前の由来とされる。",
+    "address": "東京都文京区千駄木3丁目・台東区谷中3丁目",
+    "latitude": 35.7265,
+    "longitude": 139.7652,
+    "officialUrl": null,
+    "areaId": 9,
+    "categories": [
+      "商店街",
+      "街並み"
+    ],
+    "tags": [
+      "shotengai",
+      "shimamachi"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 64,
+    "slug": "nezu-shrine",
+    "name": "根津神社",
+    "description": "日本武尊が1900年近く前に創祀したと伝わる古社。宝永3年（1706年）に造営された権現造の社殿や楼門など7棟が国の重要文化財。つつじの名所として知られ、境内の乙女稲荷神社には朱色の鳥居が連なる千本鳥居がある。",
+    "address": "東京都文京区根津1-28-9",
+    "latitude": 35.71997,
+    "longitude": 139.76066,
+    "officialUrl": "https://www.nedujinja.or.jp/",
+    "areaId": 9,
+    "categories": [
+      "神社",
+      "歴史",
+      "建築"
+    ],
+    "tags": [
+      "jinja",
+      "rekishi",
+      "kenchiku",
+      "shiseki"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 65,
+    "slug": "sendagi-station",
+    "name": "千駄木駅",
+    "description": "東京メトロ千代田線の駅。団子坂下にあり、谷中・根津・千駄木を歩く散歩の起点や終点に使いやすい。",
+    "address": "東京都文京区千駄木2丁目",
+    "latitude": 35.72524,
+    "longitude": 139.76327,
+    "officialUrl": null,
+    "areaId": 9,
+    "categories": [],
+    "tags": [],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 66,
+    "slug": "nezu-station",
+    "name": "根津駅",
+    "description": "東京メトロ千代田線の駅。不忍通りと言問通りの交差点付近にあり、根津神社や弥生美術館へ歩いて行ける。",
+    "address": "東京都台東区池之端2丁目",
+    "latitude": 35.71803,
+    "longitude": 139.76524,
+    "officialUrl": null,
+    "areaId": 9,
+    "categories": [],
+    "tags": [],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 67,
+    "slug": "yayoi-museum",
+    "name": "弥生美術館",
+    "description": "明治から昭和の挿絵画家による出版美術を中心に展示する私立美術館。弁護士の鹿野琢見が収集した高畠華宵や竹久夢二の作品などのコレクションを基にしており、同じ建物に竹久夢二美術館がある。",
+    "address": "東京都文京区弥生2-4-3",
+    "latitude": 35.7149,
+    "longitude": 139.76348,
+    "officialUrl": "https://www.yayoi-yumeji-museum.jp/",
+    "areaId": 9,
+    "categories": [
+      "美術館"
+    ],
+    "tags": [
+      "art",
+      "museum",
+      "retro"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 68,
+    "slug": "yumeji-museum",
+    "name": "竹久夢二美術館",
+    "description": "大正ロマンを代表する画家・竹久夢二の作品を展示する美術館。弥生美術館と同じ建物にあり、鹿野琢見が収集したコレクションを基に夢二の作品を紹介している。",
+    "address": "東京都文京区弥生2-4-2",
+    "latitude": 35.715,
+    "longitude": 139.7634,
+    "officialUrl": "https://www.yayoi-yumeji-museum.jp/",
+    "areaId": 9,
+    "categories": [
+      "美術館"
+    ],
+    "tags": [
+      "art",
+      "museum",
+      "retro"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 69,
+    "slug": "ogai-memorial-museum",
+    "name": "森鷗外記念館",
+    "description": "森鷗外が1892年から亡くなる1922年まで家族と暮らした旧居「観潮楼」の跡地に、2012年に開館した文京区立の記念館。二階から品川沖が見えたことが観潮楼の名の由来。敷地には観潮楼の門柱跡や大銀杏が残る。",
+    "address": "東京都文京区千駄木1-23-4",
+    "latitude": 35.72485,
+    "longitude": 139.76065,
+    "officialUrl": "https://moriogai-kinenkan.jp/",
+    "areaId": 9,
+    "categories": [
+      "博物館",
+      "歴史"
+    ],
+    "tags": [
+      "rekishi",
+      "shiseki",
+      "museum"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 70,
+    "slug": "kyu-yasuda-kusuo-tei",
+    "name": "旧安田楠雄邸庭園",
+    "description": "豊島園の創始者・藤田好三郎が大正8〜9年（1919〜1920年）に建てた邸宅と庭園。関東大震災後に安田善四郎が買い取り、長男の安田楠雄が受け継いだ。東京都指定名勝で、日本ナショナルトラストが管理し、公開日には建物の内部も見学できる。",
+    "address": "東京都文京区千駄木5-20-18",
+    "latitude": 35.72705,
+    "longitude": 139.76057,
+    "officialUrl": null,
+    "areaId": 9,
+    "categories": [
+      "庭園",
+      "建築",
+      "歴史"
+    ],
+    "tags": [
+      "teien",
+      "kenchiku",
+      "rekishi"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 71,
+    "slug": "sudo-park",
+    "name": "須藤公園",
+    "description": "江戸時代に加賀藩の支藩・大聖寺藩の江戸屋敷があった地の庭園。明治に品川弥二郎、のちに実業家の須藤吉左衛門の邸宅となり、須藤家が東京市に寄付した。高低差を生かした池と滝があり、池の中島に弁財天がまつられている。",
+    "address": "東京都文京区千駄木3丁目",
+    "latitude": 35.72637,
+    "longitude": 139.76249,
+    "officialUrl": null,
+    "areaId": 9,
+    "categories": [
+      "公園",
+      "庭園"
+    ],
+    "tags": [
+      "park",
+      "teien",
+      "shizen"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 72,
+    "slug": "tokyo-station-marunouchi",
+    "name": "東京駅 丸の内駅舎",
+    "description": "大正3年（1914年）に竣工した赤レンガの駅舎。辰野金吾らの設計で、2003年に国の重要文化財に指定され、2012年に創建時の3階建てとドーム屋根が復原された。",
+    "address": "東京都千代田区丸の内1丁目",
+    "latitude": 35.68115,
+    "longitude": 139.76598,
+    "officialUrl": null,
+    "areaId": 12,
+    "categories": [
+      "建築",
+      "歴史"
+    ],
+    "tags": [
+      "kenchiku",
+      "rekishi",
+      "retro"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 73,
+    "slug": "gyoko-dori",
+    "name": "行幸通り",
+    "description": "東京駅丸の内中央口から皇居へまっすぐ延びる並木道。イチョウ並木の先に皇居の緑が広がり、振り返ると丸の内駅舎を正面から眺められる。",
+    "address": "東京都千代田区丸の内1〜2丁目",
+    "latitude": 35.68232,
+    "longitude": 139.7608,
+    "officialUrl": null,
+    "areaId": 12,
+    "categories": [
+      "街並み"
+    ],
+    "tags": [
+      "kenchiku"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 74,
+    "slug": "kokyo-gaien",
+    "name": "皇居外苑",
+    "description": "皇居前広場と北の丸公園、内濠沿いの緑地を含む環境省所管の国民公園。広い芝生と黒松の広場の先に皇居の石垣や伏見櫓を望め、桜田門や二重橋など江戸城ゆかりの建造物を見られる。住友家が献納した楠木正成像も立つ。",
+    "address": "東京都千代田区皇居外苑1-1",
+    "latitude": 35.67994,
+    "longitude": 139.75847,
+    "officialUrl": "https://fng.or.jp/koukyo/",
+    "areaId": 12,
+    "categories": [
+      "公園",
+      "歴史"
+    ],
+    "tags": [
+      "park",
+      "rekishi",
+      "shiseki"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 75,
+    "slug": "nijubashi",
+    "name": "二重橋",
+    "description": "皇居正門に続く正門鉄橋の通称で、手前の正門石橋と合わせてそう呼ばれることも多い。皇居前広場からは石橋と鉄橋、その奥の伏見櫓をあわせて眺められ、皇居を代表する景観になっている。",
+    "address": "東京都千代田区千代田1-1",
+    "latitude": 35.6795,
+    "longitude": 139.7547,
+    "officialUrl": null,
+    "areaId": 12,
+    "categories": [
+      "橋",
+      "歴史"
+    ],
+    "tags": [
+      "hashi",
+      "shiseki"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 76,
+    "slug": "sakuradamon",
+    "name": "桜田門",
+    "description": "江戸城の城門のひとつで、外桜田門とも呼ばれる。安政7年（1860年）3月3日、門の近くで大老井伊直弼が暗殺された桜田門外の変の舞台。高麗門と渡櫓門を直角に配した枡形門で、国の重要文化財。",
+    "address": "東京都千代田区皇居外苑1-1",
+    "latitude": 35.67735,
+    "longitude": 139.75169,
+    "officialUrl": null,
+    "areaId": 12,
+    "categories": [
+      "歴史",
+      "建築"
+    ],
+    "tags": [
+      "shiseki",
+      "rekishi"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 77,
+    "slug": "hibiya-park",
+    "name": "日比谷公園",
+    "description": "明治36年（1903年）に開園した日本初の近代的な洋風公園。江戸城の堀の一部を埋め残した心字池ではかつての石垣を見ることができ、開園時に設けられた松本楼が今も園内にある。",
+    "address": "東京都千代田区日比谷公園1",
+    "latitude": 35.67404,
+    "longitude": 139.75632,
+    "officialUrl": "https://www.tokyo-park.or.jp/park/hibiya/",
+    "areaId": 12,
+    "categories": [
+      "公園",
+      "歴史"
+    ],
+    "tags": [
+      "park",
+      "rekishi"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 78,
+    "slug": "marunouchi-naka-dori",
+    "name": "丸の内仲通り",
+    "description": "大手町から有楽町まで南北に延びる通り。石畳の歩道と街路樹に沿ってブランドショップやカフェが並び、車道を歩行者に開放する時間帯もある。",
+    "address": "東京都千代田区丸の内1〜3丁目",
+    "latitude": 35.68003,
+    "longitude": 139.76285,
+    "officialUrl": null,
+    "areaId": 12,
+    "categories": [
+      "街並み",
+      "建築"
+    ],
+    "tags": [
+      "kenchiku"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 79,
+    "slug": "mitsubishi-ichigokan",
+    "name": "三菱一号館美術館",
+    "description": "明治27年（1894年）にジョサイア・コンドルが設計した、丸の内で最初の洋風貸事務所建築「三菱一号館」。1968年に解体されたのち、2009年に美術館として復元された赤レンガの建物。",
+    "address": "東京都千代田区丸の内2-6-2",
+    "latitude": 35.67857,
+    "longitude": 139.76339,
+    "officialUrl": "https://mimt.jp/",
+    "areaId": 12,
+    "categories": [
+      "美術館",
+      "建築"
+    ],
+    "tags": [
+      "art",
+      "museum",
+      "kenchiku",
+      "retro"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 80,
+    "slug": "meiji-seimeikan",
+    "name": "明治生命館",
+    "description": "昭和9年（1934年）に竣工したオフィスビル。岡田信一郎の設計で、1997年に昭和の建造物として初めて国の重要文化財に指定された。1・2階の一部が一般公開されている。",
+    "address": "東京都千代田区丸の内2-1-1",
+    "latitude": 35.67894,
+    "longitude": 139.76161,
+    "officialUrl": "https://www.meijiyasuda.co.jp/profile/meiji-seimeikan/",
+    "areaId": 12,
+    "categories": [
+      "建築",
+      "歴史"
+    ],
+    "tags": [
+      "kenchiku",
+      "retro"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 81,
+    "slug": "kitte-marunouchi",
+    "name": "JPタワー（KITTE丸の内）",
+    "description": "吉田鉄郎の設計で昭和6年（1931年）に竣工した旧東京中央郵便局舎の一部を保存・再生した低層棟に入る商業施設。6階の屋上庭園「KITTEガーデン」からは東京駅丸の内駅舎と駅前広場を見下ろせる。",
+    "address": "東京都千代田区丸の内2-7-2",
+    "latitude": 35.67965,
+    "longitude": 139.7648,
+    "officialUrl": "https://marunouchi.jp-kitte.jp/",
+    "areaId": 12,
+    "categories": [
+      "建築"
+    ],
+    "tags": [
+      "kenchiku",
+      "retro"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 82,
+    "slug": "sumida-park",
+    "name": "隅田公園",
+    "description": "関東大震災後の復興事業として、浜町公園・錦糸公園と並んで整備された公園。隅田川の両岸に広がり、浅草側は川沿いの散歩道から対岸の東京スカイツリーを望める。",
+    "address": "東京都台東区花川戸1丁目・浅草7丁目",
+    "latitude": 35.714,
+    "longitude": 139.801,
+    "officialUrl": null,
+    "areaId": 4,
+    "categories": [
+      "公園",
+      "川・水辺"
+    ],
+    "tags": [
+      "park",
+      "kawazoi"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 83,
+    "slug": "umayabashi",
+    "name": "厩橋",
+    "description": "関東大震災の復興事業として昭和4年（1929年）に完成した三連アーチ橋。名前は蔵前の米蔵の荷駄馬用の厩があった「御厩河岸」にちなみ、橋全体に馬を連想させるレリーフが施されている。",
+    "address": "東京都台東区蔵前2丁目",
+    "latitude": 35.70438,
+    "longitude": 139.79516,
+    "officialUrl": null,
+    "areaId": 10,
+    "categories": [
+      "橋",
+      "川・水辺"
+    ],
+    "tags": [
+      "hashi",
+      "kawazoi"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 84,
+    "slug": "kyu-yasuda-teien",
+    "name": "旧安田庭園",
+    "description": "元禄年間に本庄宗資が大名庭園として築いたのが始まり。明治に安田財閥の祖・安田善次郎の所有となり、現在は墨田区が管理している。小島の浮かぶ心字池を老樹と散策路が囲む庭園。",
+    "address": "東京都墨田区横網1-12-1",
+    "latitude": 35.69825,
+    "longitude": 139.79363,
+    "officialUrl": null,
+    "areaId": 13,
+    "categories": [
+      "庭園",
+      "歴史"
+    ],
+    "tags": [
+      "teien",
+      "rekishi",
+      "shizen"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 85,
+    "slug": "ryogoku-station",
+    "name": "両国駅",
+    "description": "JR総武線と都営大江戸線の駅。両国国技館や江戸東京博物館の最寄り駅。",
+    "address": "東京都墨田区横網1丁目",
+    "latitude": 35.696,
+    "longitude": 139.79275,
+    "officialUrl": null,
+    "areaId": 13,
+    "categories": [],
+    "tags": [],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 86,
+    "slug": "ryogoku-kokugikan",
+    "name": "両国国技館",
+    "description": "昭和60年（1985年）1月場所から使われている2代目の国技館。大相撲の東京での本場所が開かれ、1階には相撲博物館がある。",
+    "address": "東京都墨田区横網1-3-28",
+    "latitude": 35.69688,
+    "longitude": 139.79346,
+    "officialUrl": "https://www.sumo.or.jp/",
+    "areaId": 13,
+    "categories": [
+      "建築",
+      "歴史"
+    ],
+    "tags": [
+      "rekishi"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 87,
+    "slug": "edo-tokyo-museum",
+    "name": "江戸東京博物館",
+    "description": "徳川家康の江戸入府から現代まで約400年の江戸・東京の歴史と文化を紹介する都立博物館。常設展では日本橋の北側半分を原寸大で復元した模型が迎える。建物は菊竹清訓の設計で、改修工事を経て2026年3月にリニューアルオープンした。",
+    "address": "東京都墨田区横網1-4-1",
+    "latitude": 35.69645,
+    "longitude": 139.79608,
+    "officialUrl": "https://www.edo-tokyo-museum.or.jp/",
+    "areaId": 13,
+    "categories": [
+      "博物館",
+      "歴史"
+    ],
+    "tags": [
+      "rekishi",
+      "museum"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 88,
+    "slug": "japanese-sword-museum",
+    "name": "刀剣博物館",
+    "description": "日本美術刀剣保存協会が運営する日本刀の博物館。2018年に代々木から旧安田庭園内の両国公会堂跡地へ移転した。建物は槇文彦の設計で、屋上庭園から旧安田庭園や国技館を眺められる。",
+    "address": "東京都墨田区横網1-12-9",
+    "latitude": 35.69882,
+    "longitude": 139.79371,
+    "officialUrl": "https://www.touken.or.jp/museum/",
+    "areaId": 13,
+    "categories": [
+      "博物館"
+    ],
+    "tags": [
+      "rekishi",
+      "museum"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 89,
+    "slug": "yokoamicho-park",
+    "name": "横網町公園",
+    "description": "関東大震災で多くの避難者が犠牲になった陸軍被服本廠の跡地に造られた都立公園。震災と東京大空襲の犠牲者を慰霊する東京都慰霊堂や、復興記念館がある。",
+    "address": "東京都墨田区横網2-3-25",
+    "latitude": 35.69951,
+    "longitude": 139.79642,
+    "officialUrl": "https://www.tokyo-park.or.jp/park/yokoamicho/",
+    "areaId": 13,
+    "categories": [
+      "公園",
+      "歴史"
+    ],
+    "tags": [
+      "park",
+      "rekishi",
+      "shiseki"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 90,
+    "slug": "ekoin",
+    "name": "回向院",
+    "description": "明暦の大火の焼死者を将軍徳川家綱の命で葬った万人塚が始まりとされる寺。明和5年（1768年）以降は境内で勧進相撲が開かれ、明治42年（1909年）に旧両国国技館が建つまで続いた。力塚や鼠小僧次郎吉の墓がある。",
+    "address": "東京都墨田区両国2-8-10",
+    "latitude": 35.69334,
+    "longitude": 139.79204,
+    "officialUrl": "https://ekoin.or.jp/",
+    "areaId": 13,
+    "categories": [
+      "寺",
+      "歴史"
+    ],
+    "tags": [
+      "tera",
+      "rekishi",
+      "shiseki"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 91,
+    "slug": "kiyosumi-shirakawa-station",
+    "name": "清澄白河駅",
+    "description": "東京メトロ半蔵門線と都営大江戸線の駅。清澄庭園と深川資料館通りに近く、深川散歩の起点に便利。",
+    "address": "東京都江東区白河1丁目",
+    "latitude": 35.68205,
+    "longitude": 139.79876,
+    "officialUrl": null,
+    "areaId": 6,
+    "categories": [],
+    "tags": [],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 92,
+    "slug": "fukagawa-shiryokan-dori",
+    "name": "深川資料館通り",
+    "description": "清澄白河駅近くで清澄通りと三ツ目通りを結ぶ約800mの商店街。深川江戸資料館があり、呉服店や豆腐店など昔ながらの店にカフェや飲食店が交じる。",
+    "address": "東京都江東区白河1丁目〜三好2丁目",
+    "latitude": 35.68091,
+    "longitude": 139.80134,
+    "officialUrl": null,
+    "areaId": 6,
+    "categories": [
+      "商店街",
+      "街並み"
+    ],
+    "tags": [
+      "shotengai",
+      "shimamachi",
+      "cafe"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 93,
+    "slug": "basho-museum",
+    "name": "芭蕉記念館",
+    "description": "松尾芭蕉が「古池や蛙飛びこむ水の音」を詠んだ地とされる深川に建つ江東区の記念館。芭蕉ゆかりの資料を紹介している。近くには芭蕉稲荷神社や芭蕉庵史跡展望庭園がある。",
+    "address": "東京都江東区常盤1-6-3",
+    "latitude": 35.68614,
+    "longitude": 139.7943,
+    "officialUrl": "https://www.kcf.or.jp/basho/",
+    "areaId": 6,
+    "categories": [
+      "博物館",
+      "歴史"
+    ],
+    "tags": [
+      "rekishi",
+      "kawazoi",
+      "shiseki"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 94,
+    "slug": "fukagawa-fudodo",
+    "name": "深川不動堂",
+    "description": "成田山新勝寺の東京別院。不動明王の真言を表す梵字を散りばめた本堂の外壁が目を引く。門前の参道「人情深川ご利益通り」では毎月1日・15日・28日に縁日が開かれる。",
+    "address": "東京都江東区富岡1-17-13",
+    "latitude": 35.67302,
+    "longitude": 139.79828,
+    "officialUrl": "https://fukagawafudou.gr.jp/",
+    "areaId": 6,
+    "categories": [
+      "寺"
+    ],
+    "tags": [
+      "tera",
+      "shimamachi"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 95,
+    "slug": "tomioka-hachimangu",
+    "name": "富岡八幡宮",
+    "description": "寛永4年（1627年）創建の江戸最大の八幡宮。江戸勧進相撲発祥の神社とされ、境内には横綱力士碑など大相撲ゆかりの石碑が並ぶ。8月の深川八幡祭りは江戸三大祭りのひとつ。",
+    "address": "東京都江東区富岡1-20-3",
+    "latitude": 35.67162,
+    "longitude": 139.79975,
+    "officialUrl": null,
+    "areaId": 6,
+    "categories": [
+      "神社",
+      "歴史"
+    ],
+    "tags": [
+      "jinja",
+      "rekishi",
+      "shiseki"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 96,
+    "slug": "monzen-nakacho-station",
+    "name": "門前仲町駅",
+    "description": "東京メトロ東西線と都営大江戸線の駅。富岡八幡宮と深川不動堂の門前町として栄えた下町の玄関口。",
+    "address": "東京都江東区門前仲町1丁目",
+    "latitude": 35.67229,
+    "longitude": 139.79507,
+    "officialUrl": null,
+    "areaId": 6,
+    "categories": [],
+    "tags": [],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 97,
+    "slug": "ginza-4chome",
+    "name": "銀座四丁目交差点",
+    "description": "銀座通りと晴海通りが交わる銀座の中心。和光の時計塔と三越銀座店が向かい合い、歩行者天国の日には銀座通りを車道の真ん中から歩ける。",
+    "address": "東京都中央区銀座4丁目",
+    "latitude": 35.67122,
+    "longitude": 139.76504,
+    "officialUrl": null,
+    "areaId": 14,
+    "categories": [
+      "街並み",
+      "建築"
+    ],
+    "tags": [
+      "kenchiku"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 98,
+    "slug": "kabukiza",
+    "name": "歌舞伎座",
+    "description": "明治22年（1889年）に開場した歌舞伎の劇場。現在の建物は2013年に開場した第5期で、隈研吾の意匠設計による和風の桃山様式の外観。背後の歌舞伎座タワー5階には屋上庭園がある。",
+    "address": "東京都中央区銀座4-12-15",
+    "latitude": 35.66966,
+    "longitude": 139.76811,
+    "officialUrl": "https://www.kabuki-za.co.jp/",
+    "areaId": 14,
+    "categories": [
+      "建築",
+      "歴史"
+    ],
+    "tags": [
+      "kenchiku",
+      "rekishi"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 99,
+    "slug": "tsukiji-outer-market",
+    "name": "築地場外市場",
+    "description": "築地市場が豊洲へ移転した後も営業を続ける、築地本願寺の南側に広がる商店街。鮮魚や乾物などの専門店と飲食店が集まり、食べ歩きも楽しめる。",
+    "address": "東京都中央区築地4丁目",
+    "latitude": 35.66539,
+    "longitude": 139.77047,
+    "officialUrl": "https://www.tsukiji.or.jp/",
+    "areaId": 14,
+    "categories": [
+      "市場",
+      "グルメ",
+      "商店街"
+    ],
+    "tags": [
+      "gourmet",
+      "shotengai"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 100,
+    "slug": "tsukiji-hongwanji",
+    "name": "築地本願寺",
+    "description": "浄土真宗本願寺派の寺院。昭和9年（1934年）竣工の本堂は伊東忠太の設計で、古代インドの様式をモチーフにした鉄筋コンクリート造の建物。国の重要文化財。",
+    "address": "東京都中央区築地3-15-1",
+    "latitude": 35.6666,
+    "longitude": 139.77213,
+    "officialUrl": "https://tsukijihongwanji.jp/",
+    "areaId": 14,
+    "categories": [
+      "寺",
+      "建築",
+      "歴史"
+    ],
+    "tags": [
+      "tera",
+      "kenchiku",
+      "rekishi"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 101,
+    "slug": "tsukuda-ohashi",
+    "name": "佃大橋",
+    "description": "江戸時代から320年余り続いた「佃の渡し」の位置に、1964年東京オリンピックに備えて架けられた橋。昭和39年（1964年）に竣工し、戦後初めて隅田川に架けられた橋となった。",
+    "address": "東京都中央区湊3丁目〜佃1丁目",
+    "latitude": 35.66784,
+    "longitude": 139.78107,
+    "officialUrl": null,
+    "areaId": 15,
+    "categories": [
+      "橋",
+      "川・水辺"
+    ],
+    "tags": [
+      "hashi",
+      "kawazoi"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 102,
+    "slug": "tsukuda-island",
+    "name": "佃島",
+    "description": "江戸時代初期、摂津国佃村の漁師が造成した島を起源とする町。古くから佃煮でも知られ、佃小橋が架かる佃堀の周りに下町の街並みが残る。",
+    "address": "東京都中央区佃1丁目",
+    "latitude": 35.66727,
+    "longitude": 139.78335,
+    "officialUrl": null,
+    "areaId": 15,
+    "categories": [
+      "街並み",
+      "歴史",
+      "川・水辺"
+    ],
+    "tags": [
+      "shimamachi",
+      "rekishi",
+      "shinise",
+      "roji"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 103,
+    "slug": "sumiyoshi-shrine-tsukuda",
+    "name": "住吉神社（佃）",
+    "description": "摂津国佃村から江戸に移り住んだ漁民が、正保3年（1646年）に故郷の住吉社の分霊をまつって創建した神社。3年に一度の例祭（神幸祭）では獅子頭や宮神輿の宮出しが行われる。",
+    "address": "東京都中央区佃1-1-14",
+    "latitude": 35.66806,
+    "longitude": 139.78296,
+    "officialUrl": "http://www.sumiyoshijinja.or.jp/",
+    "areaId": 15,
+    "categories": [
+      "神社",
+      "歴史"
+    ],
+    "tags": [
+      "jinja",
+      "rekishi"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 104,
+    "slug": "tsukishima-monja-street",
+    "name": "月島もんじゃストリート",
+    "description": "月島西仲通り商店街の別名。もんじゃ焼きの店が数多く並ぶ。月島は明治時代に東京湾の浚渫土砂で埋め立てられた町で、裏通りには木造住宅が密集し狭い路地も残る。",
+    "address": "東京都中央区月島1〜3丁目",
+    "latitude": 35.663,
+    "longitude": 139.7795,
+    "officialUrl": "https://www.monja.gr.jp/",
+    "areaId": 15,
+    "categories": [
+      "商店街",
+      "グルメ",
+      "街並み"
+    ],
+    "tags": [
+      "gourmet",
+      "shotengai",
+      "shimamachi",
+      "roji"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 105,
+    "slug": "kachidoki-station",
+    "name": "勝どき駅",
+    "description": "都営大江戸線の駅。清澄通り沿いにあり、月島や勝鬨橋へ歩いて行ける。",
+    "address": "東京都中央区勝どき2丁目",
+    "latitude": 35.65893,
+    "longitude": 139.77733,
+    "officialUrl": null,
+    "areaId": 15,
+    "categories": [],
+    "tags": [],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 106,
+    "slug": "ameyoko",
+    "name": "アメ横",
+    "description": "上野駅から御徒町駅まで高架沿いに続く約400店の商店街。戦後の闇市から始まり、名前は飴を売る店が並んだ「飴屋横丁」、進駐軍の放出物資を扱った「アメリカ横丁」の二つの説がある。",
+    "address": "東京都台東区上野4〜6丁目",
+    "latitude": 35.71002,
+    "longitude": 139.77454,
+    "officialUrl": "https://www.ameyoko.net/",
+    "areaId": 3,
+    "categories": [
+      "商店街",
+      "グルメ"
+    ],
+    "tags": [
+      "shotengai",
+      "shimamachi",
+      "gourmet"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 107,
+    "slug": "kappabashi",
+    "name": "かっぱ橋道具街",
+    "description": "菊屋橋交差点付近から言問通りまで約800m続く商店街。1912年頃に古道具商が店を構えたのが起源とされ、調理器具や食器、食品サンプルなど飲食店向けの専門店が集まる。",
+    "address": "東京都台東区松が谷・西浅草",
+    "latitude": 35.71427,
+    "longitude": 139.78889,
+    "officialUrl": "https://www.kappabashi.or.jp/",
+    "areaId": 4,
+    "categories": [
+      "商店街"
+    ],
+    "tags": [
+      "shotengai",
+      "zakka"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 108,
+    "slug": "2k540",
+    "name": "2k540 AKI-OKA ARTISAN",
+    "description": "秋葉原駅と御徒町駅の間の高架下にある、ものづくりをテーマにした商業施設。アトリエや工房を構える店が中心。名前の「2k540」は東京駅から2,540m付近にあることを示すキロ程に由来する。",
+    "address": "東京都台東区上野5-9",
+    "latitude": 35.70358,
+    "longitude": 139.77416,
+    "officialUrl": "https://www.jrtk.jp/2k540/",
+    "areaId": 1,
+    "categories": [
+      "商店街",
+      "街並み"
+    ],
+    "tags": [
+      "zakka",
+      "art"
+    ],
+    "createdAt": "2026-09-27T00:00:00Z",
+    "updatedAt": "2026-09-27T00:00:00Z"
   }
 ]

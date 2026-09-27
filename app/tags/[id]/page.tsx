@@ -4,6 +4,7 @@ import type { Metadata } from "next"
 import { ListLanding } from "components/SeoSections"
 import { getTagById, getAllTagIds, getTagsWithCourseCount } from "lib/tags"
 import { getCoursesByTag } from "lib/courses"
+import { getSpotPagesByTag } from "lib/spots"
 import { tagMetadata, MIN_INDEXABLE_COURSES } from "lib/seo"
 
 export async function generateStaticParams() {
@@ -40,6 +41,11 @@ const TagPage: FC<Props> = async ({ params }) => {
         `${tag.name}をテーマに歩ける東京近辺の散歩コースを集めました。`
       }
       courses={courses}
+      spotLinksTitle={`${tag.name}を楽しめるスポット`}
+      spotLinks={getSpotPagesByTag(tag.slug).map((s) => ({
+        href: `/spots/${s.slug}`,
+        label: s.name,
+      }))}
       otherLinksTitle="ほかのテーマから探す"
       otherLinks={otherTags.map((t) => ({
         href: `/tags/${t.id}`,

@@ -208,3 +208,36 @@ export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
     })),
   }
 }
+
+export function spotMetadata(spot: Spot, area?: Area): Metadata {
+  const areaName = area ? area.name.join("・") : undefined
+  const title = `${spot.name}${areaName ? `（${areaName}）` : ""}｜見どころと散歩コース | ${SITE_NAME}`
+  const description = `${spot.name}を巡る散歩コースと周辺スポット。${spot.description ?? ""}`
+  const url = pageUrl(`/spots/${spot.slug}`)
+  const images = spot.imageUrl ? [spot.imageUrl] : undefined
+  return {
+    title: { absolute: title },
+    description,
+    openGraph: { title, description, type: "article", url, images },
+    twitter: { card: "summary_large_image", title, description, images },
+    alternates: { canonical: url },
+  }
+}
+
+export function spotJsonLd(spot: Spot) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "TouristAttraction",
+    name: spot.name,
+    description: spot.description,
+    url: pageUrl(`/spots/${spot.slug}`),
+    ...(spot.imageUrl && { image: `${BASE_URL}${spot.imageUrl}` }),
+    ...(spot.address && { address: spot.address }),
+    ...(spot.officialUrl && { sameAs: spot.officialUrl }),
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: spot.latitude,
+      longitude: spot.longitude,
+    },
+  }
+}
