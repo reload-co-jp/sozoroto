@@ -122,6 +122,15 @@ const SpotDetailPage: FC<Props> = async ({ params }) => {
             />
           </div>
         )}
+        {spot.imageCredit && (
+          <p style={{ marginTop: 6, fontSize: 12, color: colors.gray600, textAlign: "right" }}>
+            写真:{" "}
+            <a href={spot.imageCredit.sourceUrl} target="_blank" rel="noopener noreferrer">
+              {spot.imageCredit.author}
+            </a>{" "}
+            / {spot.imageCredit.license}
+          </p>
+        )}
 
         <section style={{ marginTop: 32 }}>
           <SectionTitle>概要</SectionTitle>

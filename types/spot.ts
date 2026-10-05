@@ -27,6 +27,8 @@ export type Spot = {
   latitude: number
   longitude: number
   imageUrl?: string
+  // CC BY 等の表示義務を満たすための画像出典
+  imageCredit?: { author: string; license: string; sourceUrl: string }
   officialUrl?: string
   areaId?: number
   categories: SpotCategory[]
