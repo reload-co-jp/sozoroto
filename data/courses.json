@@ -6879,7 +6879,13 @@
         ]
       ]
     },
-    "routeFetchedAt": "2026-09-17T11:59:00.374Z"
+    "routeFetchedAt": "2026-09-17T11:59:00.374Z",
+    "mainImageUrl": "/images/spots/spot-56.jpg",
+    "imageCredit": {
+      "author": "Junya Ogura from Tokyo, Japan",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:My%C5%8Djin-Otokozaka,_Kanda_My%C5%8Djin_-_2-16_Sotokanda,_2014-01-04_16.11.34_(by_Junya_Ogura).jpg"
+    }
   },
   {
     "id": 11,
@@ -7679,7 +7685,13 @@
         ]
       ]
     },
-    "routeFetchedAt": "2026-09-27T05:38:38.153Z"
+    "routeFetchedAt": "2026-09-27T05:38:38.153Z",
+    "mainImageUrl": "/images/spots/spot-62.jpg",
+    "imageCredit": {
+      "author": "Suikotei",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kanonji_Tuijibei_02.jpg"
+    }
   },
   {
     "id": 12,
@@ -8314,7 +8326,13 @@
         ]
       ]
     },
-    "routeFetchedAt": "2026-09-27T05:38:39.941Z"
+    "routeFetchedAt": "2026-09-27T05:38:39.941Z",
+    "mainImageUrl": "/images/spots/spot-64.jpg",
+    "imageCredit": {
+      "author": "Wiiii",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nezu_Shrine_2010.jpg"
+    }
   },
   {
     "id": 13,
@@ -8866,7 +8884,13 @@
         ]
       ]
     },
-    "routeFetchedAt": "2026-09-27T05:38:41.728Z"
+    "routeFetchedAt": "2026-09-27T05:38:41.728Z",
+    "mainImageUrl": "/images/spots/spot-75.jpg",
+    "imageCredit": {
+      "author": "Chris 73",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Imperial_Palace_Tokyo_Nijubashi_Bridge.JPG"
+    }
   },
   {
     "id": 14,
@@ -9240,7 +9264,13 @@
         ]
       ]
     },
-    "routeFetchedAt": "2026-09-27T05:38:43.515Z"
+    "routeFetchedAt": "2026-09-27T05:38:43.515Z",
+    "mainImageUrl": "/images/spots/spot-79.jpg",
+    "imageCredit": {
+      "author": "Brian Yang",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Ichigokan_Museum_(2023).jpg"
+    }
   },
   {
     "id": 15,
@@ -10322,7 +10352,13 @@
         ]
       ]
     },
-    "routeFetchedAt": "2026-09-27T05:38:45.697Z"
+    "routeFetchedAt": "2026-09-27T05:38:45.697Z",
+    "mainImageUrl": "/images/spots/spot-83.jpg",
+    "imageCredit": {
+      "author": "Nesnad",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Umaya_bridge_-_2021_7_31_various.jpeg"
+    }
   },
   {
     "id": 16,
@@ -11116,7 +11152,13 @@
         ]
       ]
     },
-    "routeFetchedAt": "2026-09-27T05:38:47.729Z"
+    "routeFetchedAt": "2026-09-27T05:38:47.729Z",
+    "mainImageUrl": "/images/spots/spot-86.jpg",
+    "imageCredit": {
+      "author": "Steve Cadman",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ryogoku_Great_Sumo_Hall.jpg"
+    }
   },
   {
     "id": 17,
@@ -12086,7 +12128,13 @@
         ]
       ]
     },
-    "routeFetchedAt": "2026-09-27T05:38:49.792Z"
+    "routeFetchedAt": "2026-09-27T05:38:49.792Z",
+    "mainImageUrl": "/images/spots/spot-95.jpg",
+    "imageCredit": {
+      "author": "Morio",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tomioka_Hachiman-gu_2008_August.jpg"
+    }
   },
   {
     "id": 18,
@@ -12736,7 +12784,13 @@
         ]
       ]
     },
-    "routeFetchedAt": "2026-09-27T05:38:51.647Z"
+    "routeFetchedAt": "2026-09-27T05:38:51.647Z",
+    "mainImageUrl": "/images/spots/spot-37.jpg",
+    "imageCredit": {
+      "author": "DXR",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Holy_Resurrection_Cathedral,_Tokyo,_North_view_20190422_1.jpg"
+    }
   },
   {
     "id": 19,
@@ -13472,7 +13526,13 @@
         ]
       ]
     },
-    "routeFetchedAt": "2026-09-27T05:38:53.719Z"
+    "routeFetchedAt": "2026-09-27T05:38:53.719Z",
+    "mainImageUrl": "/images/spots/spot-43.jpg",
+    "imageCredit": {
+      "author": "不明",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bank_of_Japan_headquarters_in_Tokyo,_Japan.jpg"
+    }
   },
   {
     "id": 20,
@@ -14352,7 +14412,13 @@
         ]
       ]
     },
-    "routeFetchedAt": "2026-09-27T05:38:55.539Z"
+    "routeFetchedAt": "2026-09-27T05:38:55.539Z",
+    "mainImageUrl": "/images/spots/spot-98.jpg",
+    "imageCredit": {
+      "author": "Tak1701d",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kabuki-za_Theatre_2013_1125.jpg"
+    }
   },
   {
     "id": 21,
@@ -15078,7 +15144,13 @@
         ]
       ]
     },
-    "routeFetchedAt": "2026-09-27T05:38:57.327Z"
+    "routeFetchedAt": "2026-09-27T05:38:57.327Z",
+    "mainImageUrl": "/images/spots/spot-101.jpg",
+    "imageCredit": {
+      "author": "jmho",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsukuda_ohashi.jpg"
+    }
   },
   {
     "id": 22,
@@ -16099,7 +16171,13 @@
         ]
       ]
     },
-    "routeFetchedAt": "2026-09-27T05:38:59.422Z"
+    "routeFetchedAt": "2026-09-27T05:38:59.422Z",
+    "mainImageUrl": "/images/spots/spot-107.jpg",
+    "imageCredit": {
+      "author": "Basile Morin",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kappabashi-dori_streetcorner_(Kitchen_town_-_southern_end)_a_sunny_morning_in_Tokyo_Japan.jpg"
+    }
   },
   {
     "id": 23,
@@ -16760,6 +16838,12 @@
         ]
       ]
     },
-    "routeFetchedAt": "2026-09-27T05:39:01.210Z"
+    "routeFetchedAt": "2026-09-27T05:39:01.210Z",
+    "mainImageUrl": "/images/spots/spot-108.jpg",
+    "imageCredit": {
+      "author": "ひでわく (hidewaku) from Kanagawa, Japan",
+      "license": "CC BY-SA 2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2k540_AKI-OKA_ARTISAN_(2014-02-07_14.29_by_hidewaku_@Photozou_190013736).jpg"
+    }
   }
 ]

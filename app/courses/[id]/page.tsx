@@ -19,6 +19,7 @@ import { getAllTags } from "lib/tags"
 import { getCourseSpots, hasSpotPage } from "lib/spots"
 import { courseMetadata, courseJsonLd } from "lib/seo"
 import Breadcrumb from "components/Breadcrumb"
+import ImageCredit from "components/ImageCredit"
 import { Faq, LinkList, SectionTitle } from "components/SeoSections"
 import { colors, radius, shadow } from "lib/tokens"
 import SpotListItem from "components/SpotListItem"
@@ -198,6 +199,10 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
               </div>
             )}
           </div>
+          <ImageCredit
+            credit={course.imageCredit}
+            style={{ margin: "6px 12px 0" }}
+          />
 
           <div style={{ padding: "32px 32px 40px" }}>
             {area && (

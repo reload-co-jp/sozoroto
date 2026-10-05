@@ -98,6 +98,7 @@ export const resourceSchemas: ResourceSchema[] = [
       { key: "tags", label: "タグ（カンマ区切り、slug）", type: "list" },
       { key: "recommendedTimeOfDay", label: "おすすめ時間帯（カンマ区切り）", type: "list" },
       { key: "mainImageUrl", label: "メイン画像", type: "image" },
+      { key: "imageCredit", label: "画像クレジット（author, license, sourceUrl）", type: "json" },
       { key: "imageUrls", label: "画像一覧", type: "imageList" },
       { key: "areaId", label: "エリアID（編集不可）", type: "readonly" },
       { key: "startPointId", label: "開始スポットID（編集不可）", type: "readonly" },

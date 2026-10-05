@@ -17,6 +17,9 @@ export const SPOT_CATEGORIES = [
 ] as const
 export type SpotCategory = (typeof SPOT_CATEGORIES)[number]
 
+// CC BY 等の表示義務を満たすための画像出典
+export type ImageCredit = { author: string; license: string; sourceUrl: string }
+
 // 所属コースは course_spots から引く（lib/spots.ts getCoursesBySpot）
 export type Spot = {
   id: number
@@ -27,8 +30,7 @@ export type Spot = {
   latitude: number
   longitude: number
   imageUrl?: string
-  // CC BY 等の表示義務を満たすための画像出典
-  imageCredit?: { author: string; license: string; sourceUrl: string }
+  imageCredit?: ImageCredit
   officialUrl?: string
   areaId?: number
   categories: SpotCategory[]

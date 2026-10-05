@@ -1,4 +1,5 @@
 import type { LineString } from "geojson"
+import type { ImageCredit } from "./spot"
 
 export type Difficulty = "very_easy" | "easy" | "normal" | "hard"
 export type CourseStatus = "draft" | "published" | "archived"
@@ -19,6 +20,7 @@ export type Course = {
   routeGeoJson: LineString
   routeFetchedAt?: string
   mainImageUrl?: string
+  imageCredit?: ImageCredit
   imageUrls: string[]
   recommendedTimeOfDay: string[]
   cautionNotes?: string
