@@ -1,18 +1,18 @@
 export const colors = {
-  primary: "#3d7a5f",
-  primaryLight: "#4e9a77",
-  primaryDark: "#2d5a45",
-  surface: "#faf9f6",
-  surface2: "#f3f1ec",
+  primary: "#65745B",
+  primaryLight: "#7d8b72",
+  primaryDark: "#4e5a46",
+  surface: "#F7F5EF",
+  surface2: "#EEEBE2",
   white: "#ffffff",
-  gray900: "#111827",
-  gray700: "#374151",
-  gray600: "#4B5563",
-  gray500: "#6B7280",
-  gray400: "#9CA3AF",
-  gray300: "#D1D5DB",
-  gray200: "#E5E7EB",
-  gray100: "#F3F4F6",
+  gray900: "#302F2A",
+  gray700: "#4a4842",
+  gray600: "#5f5c54",
+  gray500: "#78746b",
+  gray400: "#a39f95",
+  gray300: "#d3cfc4",
+  gray200: "#e3dfd5",
+  gray100: "#ece9e1",
   yellow50: "#fefce8",
   yellow200: "#fef08a",
   yellow700: "#a16207",
@@ -26,20 +26,22 @@ export const colors = {
 }
 
 export const radius = {
-  sm: 8,
-  md: 12,
-  lg: 16,
-  xl: 20,
+  sm: 2,
+  md: 4,
+  lg: 6,
+  xl: 6,
   full: 9999,
 }
 
 export const shadow = {
-  sm: "0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04)",
-  md: "0 4px 12px rgba(0,0,0,0.10), 0 2px 4px rgba(0,0,0,0.06)",
+  sm: "0 1px 2px rgba(48,47,42,0.06)",
+  md: "0 4px 12px rgba(48,47,42,0.08)",
 }
 
 export const font = {
-  family: '"M PLUS U", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif',
+  serif: '"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif',
+  family:
+    '"M PLUS U", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif',
 }
 
 export const transition = {

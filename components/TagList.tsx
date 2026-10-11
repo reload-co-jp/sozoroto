@@ -16,12 +16,12 @@ const TagItem: FC<TagItemProps> = ({ tag }) => {
       {...hoverProps}
       style={{
         display: "inline-block",
-        border: `1px solid ${colors.primary}`,
+        border: `1px solid ${hovered ? colors.primary : colors.gray300}`,
         borderRadius: radius.full,
         padding: "6px 14px",
         fontSize: 14,
-        color: hovered ? colors.white : colors.primary,
-        background: hovered ? colors.primary : "transparent",
+        color: hovered ? colors.white : colors.gray700,
+        background: hovered ? colors.primary : colors.white,
         transition: transition.default,
       }}
     >

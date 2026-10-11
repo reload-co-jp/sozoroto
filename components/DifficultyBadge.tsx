@@ -9,11 +9,12 @@ const labels: Record<Difficulty, string> = {
   hard: "しっかり歩く",
 }
 
+// 落ち着いた配色に合わせ、色ではなく濃淡で強度を示す
 const badgeColors: Record<Difficulty, { bg: string; text: string }> = {
-  very_easy: { bg: colors.green100, text: colors.green700 },
-  easy: { bg: colors.lime100, text: colors.lime700 },
-  normal: { bg: "#fef9c3", text: "#854d0e" },
-  hard: { bg: colors.orange100, text: colors.orange700 },
+  very_easy: { bg: colors.surface2, text: colors.gray700 },
+  easy: { bg: colors.surface2, text: colors.gray700 },
+  normal: { bg: "#e4e7dc", text: colors.primaryDark },
+  hard: { bg: "#ece0d2", text: "#7a5232" },
 }
 
 type Props = { difficulty: Difficulty }
@@ -26,10 +27,11 @@ const DifficultyBadge: FC<Props> = ({ difficulty }) => {
         display: "inline-block",
         background: bg,
         color: text,
-        borderRadius: 9999,
-        padding: "2px 10px",
+        borderRadius: 2,
+        padding: "1px 8px",
         fontSize: 12,
         fontWeight: 500,
+        lineHeight: 1.6,
       }}
     >
       {labels[difficulty]}
