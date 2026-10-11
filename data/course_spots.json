@@ -1288,5 +1288,174 @@
     "title": "ゴール：上野公園",
     "description": "上野駅の公園口側へ上がり、博物館や美術館が集まる文化の森でゴール。",
     "stayMinutes": 20
+  },
+  {
+    "id": 157,
+    "courseId": 24,
+    "spotId": 109,
+    "order": 1,
+    "title": "出発：西日暮里駅",
+    "description": "駅を出て道灌山通りを西へ。道灌山の下には、藍染川の水を流す暗渠が通された。"
+  },
+  {
+    "id": 158,
+    "courseId": 24,
+    "spotId": 63,
+    "order": 2,
+    "stayMinutes": 10,
+    "description": "谷中銀座の突き当たりから南へ。藍染川を暗渠にした上にできた商店街で、千駄木と谷中の境をなぞるように続く。"
+  },
+  {
+    "id": 159,
+    "courseId": 24,
+    "spotId": 110,
+    "order": 3,
+    "stayMinutes": 10,
+    "description": "よみせ通りの南端から、細かく曲がりくねる路地へ。川の流れのままに蛇行する道筋が暗渠の名残。"
+  },
+  {
+    "id": 160,
+    "courseId": 24,
+    "spotId": 111,
+    "order": 4,
+    "description": "へび道を抜けて根津へ。藍染川にちなむ名の通りを不忍通りに向かって歩く。"
+  },
+  {
+    "id": 161,
+    "courseId": 24,
+    "spotId": 112,
+    "order": 5,
+    "title": "ゴール：不忍池",
+    "stayMinutes": 15,
+    "description": "藍染川が注いでいた池。池畔を歩き、中島の弁天堂に立ち寄ってゴール。"
+  },
+  {
+    "id": 162,
+    "courseId": 25,
+    "spotId": 113,
+    "order": 1,
+    "title": "出発：亀戸駅",
+    "description": "南口を出て明治通りを南へ。都電は駅前で直角に曲がり、砂町方面へ向かっていた。"
+  },
+  {
+    "id": 163,
+    "courseId": 25,
+    "spotId": 114,
+    "order": 2,
+    "stayMinutes": 10,
+    "description": "入口付近が水神森停留場の跡。竪川を越える地点には、撤去された都電の橋を思わせるレールの装飾がある。"
+  },
+  {
+    "id": 164,
+    "courseId": 25,
+    "spotId": 115,
+    "order": 3,
+    "stayMinutes": 10,
+    "description": "竪川通停留場の跡から南へ、まっすぐ延びる緑道を歩く。新大橋通りの手前に大島三丁目停留場があった。"
+  },
+  {
+    "id": 165,
+    "courseId": 25,
+    "spotId": 116,
+    "order": 4,
+    "stayMinutes": 15,
+    "description": "明治通りの歩道を南へ進み、大きくカーブする緑道へ。都電のパンタグラフや車輪をモチーフにしたモニュメントを探しながら歩く。"
+  },
+  {
+    "id": 166,
+    "courseId": 25,
+    "spotId": 117,
+    "order": 5,
+    "title": "ゴール：南砂町駅",
+    "description": "緑道を抜けて東西線の南砂町駅へ。"
+  },
+  {
+    "id": 167,
+    "courseId": 26,
+    "spotId": 118,
+    "order": 1,
+    "title": "出発：新宿駅 東口",
+    "description": "東口から靖国通り方面へ北上する。"
+  },
+  {
+    "id": 168,
+    "courseId": 26,
+    "spotId": 119,
+    "order": 2,
+    "stayMinutes": 10,
+    "description": "靖国通りの新宿区役所前から斜めにのびる石畳の遊歩道。都電13系統の引込線の跡を北東へ歩く。"
+  },
+  {
+    "id": 169,
+    "courseId": 26,
+    "spotId": 120,
+    "order": 3,
+    "stayMinutes": 10,
+    "description": "四季の路のすぐ脇に広がる飲み屋街。細い路地に小さな店が並ぶ。"
+  },
+  {
+    "id": 170,
+    "courseId": 26,
+    "spotId": 121,
+    "order": 4,
+    "stayMinutes": 15,
+    "description": "ゴールデン街の裏手から境内へ。新宿の総鎮守に参拝する。"
+  },
+  {
+    "id": 171,
+    "courseId": 26,
+    "spotId": 122,
+    "order": 5,
+    "title": "ゴール：新宿三丁目駅",
+    "description": "明治通りを南へ歩き、新宿三丁目駅へ。"
+  },
+  {
+    "id": 172,
+    "courseId": 27,
+    "spotId": 4,
+    "order": 1,
+    "title": "出発：御茶ノ水駅",
+    "description": "聖橋口を出て聖橋へ。「檸檬」は聖橋とお茶の水橋の間にあった喫茶店で作られたというエピソードも残る。"
+  },
+  {
+    "id": 173,
+    "courseId": 27,
+    "spotId": 5,
+    "order": 2,
+    "stayMinutes": 10,
+    "description": "「檸檬」でレモンが放られる橋。湯島聖堂とニコライ堂の2つの聖堂を結ぶことから名付けられた。橋の上から神田川と、その谷を行き交う電車を見下ろす。"
+  },
+  {
+    "id": 174,
+    "courseId": 27,
+    "spotId": 6,
+    "order": 3,
+    "stayMinutes": 20,
+    "description": "「檸檬」の冒頭に登場する聖堂。歌のふたりが腰かけた石段を探しながら境内を歩く。"
+  },
+  {
+    "id": 175,
+    "courseId": 27,
+    "spotId": 123,
+    "order": 4,
+    "stayMinutes": 10,
+    "description": "本郷の台地を北へ歩き、東京大学の脇から坂を下る。年老いた母を想う「無縁坂」の舞台。"
+  },
+  {
+    "id": 176,
+    "courseId": 27,
+    "spotId": 124,
+    "order": 5,
+    "stayMinutes": 30,
+    "description": "無縁坂に沿って広がる旧岩崎邸庭園。洋館の見学に立ち寄るのもよい。"
+  },
+  {
+    "id": 177,
+    "courseId": 27,
+    "spotId": 112,
+    "order": 6,
+    "title": "ゴール：不忍池",
+    "stayMinutes": 10,
+    "description": "坂を下りきった先に広がる池。池畔を歩いてゴール。"
   }
 ]

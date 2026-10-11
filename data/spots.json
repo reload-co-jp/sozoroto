@@ -2558,5 +2558,373 @@
       "license": "CC BY-SA 2.5",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:2k540_AKI-OKA_ARTISAN_(2014-02-07_14.29_by_hidewaku_@Photozou_190013736).jpg"
     }
+  },
+  {
+    "id": 109,
+    "slug": "nishi-nippori-station",
+    "name": "西日暮里駅",
+    "description": "JR山手線・京浜東北線、東京メトロ千代田線、日暮里・舎人ライナーが乗り入れる駅。1918年、谷田川（藍染川）の水を道灌山の下に暗渠で通し、この付近から京成本線沿いに町屋方面へ流す藍染川排水路が造られた。",
+    "address": "東京都荒川区西日暮里5丁目",
+    "latitude": 35.7322,
+    "longitude": 139.76667,
+    "officialUrl": null,
+    "areaId": 9,
+    "categories": [],
+    "tags": [
+      "ankyo"
+    ],
+    "createdAt": "2026-10-12T00:00:00Z",
+    "updatedAt": "2026-10-12T00:00:00Z",
+    "imageUrl": "/images/spots/spot-109.jpg",
+    "imageCredit": {
+      "author": "yooko_u",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:JR%E8%A5%BF%E6%97%A5%E6%9A%AE%E9%87%8C%E9%A7%85_(5792811253).jpg"
+    }
+  },
+  {
+    "id": 110,
+    "slug": "hebimichi",
+    "name": "へび道",
+    "description": "谷中と千駄木の境を流れていた藍染川の暗渠道。細かく蛇行していることから「へび道」と呼ばれる。",
+    "address": "東京都台東区谷中2丁目",
+    "latitude": 35.723,
+    "longitude": 139.7638,
+    "officialUrl": null,
+    "areaId": 9,
+    "categories": [
+      "街並み"
+    ],
+    "tags": [
+      "ankyo",
+      "roji"
+    ],
+    "createdAt": "2026-10-12T00:00:00Z",
+    "updatedAt": "2026-10-12T00:00:00Z"
+  },
+  {
+    "id": 111,
+    "slug": "aizome-odori",
+    "name": "藍染大通り",
+    "description": "根津2丁目を東西に走る通り。かつてこの一帯を流れた藍染川にちなむ名を持つ。",
+    "address": "東京都文京区根津2丁目",
+    "latitude": 35.7204,
+    "longitude": 139.76375,
+    "officialUrl": null,
+    "areaId": 9,
+    "categories": [
+      "街並み"
+    ],
+    "tags": [
+      "ankyo"
+    ],
+    "createdAt": "2026-10-12T00:00:00Z",
+    "updatedAt": "2026-10-12T00:00:00Z"
+  },
+  {
+    "id": 112,
+    "slug": "shinobazu-pond",
+    "name": "不忍池",
+    "description": "上野恩賜公園の南西にある池。中島に弁天堂が建つ。藍染川（谷田川）はかつてこの池に注いでいた。明治初期までは池の北側が現在よりかなり広かった。",
+    "address": "東京都台東区上野公園",
+    "latitude": 35.71188,
+    "longitude": 139.77086,
+    "officialUrl": null,
+    "areaId": 3,
+    "categories": [
+      "公園"
+    ],
+    "tags": [
+      "ankyo",
+      "park"
+    ],
+    "createdAt": "2026-10-12T00:00:00Z",
+    "updatedAt": "2026-10-12T00:00:00Z",
+    "imageUrl": "/images/spots/spot-112.jpg",
+    "imageCredit": {
+      "author": "Basile Morin",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pink_swanboat_hosting_a_real_bird_on_its_head,_on_Shinobazu_Pond,_Ueno_Park,_Tokyo.jpg"
+    }
+  },
+  {
+    "id": 113,
+    "slug": "kameido-station",
+    "name": "亀戸駅",
+    "description": "JR総武線と東武亀戸線が乗り入れる駅。かつて錦糸堀から京葉道路を走ってきた都電は、亀戸駅前で直角に曲がって砂町方面へ向かった。",
+    "address": "東京都江東区亀戸5丁目",
+    "latitude": 35.69733,
+    "longitude": 139.8267,
+    "officialUrl": null,
+    "areaId": 16,
+    "categories": [],
+    "tags": [
+      "haisen"
+    ],
+    "createdAt": "2026-10-12T00:00:00Z",
+    "updatedAt": "2026-10-12T00:00:00Z",
+    "imageUrl": "/images/spots/spot-113.jpg",
+    "imageCredit": {
+      "author": "小田原 (Odawara)",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tobu_Kameido_Station_ticket_barriers_20160730.jpg"
+    }
+  },
+  {
+    "id": 114,
+    "slug": "kameido-ryokudo-park",
+    "name": "亀戸緑道公園",
+    "description": "都電砂町線の軌道跡を利用した緑道。入口付近には水神森停留場があった。竪川を渡っていた都電の橋は2011年に撤去され、その場所にはレールをかたどった装飾がある。",
+    "address": "東京都江東区亀戸",
+    "latitude": 35.6956,
+    "longitude": 139.82832,
+    "officialUrl": null,
+    "areaId": 16,
+    "categories": [
+      "公園"
+    ],
+    "tags": [
+      "haisen",
+      "park"
+    ],
+    "createdAt": "2026-10-12T00:00:00Z",
+    "updatedAt": "2026-10-12T00:00:00Z"
+  },
+  {
+    "id": 115,
+    "slug": "ojima-ryokudo-park",
+    "name": "大島緑道公園",
+    "description": "亀戸緑道公園から南へ続く、都電砂町線の軌道跡を利用した緑道。入口付近に竪川通停留場、新大橋通りの手前に大島三丁目停留場があった。",
+    "address": "東京都江東区大島",
+    "latitude": 35.68782,
+    "longitude": 139.82694,
+    "officialUrl": null,
+    "areaId": 16,
+    "categories": [
+      "公園"
+    ],
+    "tags": [
+      "haisen",
+      "park"
+    ],
+    "createdAt": "2026-10-12T00:00:00Z",
+    "updatedAt": "2026-10-12T00:00:00Z",
+    "imageUrl": "/images/spots/spot-115.jpg",
+    "imageCredit": {
+      "author": "オランウータン at Japanese Wikipedia",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:OjimaRyokudo.jpg"
+    }
+  },
+  {
+    "id": 116,
+    "slug": "minamisuna-ryokudo-park",
+    "name": "南砂緑道公園",
+    "description": "都電砂町線の専用軌道跡を利用した緑道。大きくカーブしながら続き、春は桜並木になる。都電のパンタグラフや車輪とレールをモチーフにしたモニュメントが置かれている。",
+    "address": "東京都江東区南砂2丁目",
+    "latitude": 35.67179,
+    "longitude": 139.82098,
+    "officialUrl": null,
+    "areaId": 16,
+    "categories": [
+      "公園"
+    ],
+    "tags": [
+      "haisen",
+      "park"
+    ],
+    "createdAt": "2026-10-12T00:00:00Z",
+    "updatedAt": "2026-10-12T00:00:00Z"
+  },
+  {
+    "id": 117,
+    "slug": "minami-sunamachi-station",
+    "name": "南砂町駅",
+    "description": "東京メトロ東西線の駅。",
+    "address": "東京都江東区南砂3丁目",
+    "latitude": 35.66834,
+    "longitude": 139.83186,
+    "officialUrl": null,
+    "areaId": 16,
+    "categories": [],
+    "tags": [],
+    "createdAt": "2026-10-12T00:00:00Z",
+    "updatedAt": "2026-10-12T00:00:00Z",
+    "imageUrl": "/images/spots/spot-117.jpg",
+    "imageCredit": {
+      "author": "Kansai-good",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minami-sunamachi-station-Exit3.jpg"
+    }
+  },
+  {
+    "id": 118,
+    "slug": "shinjuku-station-east",
+    "name": "新宿駅 東口",
+    "description": "JR新宿駅の東口。駅前広場から新宿通り・靖国通り方面へ出られる。",
+    "address": "東京都新宿区新宿3丁目",
+    "latitude": 35.6913,
+    "longitude": 139.7006,
+    "officialUrl": null,
+    "areaId": 17,
+    "categories": [],
+    "tags": [],
+    "createdAt": "2026-10-12T00:00:00Z",
+    "updatedAt": "2026-10-12T00:00:00Z",
+    "imageUrl": "/images/spots/spot-118.jpg",
+    "imageCredit": {
+      "author": "KΛNΛTΛ",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%96%B0%E5%AE%BF%E9%A7%85%E6%9D%B1%E5%8F%A3(%E9%99%8D%E8%BB%8A)_-_panoramio.jpg"
+    }
+  },
+  {
+    "id": 119,
+    "slug": "shiki-no-michi",
+    "name": "四季の路",
+    "description": "正式名は新宿遊歩道公園。1970年に廃止された都電13系統の、大久保車庫へ向かう引込線の専用軌道敷を利用して1974年に開園した。全長約260mの石畳の遊歩道。",
+    "address": "東京都新宿区歌舞伎町1丁目",
+    "latitude": 35.69375,
+    "longitude": 139.70405,
+    "officialUrl": "https://www.city.shinjuku.lg.jp/seikatsu/midori01_001003.html",
+    "areaId": 17,
+    "categories": [
+      "公園"
+    ],
+    "tags": [
+      "haisen",
+      "park"
+    ],
+    "createdAt": "2026-10-12T00:00:00Z",
+    "updatedAt": "2026-10-12T00:00:00Z",
+    "imageUrl": "/images/spots/spot-119.jpg",
+    "imageCredit": {
+      "author": "User:Kentin",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shiki_no_michi_kabukicho_shinjuku_tokyo_2009.JPG"
+    }
+  },
+  {
+    "id": 120,
+    "slug": "shinjuku-golden-gai",
+    "name": "新宿ゴールデン街",
+    "description": "小さな飲み屋が軒を連ねる一角。新宿駅東側にあった闇市の店舗が、1949年の闇市撤廃の指示を受けて三光町（現在の歌舞伎町1丁目周辺）に移転したのが始まり。",
+    "address": "東京都新宿区歌舞伎町1丁目",
+    "latitude": 35.69399,
+    "longitude": 139.7047,
+    "officialUrl": "http://goldengai.jp/",
+    "areaId": 17,
+    "categories": [
+      "街並み"
+    ],
+    "tags": [
+      "retro",
+      "roji"
+    ],
+    "createdAt": "2026-10-12T00:00:00Z",
+    "updatedAt": "2026-10-12T00:00:00Z",
+    "imageUrl": "/images/spots/spot-120.jpg",
+    "imageCredit": {
+      "author": "ガタステノ",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shinjuku_Golden_Gai_Theater.jpg"
+    }
+  },
+  {
+    "id": 121,
+    "slug": "hanazono-shrine",
+    "name": "花園神社",
+    "description": "江戸時代に内藤新宿が開かれて以来、新宿の総鎮守として祀られてきた神社。境内では劇団の公演などの催しも開かれる。",
+    "address": "東京都新宿区新宿5丁目",
+    "latitude": 35.69331,
+    "longitude": 139.70576,
+    "officialUrl": null,
+    "areaId": 17,
+    "categories": [
+      "神社"
+    ],
+    "tags": [
+      "jinja"
+    ],
+    "createdAt": "2026-10-12T00:00:00Z",
+    "updatedAt": "2026-10-12T00:00:00Z",
+    "imageUrl": "/images/spots/spot-121.jpg",
+    "imageCredit": {
+      "author": "Carbonium",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hanazono_Shrine(Flower-garden_Shrine)_-_%E8%8A%B1%E5%9C%92%E7%A5%9E%E7%A4%BE_-_panoramio.jpg"
+    }
+  },
+  {
+    "id": 122,
+    "slug": "shinjuku-sanchome-station",
+    "name": "新宿三丁目駅",
+    "description": "東京メトロ丸ノ内線・副都心線、都営新宿線が乗り入れる駅。",
+    "address": "東京都新宿区新宿3丁目",
+    "latitude": 35.69142,
+    "longitude": 139.70716,
+    "officialUrl": null,
+    "areaId": 17,
+    "categories": [],
+    "tags": [],
+    "createdAt": "2026-10-12T00:00:00Z",
+    "updatedAt": "2026-10-12T00:00:00Z",
+    "imageUrl": "/images/spots/spot-122.jpg",
+    "imageCredit": {
+      "author": "Rsa",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toei_Shinjuku-sanchome_Station_Platform_20121101.jpg"
+    }
+  },
+  {
+    "id": 123,
+    "slug": "muenzaka",
+    "name": "無縁坂",
+    "description": "不忍池のほとりから旧岩崎邸庭園に沿って登り、東京大学に突き当たる坂。グレープ（さだまさし）の楽曲「無縁坂」の舞台で、森鷗外の小説『雁』にも登場する。",
+    "address": "東京都文京区湯島4丁目",
+    "latitude": 35.71037,
+    "longitude": 139.76735,
+    "officialUrl": null,
+    "areaId": 3,
+    "categories": [
+      "街並み"
+    ],
+    "tags": [
+      "sakamichi"
+    ],
+    "createdAt": "2026-10-12T00:00:00Z",
+    "updatedAt": "2026-10-12T00:00:00Z",
+    "imageUrl": "/images/spots/spot-123.jpg",
+    "imageCredit": {
+      "author": "Jkr2255",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Muenzaka_from_Yushima.jpg"
+    }
+  },
+  {
+    "id": 124,
+    "slug": "kyu-iwasaki-tei-garden",
+    "name": "旧岩崎邸庭園",
+    "description": "三菱財閥岩崎家の茅町本邸だった建物と庭園を整備した都立庭園。園内の歴史的建造物は国の重要文化財。",
+    "address": "東京都台東区池之端1丁目",
+    "latitude": 35.70962,
+    "longitude": 139.7676,
+    "officialUrl": null,
+    "areaId": 3,
+    "categories": [
+      "庭園"
+    ],
+    "tags": [
+      "kenchiku",
+      "teien"
+    ],
+    "createdAt": "2026-10-12T00:00:00Z",
+    "updatedAt": "2026-10-12T00:00:00Z",
+    "imageUrl": "/images/spots/spot-124.jpg",
+    "imageCredit": {
+      "author": "pcs34560",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%97%A7%E5%B2%A9%E5%B4%8E%E9%82%B8%E5%BA%AD%E5%9C%92_Pcs34560_IMG3027.jpg"
+    }
   }
 ]

@@ -206,5 +206,21 @@
     "description": "市場や商店街で食べ歩きを楽しめるコース",
     "createdAt": "2026-09-27T00:00:00Z",
     "updatedAt": "2026-09-27T00:00:00Z"
+  },
+  {
+    "id": 27,
+    "slug": "ankyo",
+    "name": "暗渠",
+    "description": "暗渠になったかつての川の跡をたどるコース",
+    "createdAt": "2026-10-12T00:00:00Z",
+    "updatedAt": "2026-10-12T00:00:00Z"
+  },
+  {
+    "id": 28,
+    "slug": "haisen",
+    "name": "廃線跡",
+    "description": "鉄道や路面電車の線路跡をたどるコース",
+    "createdAt": "2026-10-12T00:00:00Z",
+    "updatedAt": "2026-10-12T00:00:00Z"
   }
 ]
