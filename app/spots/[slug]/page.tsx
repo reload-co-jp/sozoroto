@@ -5,6 +5,7 @@ import type { Metadata } from "next"
 import TagList from "components/TagList"
 import Breadcrumb from "components/Breadcrumb"
 import ImageCredit from "components/ImageCredit"
+import AdUnit from "components/AdUnit"
 import { CourseGrid, LinkList, SectionTitle } from "components/SeoSections"
 import {
   getSpotBySlug,
@@ -164,6 +165,8 @@ const SpotDetailPage: FC<Props> = async ({ params }) => {
             営業時間・料金・休館日は公式サイト等で最新情報をご確認ください。
           </p>
         </section>
+
+        <AdUnit unit="inArticle" style={{ marginTop: 40 }} />
 
         {highlights.length > 0 && (
           <section style={{ marginTop: 40 }}>

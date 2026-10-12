@@ -5,6 +5,7 @@ import type { Metadata } from "next"
 import DifficultyBadge from "components/DifficultyBadge"
 import TagList from "components/TagList"
 import CourseMapWrapper from "components/CourseMapWrapper"
+import AdUnit from "components/AdUnit"
 import {
   getCourseById,
   getAllCourseIds,
@@ -315,6 +316,8 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
                     </ul>
                   </div>
                 )}
+
+                <AdUnit unit="inArticle" style={{ marginTop: 32 }} />
 
                 {courseSpots.length > 0 && (
                   <div style={{ marginTop: 32 }}>

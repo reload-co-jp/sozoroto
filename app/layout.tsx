@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import Script from "next/script"
+import AdUnit from "components/AdUnit"
 import "./reset.css"
 import "./globals.css"
 import { rootMetadata, websiteJsonLd, organizationJsonLd } from "lib/seo"
@@ -35,6 +36,11 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
             <Script id="ga-init" strategy="afterInteractive">
               {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-051Z05W041');`}
             </Script>
+            <script
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542845006087970"
+              crossOrigin="anonymous"
+            />
           </>
         )}
       </head>
@@ -105,6 +111,12 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         </header>
 
         <main style={{ flex: 1 }}>{children}</main>
+
+        <AdUnit
+          unit="display"
+          className="container"
+          style={{ marginTop: 48, marginBottom: 48 }}
+        />
 
         <footer
           style={{
