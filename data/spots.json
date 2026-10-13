@@ -2926,5 +2926,255 @@
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%97%A7%E5%B2%A9%E5%B4%8E%E9%82%B8%E5%BA%AD%E5%9C%92_Pcs34560_IMG3027.jpg"
     }
+  },
+  {
+    "id": 125,
+    "slug": "matsuchiyama-shoden",
+    "name": "待乳山聖天",
+    "description": "浅草寺の子院・本龍院の通称。隅田川べりの標高約10mの小高い丘（待乳山）に建ち、江戸時代には周囲を見渡せる名所として文人墨客が訪れた。元和6年（1621年）に日本堤が築かれた際、この山を崩した土が使われたと伝わる。",
+    "address": "東京都台東区浅草7-4-1",
+    "latitude": 35.71736,
+    "longitude": 139.80297,
+    "officialUrl": null,
+    "areaId": 4,
+    "categories": [
+      "寺",
+      "歴史"
+    ],
+    "tags": [
+      "tera",
+      "rekishi"
+    ],
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T00:00:00Z",
+    "imageUrl": "/images/spots/spot-125.jpg",
+    "imageCredit": {
+      "author": "珈琲牛乳",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%BE%85%E4%B9%B3%E5%B1%B1%E8%81%96%E5%A4%A9_-_panoramio.jpg"
+    }
+  },
+  {
+    "id": 126,
+    "slug": "sanyabori-park",
+    "name": "山谷堀公園",
+    "description": "江戸初期に隅田川の氾濫を防ぐため三ノ輪から今戸まで造られた水路・山谷堀の跡。新吉原へ猪牙舟が通う水上路として賑わったが、1975年までに埋め立てられ、隅田川までの約700mが公園になった。今戸橋・聖天橋など、かつての橋の親柱が残る。",
+    "address": "東京都台東区",
+    "latitude": 35.72294,
+    "longitude": 139.799,
+    "officialUrl": null,
+    "areaId": 4,
+    "categories": [
+      "公園",
+      "歴史"
+    ],
+    "tags": [
+      "park",
+      "ankyo",
+      "rekishi"
+    ],
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T00:00:00Z",
+    "imageUrl": "/images/spots/spot-126.jpg",
+    "imageCredit": {
+      "author": "Tak1701d",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:San%27ya-bori_Park_201702b.jpg"
+    }
+  },
+  {
+    "id": 127,
+    "slug": "sakurabashi",
+    "name": "桜橋",
+    "description": "台東区と墨田区の姉妹提携事業として1985年に完成した、隅田川唯一の歩行者専用橋。平面がX字形をした珍しい橋で、両岸の隅田公園を結ぶ。",
+    "address": "東京都台東区・墨田区",
+    "latitude": 35.7175,
+    "longitude": 139.80667,
+    "officialUrl": null,
+    "areaId": 4,
+    "categories": [
+      "橋",
+      "川・水辺"
+    ],
+    "tags": [
+      "hashi",
+      "kawazoi"
+    ],
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T00:00:00Z",
+    "imageUrl": "/images/spots/spot-127.jpg",
+    "imageCredit": {
+      "author": "Basile Morin",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:X-shaped_pedestrian_Sakura_bridge_over_Sumida_river,_linking_Tait%C5%8D_and_Sumida_wards,_view_from_Tokyo_Skytree,_Japan.jpg"
+    }
+  },
+  {
+    "id": 128,
+    "slug": "chomeiji",
+    "name": "長命寺",
+    "description": "向島の墨堤沿いにある天台宗の寺院。三代将軍家光が鷹狩の途中に体調を崩し、境内の井戸水で回復したことから寺号を与えられたと伝わる。門前では享保2年（1717年）に山本新六が桜もちを売り始め、「長命寺桜もち」の名で知られる。境内に松尾芭蕉の句碑がある。",
+    "address": "東京都墨田区向島5-4-4",
+    "latitude": 35.71783,
+    "longitude": 139.80906,
+    "officialUrl": null,
+    "areaId": 4,
+    "categories": [
+      "寺",
+      "歴史"
+    ],
+    "tags": [
+      "tera",
+      "rekishi",
+      "shinise"
+    ],
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T00:00:00Z",
+    "imageUrl": "/images/spots/spot-128.jpg",
+    "imageCredit": {
+      "author": "Kamemaru2000",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yamamotoya_chomeiji_sakuramochi_mukojima.JPG"
+    }
+  },
+  {
+    "id": 129,
+    "slug": "sekiguchi-basho-an",
+    "name": "関口芭蕉庵",
+    "description": "松尾芭蕉が延宝5年（1677年）から延宝8年（1680年）にかけて神田上水の工事に携わり、付近の現場小屋か水番屋に住んだと伝わる地。のちに芭蕉を慕う人々が「竜隠庵」を建てたのが始まりとされ、大正15年（1926年）に東京府の史跡に指定された。建物は戦災などで焼失し、現在のものは戦後の復元。",
+    "address": "東京都文京区関口2-11-3",
+    "latitude": 35.71231,
+    "longitude": 139.7235,
+    "officialUrl": null,
+    "areaId": 2,
+    "categories": [
+      "歴史",
+      "庭園"
+    ],
+    "tags": [
+      "shiseki",
+      "rekishi",
+      "teien"
+    ],
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T00:00:00Z",
+    "imageUrl": "/images/spots/spot-129.jpg",
+    "imageCredit": {
+      "author": "User:Kentin",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sekiguchi_basyoan_bunkyo_tokyo_2009.JPG"
+    }
+  },
+  {
+    "id": 130,
+    "slug": "edogawa-park-oarai-zeki",
+    "name": "江戸川公園（関口大洗堰跡）",
+    "description": "神田川沿いの細長い公園。付近にはかつて神田上水の取水堰「関口大洗堰」があり、水を上水と余水に分けていた。堰は昭和12年（1937年）の河川改修で取り壊され、跡に大滝橋が架けられた。公園には堰の石柱の一部が保存されている。関口という地名はこの堰に由来するという。",
+    "address": "東京都文京区関口",
+    "latitude": 35.71068,
+    "longitude": 139.72678,
+    "officialUrl": null,
+    "areaId": 2,
+    "categories": [
+      "公園",
+      "川・水辺",
+      "歴史"
+    ],
+    "tags": [
+      "park",
+      "kawazoi",
+      "shiseki"
+    ],
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T00:00:00Z",
+    "imageUrl": "/images/spots/spot-130.jpg",
+    "imageCredit": {
+      "author": "User:Kentin",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edogawa_park_entrance_bunkyo_tokyo.JPG"
+    }
+  },
+  {
+    "id": 131,
+    "slug": "koishikawa-korakuen",
+    "name": "小石川後楽園",
+    "description": "江戸時代初期に水戸徳川家の江戸上屋敷内につくられた大名庭園。国の特別史跡・特別名勝。屋敷に引き込まれた神田上水は、邸内の飲料水や生活用水、庭園の池水に使われた。",
+    "address": "東京都文京区後楽1丁目",
+    "latitude": 35.70511,
+    "longitude": 139.74989,
+    "officialUrl": null,
+    "areaId": 2,
+    "categories": [
+      "庭園",
+      "歴史"
+    ],
+    "tags": [
+      "teien",
+      "shiseki",
+      "rekishi"
+    ],
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T00:00:00Z",
+    "imageUrl": "/images/spots/spot-131.jpg",
+    "imageCredit": {
+      "author": "Guilhem Vellut from Annecy, France",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Winter_@_Koishikawa_Korakuen_Garden_(12152370736).jpg"
+    }
+  },
+  {
+    "id": 132,
+    "slug": "suidobashi-bridge",
+    "name": "水道橋",
+    "description": "白山通りが神田川を渡る橋。橋名は、すぐ下流に神田上水の懸樋（水道の橋）が架かり、上水が神田川を越えていたことに由来する。現在の橋は昭和63年（1988年）の架け替え。",
+    "address": "東京都文京区・千代田区",
+    "latitude": 35.70206,
+    "longitude": 139.75531,
+    "officialUrl": null,
+    "areaId": 2,
+    "categories": [
+      "橋",
+      "川・水辺"
+    ],
+    "tags": [
+      "hashi",
+      "kawazoi"
+    ],
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T00:00:00Z",
+    "imageUrl": "/images/spots/spot-132.jpg",
+    "imageCredit": {
+      "author": "Kamemaru2000",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Suidobashi_bridge_tokyo_2009.JPG"
+    }
+  },
+  {
+    "id": 133,
+    "slug": "tokyo-waterworks-historical-museum",
+    "name": "東京都水道歴史館",
+    "description": "東京都水道局が1995年に開館した水道の歴史を紹介する施設。江戸の上水で使われた木樋などを展示する。裏手の本郷給水所公苑には、1987年に本郷で発掘された神田上水の石樋の一部が移築・復元されている。",
+    "address": "東京都文京区本郷",
+    "latitude": 35.70333,
+    "longitude": 139.76044,
+    "officialUrl": null,
+    "areaId": 2,
+    "categories": [
+      "博物館",
+      "歴史"
+    ],
+    "tags": [
+      "museum",
+      "rekishi",
+      "shiseki"
+    ],
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T00:00:00Z",
+    "imageUrl": "/images/spots/spot-133.jpg",
+    "imageCredit": {
+      "author": "Syced",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B0%B4%E9%81%93%E6%AD%B4%E5%8F%B2%E9%A4%A8.jpg"
+    }
   }
 ]

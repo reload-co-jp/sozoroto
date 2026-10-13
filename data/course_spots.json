@@ -1457,5 +1457,96 @@
     "title": "ゴール：不忍池",
     "stayMinutes": 10,
     "description": "坂を下りきった先に広がる池。池畔を歩いてゴール。"
+  },
+  {
+    "id": 178,
+    "courseId": 28,
+    "spotId": 29,
+    "order": 1,
+    "title": "出発：吾妻橋",
+    "description": "浅草駅すぐの吾妻橋からスタート。橋の上から両岸の堤防を眺め、隅田公園へ。"
+  },
+  {
+    "id": 179,
+    "courseId": 28,
+    "spotId": 82,
+    "order": 2,
+    "stayMinutes": 15,
+    "description": "川沿いの遊歩道を北へ。足元の親水テラスと、その背後に立つ垂直な防潮堤（通称カミソリ堤防）を見比べたい。"
+  },
+  {
+    "id": 180,
+    "courseId": 28,
+    "spotId": 126,
+    "order": 3,
+    "stayMinutes": 20,
+    "description": "土手通りに面した公園の北端から、山谷堀の跡を隅田川へ向かって歩く。土手通りが江戸初期に築かれた日本堤の名残。"
+  },
+  {
+    "id": 181,
+    "courseId": 28,
+    "spotId": 125,
+    "order": 4,
+    "stayMinutes": 15,
+    "description": "日本堤の土を供給したと伝わる丘に登り参拝。かつての今戸橋のたもとから隅田川へ戻る。"
+  },
+  {
+    "id": 182,
+    "courseId": 28,
+    "spotId": 127,
+    "order": 5,
+    "stayMinutes": 10,
+    "description": "X字形の歩行者専用橋で対岸の向島へ。橋の上から両岸の桜並木と堤防を見渡せる。"
+  },
+  {
+    "id": 183,
+    "courseId": 28,
+    "spotId": 128,
+    "order": 6,
+    "title": "ゴール：長命寺",
+    "stayMinutes": 15,
+    "description": "墨堤通り沿いの寺に参拝してゴール。門前の桜もちでひと休み。"
+  },
+  {
+    "id": 184,
+    "courseId": 29,
+    "spotId": 129,
+    "order": 1,
+    "title": "出発：関口芭蕉庵",
+    "stayMinutes": 15,
+    "description": "胸突坂の下、芭蕉が神田上水の工事に関わった縁の地からスタート。"
+  },
+  {
+    "id": 185,
+    "courseId": 29,
+    "spotId": 130,
+    "order": 2,
+    "stayMinutes": 15,
+    "description": "大滝橋のあたりがかつての大洗堰。公園内に残る堰の石柱を探しながら、神田川沿いを下流へ。"
+  },
+  {
+    "id": 186,
+    "courseId": 29,
+    "spotId": 131,
+    "order": 3,
+    "stayMinutes": 40,
+    "description": "上水が引き込まれた水戸藩上屋敷の庭園。大泉水を巡り、江戸の水の行き先を想像したい。"
+  },
+  {
+    "id": 187,
+    "courseId": 29,
+    "spotId": 132,
+    "order": 4,
+    "stayMinutes": 10,
+    "description": "橋の上から下流を眺める。この先に上水を通す懸樋が神田川をまたいでいた。"
+  },
+  {
+    "id": 188,
+    "courseId": 29,
+    "spotId": 133,
+    "order": 5,
+    "title": "ゴール：東京都水道歴史館",
+    "stayMinutes": 40,
+    "description": "江戸の上水の展示を見学し、裏手の本郷給水所公苑で神田上水の石樋を見てゴール。"
   }
 ]

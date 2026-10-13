@@ -43,6 +43,8 @@ const SEARCH_QUERIES = {
   "akihabara-udx-tashiro-dori": "Akihabara UDX",
   "akihabara-udx-monitor": "Akihabara UDX building",
   "shimo-goinden-bridge": "Shimogoinden",
+  "edogawa-park-oarai-zeki": "Edogawa Park Bunkyo",
+  "suidobashi-bridge": "Suidobashi bridge tokyo 2009",
 }
 
 const HEADERS = { "User-Agent": "sozoroto-bot/1.0 (yamamoto@reload.co.jp)" }
