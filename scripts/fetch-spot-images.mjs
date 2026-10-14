@@ -45,6 +45,10 @@ const SEARCH_QUERIES = {
   "shimo-goinden-bridge": "Shimogoinden",
   "edogawa-park-oarai-zeki": "Edogawa Park Bunkyo",
   "suidobashi-bridge": "Suidobashi bridge tokyo 2009",
+  "shimbashi-station": "Shimbashi Station brick viaduct",
+  "hibiya-okuroji": "Hibiya OKUROJI",
+  "yurakucho-station": "Yurakucho Station brick viaduct",
+  "maach-ecute-kanda-manseibashi": "mAAch ecute Kanda Manseibashi",
 }
 
 const HEADERS = { "User-Agent": "sozoroto-bot/1.0 (yamamoto@reload.co.jp)" }

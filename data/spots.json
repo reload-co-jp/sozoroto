@@ -3176,5 +3176,112 @@
       "license": "CC0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B0%B4%E9%81%93%E6%AD%B4%E5%8F%B2%E9%A4%A8.jpg"
     }
+  },
+  {
+    "id": 134,
+    "slug": "shimbashi-station",
+    "name": "新橋駅",
+    "description": "明治42年（1909年）、烏森駅として開業し、大正3年（1914年）に現在の駅名となった。駅の北東で山手線などを支える新永間市街線高架橋は明治43年（1910年）に建てられた煉瓦アーチ橋で、土木学会選奨土木遺産に選定されている。",
+    "address": "東京都港区新橋2丁目",
+    "latitude": 35.66639,
+    "longitude": 139.75806,
+    "officialUrl": null,
+    "areaId": 14,
+    "categories": [
+      "歴史"
+    ],
+    "tags": [
+      "rekishi"
+    ],
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T00:00:00Z",
+    "imageUrl": "/images/spots/spot-134.jpg",
+    "imageCredit": {
+      "author": "まも(Mamo)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shimbashi-Station-East-exit.JPG"
+    }
+  },
+  {
+    "id": 135,
+    "slug": "hibiya-okuroji",
+    "name": "日比谷OKUROJI",
+    "description": "有楽町〜新橋間の明治期の煉瓦アーチ高架下に、2020年9月に開業した商業施設。長さ約300mの通路沿いに、アーチの中を店舗とした飲食店やバーが並ぶ。",
+    "address": "東京都千代田区内幸町1丁目",
+    "latitude": 35.6704,
+    "longitude": 139.7598,
+    "officialUrl": null,
+    "areaId": 14,
+    "categories": [
+      "グルメ",
+      "歴史"
+    ],
+    "tags": [
+      "gourmet",
+      "rekishi",
+      "kenchiku"
+    ],
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T00:00:00Z",
+    "imageUrl": "/images/spots/spot-135.jpg",
+    "imageCredit": {
+      "author": "電車(新幹線)でゴー！",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:HIBIYA_OKUROJI_04.jpg"
+    }
+  },
+  {
+    "id": 136,
+    "slug": "yurakucho-station",
+    "name": "有楽町駅",
+    "description": "明治43年（1910年）6月、烏森（現・新橋）〜有楽町間の高架線とともに開業。同年9月には呉服橋駅まで線路が延び、のちの東京駅へつながった。",
+    "address": "東京都千代田区有楽町2丁目",
+    "latitude": 35.67507,
+    "longitude": 139.76333,
+    "officialUrl": null,
+    "areaId": 12,
+    "categories": [
+      "歴史"
+    ],
+    "tags": [
+      "rekishi"
+    ],
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T00:00:00Z",
+    "imageUrl": "/images/spots/spot-136.jpg",
+    "imageCredit": {
+      "author": "白石 准 (1934405) from Kanagawa, Japan",
+      "license": "CC BY-SA 2.1 jp",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yurakucho_Station_viaduct%27s_bricks_and_circular_decorations_(%E6%9C%89%E6%A5%BD%E7%94%BA%E9%A7%85%E9%AB%98%E6%9E%B6%E3%81%AE%E7%85%89%E7%93%A6%E3%81%A8%E5%86%86%E5%BD%A2%E3%81%AE%E8%A3%85%E9%A3%BE)_(2014-06-17_15.03_by_Jun_Shiraishi_@photozou_206020712).jpg"
+    }
+  },
+  {
+    "id": 137,
+    "slug": "maach-ecute-kanda-manseibashi",
+    "name": "マーチエキュート神田万世橋",
+    "description": "明治45年（1912年）に開業した中央線のターミナル・万世橋駅の跡。辰野金吾設計の赤煉瓦駅舎は関東大震災で被災し、駅は1943年に休止。煉瓦アーチ高架橋の内部や旧ホームを活かし、2013年に商業施設として開業した。",
+    "address": "東京都千代田区神田須田町1丁目",
+    "latitude": 35.69755,
+    "longitude": 139.77002,
+    "officialUrl": "https://www.ecute.jp/maach",
+    "areaId": 1,
+    "categories": [
+      "建築",
+      "歴史"
+    ],
+    "tags": [
+      "kenchiku",
+      "rekishi",
+      "retro",
+      "cafe"
+    ],
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T00:00:00Z",
+    "imageUrl": "/images/spots/spot-137.jpg",
+    "imageCredit": {
+      "author": "掬茶",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MAAch_ecute_Kanda-Manseibashi_riverside_deck_20130721-1.jpg"
+    }
   }
 ]
