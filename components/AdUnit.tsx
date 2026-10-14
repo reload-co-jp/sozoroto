@@ -1,6 +1,6 @@
 "use client"
 
-import { FC, useEffect } from "react"
+import { FC, useEffect, useRef } from "react"
 
 declare global {
   interface Window {
@@ -27,9 +27,21 @@ const AdUnit: FC<{
   style?: React.CSSProperties
   className?: string
 }> = ({ unit, style, className }) => {
+  const ref = useRef<HTMLModElement>(null)
+
   useEffect(() => {
-    if (process.env.NODE_ENV !== "production") return
-    ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+    const el = ref.current
+    if (process.env.NODE_ENV !== "production" || !el) return
+    // 幅0でpushすると "No slot size for availableWidth=0" → 幅確定まで待つ
+    const push = () => {
+      if (el.offsetWidth === 0 || el.dataset.adsbygoogleStatus) return false
+      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+      return true
+    }
+    if (push()) return
+    const ro = new ResizeObserver(() => push() && ro.disconnect())
+    ro.observe(el)
+    return () => ro.disconnect()
   }, [])
 
   if (process.env.NODE_ENV !== "production") return null
@@ -37,6 +49,7 @@ const AdUnit: FC<{
   return (
     <div className={className} style={style}>
       <ins
+        ref={ref}
         className="adsbygoogle"
         style={{
           display: "block",
