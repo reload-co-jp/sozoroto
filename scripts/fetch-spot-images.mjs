@@ -51,6 +51,8 @@ const SEARCH_QUERIES = {
   "maach-ecute-kanda-manseibashi": "mAAch ecute Kanda Manseibashi",
   "tokyo-radio-department": "Tokyo Radio Department Akihabara",
   "akihabara-radio-center": "Akihabara Radio Center",
+  "asakusa-hoppy-dori": "Hoppy Street Asakusa",
+  "asakusa-hisago-dori": "Hisagodori-1",
 }
 
 const HEADERS = { "User-Agent": "sozoroto-bot/1.0 (yamamoto@reload.co.jp)" }

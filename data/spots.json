@@ -3340,5 +3340,80 @@
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Akihabara_Radio_Center_-00.jpg"
     }
+  },
+  {
+    "id": 140,
+    "slug": "asakusa-hoppy-dori",
+    "name": "ホッピー通り（公園本通り）",
+    "description": "浅草寺の西側、伝法院通りから北へ延びる横丁。正式には公園本通り商店街といい、軒先にテントを張り出した屋外席でモツ煮込みやモツ焼き、ホッピーを出す大衆酒場が20軒ほど並ぶ。昭和40年代はまだ衣類を売る店が多かったが、平成に入って煮込みとホッピーの店が増え、いつしか「ホッピー通り」「煮込み通り」と呼ばれるようになった。",
+    "address": "東京都台東区浅草2丁目",
+    "latitude": 35.7134,
+    "longitude": 139.7936,
+    "officialUrl": null,
+    "areaId": 4,
+    "categories": [
+      "グルメ",
+      "商店街"
+    ],
+    "tags": [
+      "gourmet",
+      "retro",
+      "shotengai"
+    ],
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T00:00:00Z",
+    "imageUrl": "/images/spots/spot-140.jpg",
+    "imageCredit": {
+      "author": "Kentin",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Koenhondori_shopping_street_asakusa_2014.jpg"
+    }
+  },
+  {
+    "id": 141,
+    "slug": "asakusa-hisago-dori",
+    "name": "ひさご通り",
+    "description": "浅草六区から言問通りへ抜けるアーケード商店街。老舗の飲食店や雑貨店が並び、通りを抜けて言問通りを渡ると千束通り商店街へ続く。",
+    "address": "東京都台東区浅草2丁目",
+    "latitude": 35.7155,
+    "longitude": 139.7928,
+    "officialUrl": null,
+    "areaId": 4,
+    "categories": [
+      "商店街"
+    ],
+    "tags": [
+      "shotengai",
+      "retro"
+    ],
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T00:00:00Z",
+    "imageUrl": "/images/spots/spot-141.jpg",
+    "imageCredit": {
+      "author": "江戸村のとくぞう",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hisagodori-1.jpg"
+    }
+  },
+  {
+    "id": 142,
+    "slug": "asakusa-kenban",
+    "name": "浅草見番",
+    "description": "浅草寺裏の花街「観音裏」で芸者衆の取次ぎや稽古を担う東京浅草組合の見番。浅草の花街は明治末期に浅草寺の裏側へ移り、大正期には芸妓1000人以上を数えた。戦後も料亭や置屋とともに再開し、今も芸者衆が三社祭や「浅草おどり」に出る。周辺には料亭の名残を伝える建物や、小さな酒場、ビストロが点在する。",
+    "address": "東京都台東区浅草3丁目33-5",
+    "latitude": 35.71747,
+    "longitude": 139.79662,
+    "officialUrl": null,
+    "areaId": 4,
+    "categories": [
+      "歴史"
+    ],
+    "tags": [
+      "rekishi",
+      "roji",
+      "gourmet"
+    ],
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T00:00:00Z"
   }
 ]
