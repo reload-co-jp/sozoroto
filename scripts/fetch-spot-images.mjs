@@ -49,6 +49,8 @@ const SEARCH_QUERIES = {
   "hibiya-okuroji": "Hibiya OKUROJI",
   "yurakucho-station": "Yurakucho Station brick viaduct",
   "maach-ecute-kanda-manseibashi": "mAAch ecute Kanda Manseibashi",
+  "tokyo-radio-department": "Tokyo Radio Department Akihabara",
+  "akihabara-radio-center": "Akihabara Radio Center",
 }
 
 const HEADERS = { "User-Agent": "sozoroto-bot/1.0 (yamamoto@reload.co.jp)" }

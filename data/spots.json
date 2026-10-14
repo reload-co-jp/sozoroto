@@ -3283,5 +3283,62 @@
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:MAAch_ecute_Kanda-Manseibashi_riverside_deck_20130721-1.jpg"
     }
+  },
+  {
+    "id": 138,
+    "slug": "tokyo-radio-department",
+    "name": "東京ラジオデパート",
+    "description": "1950年開業の電子部品の専門店ビル。戦後、神田小川町〜須田町界隈の露店でラジオ部品を売っていた電器商が、GHQの指示による露店整理で行き場を失い、その移転先として設けられた共同店舗の一つ。現在のビルは1972年に完成した。",
+    "address": "東京都千代田区外神田1丁目10-11",
+    "latitude": 35.69873,
+    "longitude": 139.77087,
+    "officialUrl": "http://www.tokyoradiodepart.co.jp/",
+    "areaId": 1,
+    "categories": [
+      "歴史",
+      "商店街"
+    ],
+    "tags": [
+      "denkigai",
+      "rekishi",
+      "retro"
+    ],
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T00:00:00Z",
+    "imageUrl": "/images/spots/spot-138.jpg",
+    "imageCredit": {
+      "author": "Brandon Daniel from Sunnyvale, CA, USA",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Radio_Department_Store,_Akihabara,_Oct_2005.jpg"
+    }
+  },
+  {
+    "id": 139,
+    "slug": "akihabara-radio-center",
+    "name": "秋葉原ラジオセンター",
+    "description": "秋葉原駅の総武線ガード下にある、電子部品の小売店が集まる商業施設。神田須田町界隈の闇市で真空管やラジオ部品を売っていた露天商が、GHQの露店撤廃令を受けてガード下へ移ったのが始まりで、秋葉原電気街の源流とされる。",
+    "address": "東京都千代田区外神田1丁目14",
+    "latitude": 35.69848,
+    "longitude": 139.77166,
+    "officialUrl": null,
+    "areaId": 1,
+    "categories": [
+      "歴史",
+      "商店街"
+    ],
+    "tags": [
+      "denkigai",
+      "rekishi",
+      "koukashita",
+      "retro"
+    ],
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T00:00:00Z",
+    "imageUrl": "/images/spots/spot-139.jpg",
+    "imageCredit": {
+      "author": "Aimaimyi",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Akihabara_Radio_Center_-00.jpg"
+    }
   }
 ]
