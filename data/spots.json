@@ -3415,5 +3415,83 @@
     ],
     "createdAt": "2026-10-14T00:00:00Z",
     "updatedAt": "2026-10-14T00:00:00Z"
+  },
+  {
+    "id": 143,
+    "slug": "tokyo-riverside-distillery",
+    "name": "東京リバーサイド蒸溜所",
+    "description": "エシカル・スピリッツが運営する蔵前の蒸留所。日本酒造りで出る酒粕など、副産物を原料にクラフトジンを造る。1階がオフィシャルストア、2階がバー＆ダイニング。",
+    "address": "東京都台東区蔵前3-9-3",
+    "latitude": 35.704697,
+    "longitude": 139.790588,
+    "officialUrl": "https://ethicalspirits.jp/",
+    "areaId": 10,
+    "categories": [
+      "グルメ"
+    ],
+    "tags": [
+      "gourmet"
+    ],
+    "createdAt": "2026-10-15T00:00:00Z",
+    "updatedAt": "2026-10-15T00:00:00Z"
+  },
+  {
+    "id": 144,
+    "slug": "konohana-brewery",
+    "name": "木花之醸造所",
+    "description": "2020年に駒形で誕生したどぶろく醸造所。米と米麹のどぶろくや、フルーツを使った酒を醸す。併設のバル「ALL(W)RIGHT -sake place-」で造りたてを飲める。",
+    "address": "東京都台東区駒形2-5-5 小宮ビルB1",
+    "latitude": 35.706699,
+    "longitude": 139.794861,
+    "officialUrl": null,
+    "areaId": 10,
+    "categories": [
+      "グルメ"
+    ],
+    "tags": [
+      "gourmet"
+    ],
+    "createdAt": "2026-10-15T00:00:00Z",
+    "updatedAt": "2026-10-15T00:00:00Z"
+  },
+  {
+    "id": 145,
+    "slug": "romeo-brewery",
+    "name": "Romeo Brewery",
+    "description": "2024年1月に押上で開業したブルーパブ。10本のタップはすべて自家醸造で、梅のゴーゼやハーブを使ったセゾンなどを出す。料理はハーブを使ったイタリアン。月曜・火曜定休。",
+    "address": "東京都墨田区押上2-12-3 1F",
+    "latitude": 35.712353,
+    "longitude": 139.811905,
+    "officialUrl": null,
+    "areaId": 4,
+    "categories": [
+      "グルメ"
+    ],
+    "tags": [
+      "gourmet",
+      "shimamachi"
+    ],
+    "createdAt": "2026-10-15T00:00:00Z",
+    "updatedAt": "2026-10-15T00:00:00Z"
+  },
+  {
+    "id": 146,
+    "slug": "bathe-yotsume-brewery",
+    "name": "BATHE YOTSUME BREWERY",
+    "description": "黄金湯など銭湯3軒を営む金沢浴場が2023年12月に始めた醸造所。サウナで使うヴィヒタを使った「FOREST」が看板。奥にビアバーを併設。営業は木金18:00〜、土日15:00〜で、月〜水曜は休み。",
+    "address": "東京都墨田区業平4-11-3",
+    "latitude": 35.707977,
+    "longitude": 139.814713,
+    "officialUrl": "https://batheyotsumebrewery.jp/",
+    "areaId": 4,
+    "categories": [
+      "グルメ"
+    ],
+    "tags": [
+      "gourmet",
+      "shimamachi"
+    ],
+    "createdAt": "2026-10-15T00:00:00Z",
+    "updatedAt": "2026-10-15T00:00:00Z"
   }
 ]

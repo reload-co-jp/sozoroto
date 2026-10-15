@@ -1690,5 +1690,55 @@
     "title": "ゴール：浅草寺",
     "stayMinutes": 20,
     "description": "観音裏から南へ戻って浅草寺の境内へ。夜はライトアップされた本堂と五重塔を眺めて、ほろ酔い散歩のしめくくり。"
+  },
+  {
+    "id": 206,
+    "courseId": 33,
+    "spotId": 143,
+    "order": 1,
+    "title": "出発：東京リバーサイド蒸溜所",
+    "stayMinutes": 45,
+    "description": "蔵前駅から歩いてすぐ。1階のストアで酒粕などから造ったジンを選び、2階のバーで一杯目を。"
+  },
+  {
+    "id": 207,
+    "courseId": 33,
+    "spotId": 144,
+    "order": 2,
+    "stayMinutes": 40,
+    "description": "江戸通りを北へ進み、駒形へ。地下の醸造所で造るどぶろくを、併設のバルで味わう。"
+  },
+  {
+    "id": 208,
+    "courseId": 33,
+    "spotId": 42,
+    "order": 3,
+    "stayMinutes": 5,
+    "description": "駒形橋で隅田川を渡る。橋の上からは浅草寺の五重塔と東京スカイツリーが見える。"
+  },
+  {
+    "id": 209,
+    "courseId": 33,
+    "spotId": 11,
+    "order": 4,
+    "stayMinutes": 10,
+    "description": "橋を渡ったら川沿いのテラスへ下り、スカイツリーを眺めながら北へ。吾妻橋のたもとにはアサヒビール本社。1995年にTOKYO隅田川ブルーイングがクラフトビールを造り始めた場所でもある。ここから浅草通りを東へ。"
+  },
+  {
+    "id": 210,
+    "courseId": 33,
+    "spotId": 145,
+    "order": 5,
+    "stayMinutes": 50,
+    "description": "浅草通りを東へ歩き、押上へ。10本のタップがすべて自家醸造のブルーパブで、梅のゴーゼなど個性派のビールを。"
+  },
+  {
+    "id": 211,
+    "courseId": 33,
+    "spotId": 146,
+    "order": 6,
+    "title": "ゴール：BATHE YOTSUME BREWERY",
+    "stayMinutes": 50,
+    "description": "押上から南へ下って業平へ。銭湯を営む金沢浴場の醸造所で、ヴィヒタを使った「FOREST」を飲んでゴール。"
   }
 ]
