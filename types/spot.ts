@@ -32,6 +32,8 @@ export type Spot = {
   imageUrl?: string
   imageCredit?: ImageCredit
   officialUrl?: string
+  // 例: 「湯島駅（東京メトロ）、上野広小路駅（東京メトロ）」
+  access?: string
   areaId?: number
   categories: SpotCategory[]
   // tags.json の slug

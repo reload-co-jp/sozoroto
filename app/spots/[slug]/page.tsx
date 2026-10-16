@@ -145,6 +145,12 @@ const SpotDetailPage: FC<Props> = async ({ params }) => {
                 <dd style={{ display: "inline" }}>{spot.address}</dd>
               </div>
             )}
+            {spot.access && (
+              <div>
+                <dt style={{ display: "inline", fontWeight: 700 }}>最寄り駅：</dt>
+                <dd style={{ display: "inline" }}>{spot.access}</dd>
+              </div>
+            )}
             {spot.officialUrl && (
               <div>
                 <dt style={{ display: "inline", fontWeight: 700 }}>公式サイト：</dt>

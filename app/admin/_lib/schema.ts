@@ -41,6 +41,7 @@ export const resourceSchemas: ResourceSchema[] = [
       { key: "imageUrl", label: "画像", type: "image" },
       { key: "imageCredit", label: "画像クレジット（author, license, sourceUrl）", type: "json" },
       { key: "officialUrl", label: "公式URL", type: "text" },
+      { key: "access", label: "最寄り駅", type: "text" },
       { key: "areaId", label: "エリアID", type: "number" },
       { key: "categories", label: "カテゴリ（カンマ区切り、types/spot.ts SPOT_CATEGORIES）", type: "list" },
       { key: "tags", label: "タグ（カンマ区切り、slug）", type: "list" },
