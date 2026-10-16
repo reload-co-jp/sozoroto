@@ -3493,5 +3493,154 @@
     ],
     "createdAt": "2026-10-15T00:00:00Z",
     "updatedAt": "2026-10-15T00:00:00Z"
+  },
+  {
+    "id": 147,
+    "slug": "saigo-takamori-statue",
+    "name": "西郷隆盛像",
+    "description": "上野公園の南口に立つ「上野の西郷さん」。高村光雲の作で、連れている犬「ツン」は後藤貞行の作。全国の有志の寄付で建てられ、1898年（明治31年）12月18日に除幕された。",
+    "address": "東京都台東区上野公園",
+    "latitude": 35.711857,
+    "longitude": 139.774172,
+    "officialUrl": null,
+    "areaId": 3,
+    "categories": [
+      "歴史"
+    ],
+    "tags": [
+      "rekishi",
+      "shiseki"
+    ],
+    "createdAt": "2026-10-16T00:00:00Z",
+    "updatedAt": "2026-10-16T00:00:00Z"
+  },
+  {
+    "id": 148,
+    "slug": "shogitai-grave",
+    "name": "彰義隊の墓",
+    "description": "1868年（慶応4年5月15日）の上野戦争で新政府軍と戦った彰義隊士を弔う墓。西郷隆盛像の裏手にあり、1881年（明治14年）に据えられた墓石の「戦死之墓」の文字は山岡鉄舟の揮毫。",
+    "address": "東京都台東区上野公園",
+    "latitude": 35.712188,
+    "longitude": 139.77406,
+    "officialUrl": null,
+    "areaId": 3,
+    "categories": [
+      "歴史"
+    ],
+    "tags": [
+      "rekishi",
+      "shiseki"
+    ],
+    "createdAt": "2026-10-16T00:00:00Z",
+    "updatedAt": "2026-10-16T00:00:00Z"
+  },
+  {
+    "id": 149,
+    "slug": "kiyomizu-kannon-do",
+    "name": "清水観音堂",
+    "description": "寛永寺の堂宇のひとつで、1631年（寛永8年）の建築。京都の清水寺本堂と同じ懸造（かけづくり）で、国の重要文化財。もとは摺鉢山にあり、のちに現在地へ移された。千手観音を祀る。",
+    "address": "東京都台東区上野公園1-29",
+    "latitude": 35.712729,
+    "longitude": 139.77353,
+    "officialUrl": null,
+    "areaId": 3,
+    "categories": [
+      "寺",
+      "歴史"
+    ],
+    "tags": [
+      "tera",
+      "rekishi",
+      "shiseki"
+    ],
+    "createdAt": "2026-10-16T00:00:00Z",
+    "updatedAt": "2026-10-16T00:00:00Z"
+  },
+  {
+    "id": 150,
+    "slug": "shinobazu-bentendo",
+    "name": "不忍池弁天堂",
+    "description": "寛永寺を開いた天海が、不忍池を琵琶湖に、中島を竹生島に見立てて弁才天を祀ったお堂。当初は舟で渡る島だった。1945年の東京大空襲で焼け、1958年に鉄筋コンクリート造の八角堂として再建された。",
+    "address": "東京都台東区上野公園2-1",
+    "latitude": 35.71214,
+    "longitude": 139.771154,
+    "officialUrl": null,
+    "areaId": 3,
+    "categories": [
+      "寺",
+      "歴史"
+    ],
+    "tags": [
+      "tera",
+      "rekishi"
+    ],
+    "createdAt": "2026-10-16T00:00:00Z",
+    "updatedAt": "2026-10-16T00:00:00Z"
+  },
+  {
+    "id": 151,
+    "slug": "ueno-daibutsu",
+    "name": "上野大仏",
+    "description": "江戸時代初期に建立された釈迦如来坐像。たびたび火災や地震に遭い、1923年の関東大震災で頭部が落ちた。現在は顔の部分だけが残り、「これ以上落ちない」と合格祈願に訪れる人もいる。隣にはパゴダ様式の祈願塔が建つ。",
+    "address": "東京都台東区上野公園",
+    "latitude": 35.714362,
+    "longitude": 139.772799,
+    "officialUrl": null,
+    "areaId": 3,
+    "categories": [
+      "寺",
+      "歴史"
+    ],
+    "tags": [
+      "tera",
+      "rekishi"
+    ],
+    "createdAt": "2026-10-16T00:00:00Z",
+    "updatedAt": "2026-10-16T00:00:00Z"
+  },
+  {
+    "id": 152,
+    "slug": "kaneiji-hombo-omotemon",
+    "name": "寛永寺旧本坊表門",
+    "description": "通称「黒門」。寛永寺本坊の正門で、上野戦争で本坊が焼けたなか焼け残った。しばらく東京国立博物館の正門として使われたのち、博物館の東の輪王寺に移された。国の重要文化財。",
+    "address": "東京都台東区上野公園14",
+    "latitude": 35.71667,
+    "longitude": 139.77775,
+    "officialUrl": null,
+    "areaId": 3,
+    "categories": [
+      "寺",
+      "歴史"
+    ],
+    "tags": [
+      "tera",
+      "rekishi",
+      "shiseki",
+      "kenchiku"
+    ],
+    "createdAt": "2026-10-16T00:00:00Z",
+    "updatedAt": "2026-10-16T00:00:00Z"
+  },
+  {
+    "id": 153,
+    "slug": "kaneiji-konponchudo",
+    "name": "寛永寺根本中堂",
+    "description": "徳川家の菩提寺・寛永寺の本堂。江戸時代の根本中堂は現在の噴水広場のあたりにあったが、上野戦争で焼失。1879年（明治12年）、子院・大慈院の跡地に川越・喜多院の本地堂を移築して本堂とした。",
+    "address": "東京都台東区上野桜木1-14-11",
+    "latitude": 35.72139,
+    "longitude": 139.774306,
+    "officialUrl": "https://kaneiji.jp/",
+    "areaId": 3,
+    "categories": [
+      "寺",
+      "歴史"
+    ],
+    "tags": [
+      "tera",
+      "rekishi",
+      "shiseki"
+    ],
+    "createdAt": "2026-10-16T00:00:00Z",
+    "updatedAt": "2026-10-16T00:00:00Z"
   }
 ]

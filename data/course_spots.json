@@ -1740,5 +1740,79 @@
     "title": "ゴール：BATHE YOTSUME BREWERY",
     "stayMinutes": 50,
     "description": "押上から南へ下って業平へ。銭湯を営む金沢浴場の醸造所で、ヴィヒタを使った「FOREST」を飲んでゴール。"
+  },
+  {
+    "id": 212,
+    "courseId": 34,
+    "spotId": 21,
+    "order": 1,
+    "title": "出発：上野駅",
+    "stayMinutes": 0,
+    "description": "公園口ではなく不忍口・中央改札側から出て、上野公園の南口（京成上野駅側）の階段を上る。"
+  },
+  {
+    "id": 213,
+    "courseId": 34,
+    "spotId": 147,
+    "order": 2,
+    "stayMinutes": 10,
+    "description": "階段を上りきると西郷さんが立つ。像の建立が始まったのは、1889年の大日本帝国憲法発布の大赦で西郷の「逆徒」の汚名が解かれたのがきっかけ。"
+  },
+  {
+    "id": 214,
+    "courseId": 34,
+    "spotId": 148,
+    "order": 3,
+    "stayMinutes": 10,
+    "description": "西郷像のすぐ裏手。1868年の上野戦争で、寛永寺に立てこもった彰義隊は新政府軍の総攻撃を受けて一日で敗れた。"
+  },
+  {
+    "id": 215,
+    "courseId": 34,
+    "spotId": 149,
+    "order": 4,
+    "stayMinutes": 15,
+    "description": "清水坂を少し進むと懸造の舞台が見えてくる。舞台から不忍池と弁天堂を見下ろせる。"
+  },
+  {
+    "id": 216,
+    "courseId": 34,
+    "spotId": 150,
+    "order": 5,
+    "stayMinutes": 15,
+    "description": "清水観音堂の舞台から見えた弁天堂へ、石段を下りて池を渡る。中島へは江戸時代に石橋が架けられて歩いて渡れるようになった。"
+  },
+  {
+    "id": 217,
+    "courseId": 34,
+    "spotId": 151,
+    "order": 6,
+    "stayMinutes": 10,
+    "description": "池から坂を上り、精養軒の隣の大仏山へ。小高い丘の上に顔だけの大仏がある。"
+  },
+  {
+    "id": 218,
+    "courseId": 34,
+    "spotId": 39,
+    "order": 7,
+    "stayMinutes": 20,
+    "description": "大仏山から北へ歩き東照宮へ。社殿は1651年（慶安4年）の造営で、社殿・唐門・透塀は国の重要文化財。参道からは動物園内に建つ旧寛永寺五重塔も見える。"
+  },
+  {
+    "id": 219,
+    "courseId": 34,
+    "spotId": 152,
+    "order": 8,
+    "stayMinutes": 10,
+    "description": "噴水広場を抜け、東京国立博物館の東側、輪王寺の前へ。かつての寛永寺本坊は今の博物館の敷地にあった。"
+  },
+  {
+    "id": 220,
+    "courseId": 34,
+    "spotId": 153,
+    "order": 9,
+    "title": "ゴール：寛永寺根本中堂",
+    "stayMinutes": 20,
+    "description": "博物館の裏から言問通りを渡り、東京芸大の裏手へ。上野の山の喧騒から離れた静かな境内でゴール。"
   }
 ]
