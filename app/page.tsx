@@ -3,6 +3,7 @@ import Link from "next/link"
 import CourseCard from "components/CourseCard"
 import AreaCard from "components/AreaCard"
 import TagList from "components/TagList"
+import AdUnit from "components/AdUnit"
 import { getAllCourses, getCourseById } from "lib/courses"
 import { getAreasWithCourseCount } from "lib/areas"
 import { getTagsWithCourseCount } from "lib/tags"
@@ -260,6 +261,8 @@ const Page: FC = () => {
           ))}
         </div>
       </Section>
+
+      <AdUnit unit="display" className="container" style={{ marginTop: 80 }} />
 
       <Section>
         <SectionHeader eyebrow="Areas" title="エリアから探す" href="/areas" />

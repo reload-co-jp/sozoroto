@@ -3,6 +3,7 @@ import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 import TagList from "components/TagList"
 import Breadcrumb from "components/Breadcrumb"
+import AdUnit from "components/AdUnit"
 import { CourseGrid, Faq, LinkList, SectionTitle } from "components/SeoSections"
 import { getAreaById, getAllAreaIds, getNearbyAreas } from "lib/areas"
 import { getCoursesByArea } from "lib/courses"
@@ -110,7 +111,10 @@ const AreaDetailPage: FC<Props> = async ({ params }) => {
       {courses.length === 0 ? (
         <p style={{ color: colors.gray500 }}>現在コースを準備中です。</p>
       ) : (
-        <CourseGrid courses={courses} />
+        <>
+          <CourseGrid courses={courses} />
+          <AdUnit unit="inArticle" style={{ marginTop: 40 }} />
+        </>
       )}
 
       {areaSpots.length > 0 && (

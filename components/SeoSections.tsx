@@ -2,6 +2,7 @@ import { FC, ReactNode } from "react"
 import Link from "next/link"
 import type { Course } from "types/course"
 import CourseCard from "components/CourseCard"
+import AdUnit from "components/AdUnit"
 import Breadcrumb from "components/Breadcrumb"
 import { colors, radius } from "lib/tokens"
 
@@ -125,6 +126,7 @@ export const ListLanding: FC<ListLandingProps> = ({
           {courses.length}件
         </p>
         <CourseGrid courses={courses} />
+        <AdUnit unit="inArticle" style={{ marginTop: 40 }} />
       </>
     )}
     {spotLinks.length > 0 && (
