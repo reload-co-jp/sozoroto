@@ -2,15 +2,14 @@ import { FC } from "react"
 import type { Metadata } from "next"
 import AreaCard from "components/AreaCard"
 import { getAreasWithCourseCount } from "lib/areas"
-import { breadcrumbJsonLd } from "lib/seo"
+import { breadcrumbJsonLd, listMetadata } from "lib/seo"
 import { colors } from "lib/tokens"
 
-export const metadata: Metadata = {
-  title: "エリア一覧",
-  description:
-    "東京近辺の散歩エリア一覧。秋葉原・谷中・清澄白河など、街ごとの散歩コースを探す。",
-  alternates: { canonical: "https://sozoroto.reload.co.jp/areas/" },
-}
+export const metadata: Metadata = listMetadata(
+  "/areas",
+  "東京の散歩エリア一覧｜街ごとの散歩コースを探す",
+  "東京近辺の散歩エリア一覧。秋葉原・上野・浅草・谷中・清澄白河など、街ごとの散歩コースと見どころを探せます。"
+)
 
 const AreasPage: FC = () => {
   const areas = getAreasWithCourseCount()
@@ -46,7 +45,7 @@ const AreasPage: FC = () => {
             marginBottom: 8,
           }}
         >
-          エリア一覧
+          散歩エリア一覧
         </h1>
         <p
           style={{
