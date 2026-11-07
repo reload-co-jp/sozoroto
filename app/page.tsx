@@ -7,6 +7,8 @@ import AdUnit from "components/AdUnit"
 import { getAllCourses, getCourseById } from "lib/courses"
 import { getAreasWithCourseCount } from "lib/areas"
 import { getTagsWithCourseCount } from "lib/tags"
+import { getStationPages } from "lib/stations"
+import { LinkList } from "components/SeoSections"
 import type { Course } from "types/course"
 import { colors, font, radius } from "lib/tokens"
 
@@ -271,6 +273,18 @@ const Page: FC = () => {
             <AreaCard key={area.id} area={area} />
           ))}
         </div>
+      </Section>
+
+      <Section>
+        <SectionHeader eyebrow="Stations" title="駅から探す" href="/stations" />
+        <LinkList
+          links={getStationPages()
+            .slice(0, 12)
+            .map((s) => ({
+              href: `/stations/${s.slug}`,
+              label: `${s.name}駅`,
+            }))}
+        />
       </Section>
 
       <Section>

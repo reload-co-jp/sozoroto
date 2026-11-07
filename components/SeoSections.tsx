@@ -95,6 +95,7 @@ type ListLandingProps = {
   spotLinks?: { href: string; label: string }[]
   otherLinksTitle: string
   otherLinks: { href: string; label: string }[]
+  faq?: { q: string; a: string }[]
 }
 
 // テーマ・所要時間・距離別の一覧ランディングページ共通レイアウト
@@ -107,6 +108,7 @@ export const ListLanding: FC<ListLandingProps> = ({
   spotLinks = [],
   otherLinksTitle,
   otherLinks,
+  faq = [],
 }) => (
   <div style={{ maxWidth: 1024, margin: "0 auto", padding: "40px 24px" }}>
     <Breadcrumb items={breadcrumb} />
@@ -141,5 +143,6 @@ export const ListLanding: FC<ListLandingProps> = ({
         <LinkList links={otherLinks} />
       </section>
     )}
+    <Faq items={faq} />
   </div>
 )

@@ -24,6 +24,7 @@ import ImageCredit from "components/ImageCredit"
 import { Faq, LinkList, SectionTitle } from "components/SeoSections"
 import { colors, radius, shadow } from "lib/tokens"
 import SpotListItem from "components/SpotListItem"
+import { getStationPagesByCourse } from "lib/stations"
 
 export async function generateStaticParams() {
   return getAllCourseIds().map((id) => ({ id: String(id) }))
@@ -64,6 +65,7 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
   }))
 
   const relatedCourses = getRelatedCourses(course)
+  const stations = getStationPagesByCourse(course)
   const nearbyAreas = area ? getNearbyAreas(area, 3) : []
   const km = Number((course.distanceMeters / 1000).toFixed(1))
   const durationBand = getDurationPageBands().find((b) =>
@@ -616,6 +618,18 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
                 </Link>
               ))}
             </div>
+          </section>
+        )}
+
+        {stations.length > 0 && (
+          <section style={{ marginTop: 48 }}>
+            <SectionTitle>コース沿いの駅から探す</SectionTitle>
+            <LinkList
+              links={stations.map((s) => ({
+                href: `/stations/${s.slug}`,
+                label: `${s.name}駅から歩ける散歩コース`,
+              }))}
+            />
           </section>
         )}
 

@@ -8,6 +8,7 @@ import {
 import { getAllAreas } from "lib/areas"
 import { getSpotPages } from "lib/spots"
 import { getTagsWithCourseCount } from "lib/tags"
+import { getStationPages } from "lib/stations"
 import { pageUrl, MIN_INDEXABLE_COURSES } from "lib/seo"
 
 export const dynamic = "force-static"
@@ -18,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: pageUrl("/"), changeFrequency: "weekly", priority: 1 },
     { url: pageUrl("/courses"), changeFrequency: "daily", priority: 0.9 },
     { url: pageUrl("/areas"), changeFrequency: "weekly", priority: 0.8 },
+    { url: pageUrl("/stations"), changeFrequency: "weekly", priority: 0.7 },
     { url: pageUrl("/about"), changeFrequency: "monthly", priority: 0.5 },
     ...getAllCourses().map((course) => ({
       url: pageUrl(`/courses/${course.id}`),
@@ -45,6 +47,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "weekly" as const,
         priority: 0.6,
       })),
+    ...getStationPages().map((s) => ({
+      url: pageUrl(`/stations/${s.slug}`),
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+    })),
     ...getDurationPageBands().map((m) => ({
       url: pageUrl(`/duration/${m}`),
       changeFrequency: "weekly" as const,
