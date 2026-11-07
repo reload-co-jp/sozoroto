@@ -5,7 +5,8 @@ import type { Tag } from "types/tag"
 import type { Spot } from "types/spot"
 
 const SITE_NAME = "そぞろっと"
-const SITE_DESCRIPTION = "東京近辺の散歩コースを、そぞろっと探す。"
+const SITE_DESCRIPTION =
+  "東京近辺の散歩コース・街歩きルートを紹介。秋葉原・上野・浅草・谷中・神保町などのコースを、エリア・駅・所要時間・テーマから探せます。路地裏の喫茶店、川沿いの遊歩道、古書店の並ぶ通りを、地図と見どころ付きで。"
 export const BASE_URL = "https://sozoroto.reload.co.jp"
 
 // 検索結果で1〜2件しかない一覧ページは薄いのでnoindex・sitemap除外
@@ -23,7 +24,7 @@ export function rootMetadata(): Metadata {
     metadataBase: new URL(BASE_URL),
     title: {
       template: `%s | ${SITE_NAME}`,
-      default: `${SITE_NAME} — なんとなく、きままな冒険を。`,
+      default: `東京の散歩コース・街歩きルート｜${SITE_NAME} — なんとなく、きままな冒険を。`,
     },
     description: SITE_DESCRIPTION,
     openGraph: {

@@ -16,6 +16,7 @@ import {
   getNearbySpots,
 } from "lib/spots"
 import { getAreaById } from "lib/areas"
+import { getStationPagesBySpot } from "lib/stations"
 import { getAllTags } from "lib/tags"
 import { spotMetadata, spotJsonLd } from "lib/seo"
 import { colors, radius } from "lib/tokens"
@@ -51,6 +52,7 @@ const SpotDetailPage: FC<Props> = async ({ params }) => {
   const highlights = getSpotHighlights(spot.id)
   const nearbySpots = getNearbySpots(spot)
   const spotTags = getAllTags().filter((t) => spot.tags.includes(t.slug))
+  const stations = getStationPagesBySpot(spot)
 
   return (
     <>
@@ -220,16 +222,24 @@ const SpotDetailPage: FC<Props> = async ({ params }) => {
           </section>
         )}
 
-        {(area || spotTags.length > 0) && (
+        {(area || stations.length > 0 || spotTags.length > 0) && (
           <section style={{ marginTop: 48 }}>
-            <SectionTitle>エリア・テーマから探す</SectionTitle>
-            {area && (
+            <SectionTitle>エリア・駅・テーマから探す</SectionTitle>
+            {(area || stations.length > 0) && (
               <LinkList
                 links={[
-                  {
-                    href: `/areas/${area.id}`,
-                    label: `${areaName}の散歩コース`,
-                  },
+                  ...(area
+                    ? [
+                        {
+                          href: `/areas/${area.id}`,
+                          label: `${areaName}の散歩コース`,
+                        },
+                      ]
+                    : []),
+                  ...stations.map((s) => ({
+                    href: `/stations/${s.slug}`,
+                    label: `${s.name}駅から歩ける散歩コース`,
+                  })),
                 ]}
               />
             )}

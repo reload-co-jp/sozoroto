@@ -3822,5 +3822,468 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:T%C5%8Deizan_Kan%27ei-ji_Temple_20211126_10.jpg"
     },
     "access": "鶯谷駅（JR）"
+  },
+  {
+    "id": 154,
+    "slug": "ningyocho-station",
+    "name": "人形町駅",
+    "description": "東京メトロ日比谷線と都営浅草線の人形町駅。人形町通りの地下にあり、甘酒横丁や水天宮へ歩いてすぐ。",
+    "address": "東京都中央区日本橋人形町2丁目",
+    "latitude": 35.686184,
+    "longitude": 139.782416,
+    "imageUrl": "/images/spots/spot-154.jpg",
+    "imageCredit": {
+      "author": "MaedaAkihiko",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toei_Ningyocho-STA_Meijiza-Ningyocho-crossing-East-District-Gate.jpg"
+    },
+    "officialUrl": null,
+    "access": "人形町駅（東京メトロ・都営）",
+    "createdAt": "2026-11-07T00:00:00Z",
+    "updatedAt": "2026-11-07T00:00:00Z",
+    "categories": [],
+    "tags": [],
+    "areaId": 11
+  },
+  {
+    "id": 155,
+    "slug": "matsushima-jinja",
+    "name": "松島神社",
+    "description": "日本橋七福神のひとつで、大国神（大黒様）を祀る神社。マンションの1階に社殿が組み込まれた、都心らしい姿をしている。11月の酉の日には酉の市が開かれる。",
+    "address": "東京都中央区日本橋人形町2-15-2",
+    "latitude": 35.684647,
+    "longitude": 139.78544,
+    "imageUrl": "/images/spots/spot-155.jpg",
+    "imageCredit": {
+      "author": "Higa4",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Matsushima-jinja(Nihonbashi-Ningy%C5%8Dch%C5%8D,_Ch%C5%AB%C5%8D)_01.jpg"
+    },
+    "officialUrl": null,
+    "access": "水天宮前駅（東京メトロ）、人形町駅（東京メトロ・都営）",
+    "createdAt": "2026-11-07T00:00:00Z",
+    "updatedAt": "2026-11-07T00:00:00Z",
+    "categories": [
+      "神社"
+    ],
+    "tags": [
+      "jinja"
+    ],
+    "areaId": 11
+  },
+  {
+    "id": 156,
+    "slug": "suehiro-jinja",
+    "name": "末廣神社",
+    "description": "日本橋七福神のひとつで、毘沙門天を祀る神社。江戸時代の初め、この一帯にあった元吉原の氏神として信仰された。人形町の裏通りに静かに鎮座する。",
+    "address": "東京都中央区日本橋人形町2-25-20",
+    "latitude": 35.686856,
+    "longitude": 139.784052,
+    "imageUrl": "/images/spots/spot-156.jpg",
+    "imageCredit": {
+      "author": "Higa4",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Suehiro-jinja(Nihonbashi-Ningy%C5%8Dch%C5%8D,_Ch%C5%AB%C5%8D)_01.jpg"
+    },
+    "officialUrl": null,
+    "access": "人形町駅（東京メトロ・都営）、浜町駅（都営）",
+    "createdAt": "2026-11-07T00:00:00Z",
+    "updatedAt": "2026-11-07T00:00:00Z",
+    "categories": [
+      "神社",
+      "歴史"
+    ],
+    "tags": [
+      "jinja",
+      "rekishi"
+    ],
+    "areaId": 11
+  },
+  {
+    "id": 157,
+    "slug": "kasama-inari-tokyo",
+    "name": "笠間稲荷神社 東京別社",
+    "description": "茨城県笠間市にある笠間稲荷神社の東京別社。安政6年（1859年）、笠間藩主牧野家の屋敷に分霊されたのが始まり。日本橋七福神では寿老神を祀る。",
+    "address": "東京都中央区日本橋浜町2-11-6",
+    "latitude": 35.688086,
+    "longitude": 139.785311,
+    "officialUrl": null,
+    "access": "浜町駅（都営）、人形町駅（東京メトロ・都営）",
+    "createdAt": "2026-11-07T00:00:00Z",
+    "updatedAt": "2026-11-07T00:00:00Z",
+    "categories": [
+      "神社",
+      "歴史"
+    ],
+    "tags": [
+      "jinja",
+      "rekishi"
+    ],
+    "areaId": 11
+  },
+  {
+    "id": 158,
+    "slug": "chanoki-jinja",
+    "name": "茶ノ木神社",
+    "description": "日本橋七福神のひとつで、布袋尊を祀る小さな神社。佐倉藩主堀田家の屋敷の守り神で、周囲に茶の木が植えられていたことから「お茶ノ木様」と呼ばれた。火伏せの神としても信仰される。",
+    "address": "東京都中央区日本橋人形町1-12-10",
+    "latitude": 35.683928,
+    "longitude": 139.783596,
+    "imageUrl": "/images/spots/spot-158.jpg",
+    "imageCredit": {
+      "author": "SnippyHolloW",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chanoki_Shrine,_Nihonbashi-Ningy%C5%8Dch%C5%8D_-_Jun_18,_2009.jpg"
+    },
+    "officialUrl": null,
+    "access": "人形町駅（東京メトロ・都営）、水天宮前駅（東京メトロ）",
+    "createdAt": "2026-11-07T00:00:00Z",
+    "updatedAt": "2026-11-07T00:00:00Z",
+    "categories": [
+      "神社",
+      "歴史"
+    ],
+    "tags": [
+      "jinja",
+      "rekishi"
+    ],
+    "areaId": 11
+  },
+  {
+    "id": 159,
+    "slug": "koami-jinja",
+    "name": "小網神社",
+    "description": "室町時代の創建と伝わる、強運厄除けで知られる神社。日本橋七福神では福禄寿と弁財天を祀る。1929年に建てられた社殿と神楽殿は戦災を免れ、中央区の文化財になっている。向拝の龍の彫刻も見どころ。",
+    "address": "東京都中央区日本橋小網町16-23",
+    "latitude": 35.684167,
+    "longitude": 139.780448,
+    "imageUrl": "/images/spots/spot-159.jpg",
+    "imageCredit": {
+      "author": "Ken Marshall",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Koami_Shrine,_Nihonbashi-Koamich%C5%8D,_Tokyo_-_Feb_10,_2026.jpg"
+    },
+    "officialUrl": "https://www.koamijinja.or.jp/",
+    "access": "人形町駅（東京メトロ・都営）、水天宮前駅（東京メトロ）",
+    "createdAt": "2026-11-07T00:00:00Z",
+    "updatedAt": "2026-11-07T00:00:00Z",
+    "categories": [
+      "神社",
+      "建築",
+      "歴史"
+    ],
+    "tags": [
+      "jinja",
+      "kenchiku",
+      "rekishi"
+    ],
+    "areaId": 11
+  },
+  {
+    "id": 160,
+    "slug": "sugimori-jinja",
+    "name": "椙森神社",
+    "description": "平安時代の創建と伝わる古社で、「すぎのもり」と読む。江戸時代には富くじ（現在の宝くじ）が行われた神社のひとつで、境内にはその歴史を伝える富塚が建つ。日本橋七福神では恵比寿神を祀る。",
+    "address": "東京都中央区日本橋堀留町1-10-2",
+    "latitude": 35.68835,
+    "longitude": 139.779681,
+    "imageUrl": "/images/spots/spot-160.jpg",
+    "imageCredit": {
+      "author": "Nesnad",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Suginomori-shrine-mainbuilding-aug13-2015.jpg"
+    },
+    "officialUrl": null,
+    "access": "人形町駅（東京メトロ・都営）、小伝馬町駅（東京メトロ）",
+    "createdAt": "2026-11-07T00:00:00Z",
+    "updatedAt": "2026-11-07T00:00:00Z",
+    "categories": [
+      "神社",
+      "歴史"
+    ],
+    "tags": [
+      "jinja",
+      "rekishi"
+    ],
+    "areaId": 11
+  },
+  {
+    "id": 161,
+    "slug": "takarada-ebisu-jinja",
+    "name": "寶田恵比寿神社",
+    "description": "日本橋七福神のひとつで、恵比寿神を祀る小さな神社。毎年10月19日・20日に周辺で開かれる「べったら市」の中心で、江戸時代から続く市にべったら漬けの屋台が並ぶ。",
+    "address": "東京都中央区日本橋本町3-10-11",
+    "latitude": 35.689245,
+    "longitude": 139.776961,
+    "imageUrl": "/images/spots/spot-161.jpg",
+    "imageCredit": {
+      "author": "bethom33",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Takarada_Ebisu_Shrine,_Nihonbashi-Honch%C5%8D,_Tokyo_-_May_3,_2018.jpg"
+    },
+    "officialUrl": null,
+    "access": "小伝馬町駅（東京メトロ）、新日本橋駅（JR）",
+    "createdAt": "2026-11-07T00:00:00Z",
+    "updatedAt": "2026-11-07T00:00:00Z",
+    "categories": [
+      "神社",
+      "歴史"
+    ],
+    "tags": [
+      "jinja",
+      "rekishi"
+    ],
+    "areaId": 11
+  },
+  {
+    "id": 162,
+    "slug": "jokakuji-shinjuku",
+    "name": "成覚寺",
+    "description": "内藤新宿の宿場で働いた飯盛女（遊女）たちを弔った浄土宗の寺。遊女は「子供」と呼ばれ、亡くなると投げ込むように葬られたと伝わり、境内にはその供養のために建てられた「子供合埋碑」が残る。",
+    "address": "東京都新宿区新宿2-15-18",
+    "latitude": 35.691164,
+    "longitude": 139.709285,
+    "imageUrl": "/images/spots/spot-162.jpg",
+    "imageCredit": {
+      "author": "Abasaa",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jokaku-ji_(Shinjuku).JPG"
+    },
+    "officialUrl": null,
+    "access": "新宿三丁目駅（東京メトロ・都営）、新宿御苑前駅（東京メトロ）",
+    "createdAt": "2026-11-07T00:00:00Z",
+    "updatedAt": "2026-11-07T00:00:00Z",
+    "categories": [
+      "寺",
+      "歴史"
+    ],
+    "tags": [
+      "tera",
+      "rekishi",
+      "shiseki"
+    ],
+    "areaId": 17
+  },
+  {
+    "id": 163,
+    "slug": "shojuin-shinjuku",
+    "name": "正受院",
+    "description": "成覚寺の隣にある浄土宗の寺。綿をかぶせた奪衣婆の像があり、「綿のおばば」と呼ばれて咳止めや子どもの虫封じの信仰を集めた。宿場町の庶民信仰を今に伝える。",
+    "address": "東京都新宿区新宿2-15-16",
+    "latitude": 35.691103,
+    "longitude": 139.70964,
+    "imageUrl": "/images/spots/spot-163.jpg",
+    "imageCredit": {
+      "author": "多摩に暇人",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%AD%A3%E5%8F%97%E9%99%A2.jpg"
+    },
+    "officialUrl": null,
+    "access": "新宿三丁目駅（東京メトロ・都営）、新宿御苑前駅（東京メトロ）",
+    "createdAt": "2026-11-07T00:00:00Z",
+    "updatedAt": "2026-11-07T00:00:00Z",
+    "categories": [
+      "寺",
+      "歴史"
+    ],
+    "tags": [
+      "tera",
+      "rekishi"
+    ],
+    "areaId": 17
+  },
+  {
+    "id": 164,
+    "slug": "taisoji",
+    "name": "太宗寺",
+    "description": "内藤新宿の名の由来となった内藤家の菩提寺。境内の銅造地蔵菩薩坐像は江戸六地蔵のひとつに数えられる。閻魔像と奪衣婆像を納めた閻魔堂もあり、宿場町の寺の雰囲気が残る。",
+    "address": "東京都新宿区新宿2-9-2",
+    "latitude": 35.689669,
+    "longitude": 139.709241,
+    "imageUrl": "/images/spots/spot-164.jpg",
+    "imageCredit": {
+      "author": "Suikotei",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taiso-ji_(Shinjuku).jpg"
+    },
+    "officialUrl": null,
+    "access": "新宿御苑前駅（東京メトロ）、新宿三丁目駅（東京メトロ・都営）",
+    "createdAt": "2026-11-07T00:00:00Z",
+    "updatedAt": "2026-11-07T00:00:00Z",
+    "categories": [
+      "寺",
+      "歴史"
+    ],
+    "tags": [
+      "tera",
+      "rekishi",
+      "shiseki"
+    ],
+    "areaId": 17
+  },
+  {
+    "id": 165,
+    "slug": "shinjuku-gyoen-okido-gate",
+    "name": "新宿御苑 大木戸門",
+    "description": "新宿御苑の東側、四谷寄りにある門。御苑は信州高遠藩内藤家の屋敷跡で、1906年に皇室の庭園として誕生し、戦後に国民公園として一般に公開された。フランス式整形庭園、イギリス風景式庭園、日本庭園を組み合わせた広い庭を歩ける。",
+    "address": "東京都新宿区内藤町11",
+    "latitude": 35.686772,
+    "longitude": 139.713549,
+    "imageUrl": "/images/spots/spot-165.jpg",
+    "imageCredit": {
+      "author": "Keiichi Yasu",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Okido_Gate,_Shinjuku_Gyoen_National_Garden_-_Jul_4,_2013.jpg"
+    },
+    "officialUrl": "https://www.env.go.jp/garden/shinjukugyoen/",
+    "access": "新宿御苑前駅（東京メトロ）",
+    "createdAt": "2026-11-07T00:00:00Z",
+    "updatedAt": "2026-11-07T00:00:00Z",
+    "categories": [
+      "庭園",
+      "公園",
+      "歴史"
+    ],
+    "tags": [
+      "teien",
+      "park",
+      "shizen",
+      "rekishi"
+    ],
+    "areaId": 17
+  },
+  {
+    "id": 166,
+    "slug": "yotsuya-okido-ato",
+    "name": "四谷大木戸跡",
+    "description": "江戸時代、甲州街道から江戸の境に設けられた大木戸の跡。玉川上水の水番所も置かれ、多摩川の水はここから地下の石樋や木樋で江戸市中へ送られた。近くに大木戸跡の碑と、玉川上水の由来を刻んだ「水道碑記」が建つ。",
+    "address": "東京都新宿区内藤町",
+    "latitude": 35.687555,
+    "longitude": 139.715047,
+    "officialUrl": null,
+    "access": "新宿御苑前駅（東京メトロ）、四谷三丁目駅（東京メトロ）",
+    "createdAt": "2026-11-07T00:00:00Z",
+    "updatedAt": "2026-11-07T00:00:00Z",
+    "categories": [
+      "歴史"
+    ],
+    "tags": [
+      "rekishi",
+      "shiseki"
+    ],
+    "areaId": 17
+  },
+  {
+    "id": 167,
+    "slug": "kyobashi-oyabashira",
+    "name": "京橋の親柱",
+    "description": "かつて京橋川に架かっていた京橋の親柱。京橋は日本橋から東海道を南へ進んで最初に渡る橋だった。川は昭和30年代に埋め立てられて橋は姿を消したが、明治と大正の親柱が残り、中央区の文化財になっている。",
+    "address": "東京都中央区銀座1丁目",
+    "latitude": 35.674952,
+    "longitude": 139.768706,
+    "officialUrl": null,
+    "access": "京橋駅（東京メトロ）、銀座一丁目駅（東京メトロ）",
+    "createdAt": "2026-11-07T00:00:00Z",
+    "updatedAt": "2026-11-07T00:00:00Z",
+    "categories": [
+      "橋",
+      "歴史"
+    ],
+    "tags": [
+      "hashi",
+      "rekishi",
+      "shiseki"
+    ],
+    "areaId": 14
+  },
+  {
+    "id": 168,
+    "slug": "okuno-building",
+    "name": "奥野ビル",
+    "description": "1932年に「銀座アパートメント」として建てられた集合住宅。1934年に隣に新館が建ち、今の姿になった。手動扉のエレベーターや細い階段が残り、現在は小さなギャラリーや店が入る。",
+    "address": "東京都中央区銀座1-9-8",
+    "latitude": 35.673748,
+    "longitude": 139.768796,
+    "officialUrl": null,
+    "access": "銀座一丁目駅（東京メトロ）、京橋駅（東京メトロ）",
+    "createdAt": "2026-11-07T00:00:00Z",
+    "updatedAt": "2026-11-07T00:00:00Z",
+    "categories": [
+      "建築",
+      "歴史"
+    ],
+    "tags": [
+      "kenchiku",
+      "retro",
+      "art"
+    ],
+    "areaId": 14
+  },
+  {
+    "id": 169,
+    "slug": "ginza-hassho-no-chi",
+    "name": "銀座発祥の地碑",
+    "description": "慶長17年（1612年）、銀貨を鋳造する「銀座」の役所が駿府からこの地に移された。町の名前「銀座」はこの役所に由来し、跡地の中央通り沿いに記念碑が建つ。",
+    "address": "東京都中央区銀座2-7",
+    "latitude": 35.673378,
+    "longitude": 139.767502,
+    "officialUrl": null,
+    "access": "銀座一丁目駅（東京メトロ）、銀座駅（東京メトロ）",
+    "createdAt": "2026-11-07T00:00:00Z",
+    "updatedAt": "2026-11-07T00:00:00Z",
+    "categories": [
+      "歴史"
+    ],
+    "tags": [
+      "rekishi",
+      "shiseki"
+    ],
+    "areaId": 14
+  },
+  {
+    "id": 170,
+    "slug": "taimei-elementary-school",
+    "name": "泰明小学校",
+    "description": "1878年開校の区立小学校。現在の校舎は関東大震災後の復興小学校として1929年に建てられ、アーチ窓とツタに覆われた外観が残る。島崎藤村や北村透谷が学んだ学校で、校門は「フランス門」と呼ばれる。",
+    "address": "東京都中央区銀座5-1-13",
+    "latitude": 35.672327,
+    "longitude": 139.761492,
+    "officialUrl": null,
+    "access": "銀座駅（東京メトロ）、有楽町駅（JR・東京メトロ）",
+    "createdAt": "2026-11-07T00:00:00Z",
+    "updatedAt": "2026-11-07T00:00:00Z",
+    "categories": [
+      "建築",
+      "歴史"
+    ],
+    "tags": [
+      "kenchiku",
+      "retro",
+      "rekishi"
+    ],
+    "areaId": 14
+  },
+  {
+    "id": 171,
+    "slug": "sukiyabashi-park",
+    "name": "数寄屋橋公園",
+    "description": "江戸城の数寄屋橋御門があった場所にある小さな公園。外堀に架かっていた数寄屋橋は戦後の外堀の埋め立てでなくなった。ラジオドラマ「君の名は」の舞台を記念した菊田一夫の碑「数寄屋橋此処にありき」が建つ。",
+    "address": "東京都中央区銀座5-1",
+    "latitude": 35.672537,
+    "longitude": 139.762262,
+    "officialUrl": null,
+    "access": "銀座駅（東京メトロ）、有楽町駅（JR・東京メトロ）",
+    "createdAt": "2026-11-07T00:00:00Z",
+    "updatedAt": "2026-11-07T00:00:00Z",
+    "categories": [
+      "公園",
+      "歴史"
+    ],
+    "tags": [
+      "park",
+      "rekishi",
+      "shiseki"
+    ],
+    "areaId": 14
   }
 ]

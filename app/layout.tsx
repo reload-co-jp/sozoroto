@@ -163,6 +163,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
             >
               <Link href="/courses">コース一覧</Link>
               <Link href="/areas">エリアから探す</Link>
+              <Link href="/stations">駅から探す</Link>
               <Link href="/about">このサイトについて</Link>
             </nav>
           </div>

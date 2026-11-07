@@ -1814,5 +1814,191 @@
     "title": "ゴール：寛永寺根本中堂",
     "stayMinutes": 20,
     "description": "博物館の裏から言問通りを渡り、東京芸大の裏手へ。上野の山の喧騒から離れた静かな境内でゴール。"
+  },
+  {
+    "id": 221,
+    "courseId": 35,
+    "spotId": 154,
+    "order": 1,
+    "title": "出発：人形町駅",
+    "description": "人形町通りから一本東へ入り、末廣神社を目指す。"
+  },
+  {
+    "id": 222,
+    "courseId": 35,
+    "spotId": 156,
+    "order": 2,
+    "stayMinutes": 5,
+    "description": "日本橋七福神の毘沙門天。元吉原の氏神だった神社で、人形町の名残を感じる路地に建つ。"
+  },
+  {
+    "id": 223,
+    "courseId": 35,
+    "spotId": 157,
+    "order": 3,
+    "stayMinutes": 5,
+    "description": "寿老神を祀る。笠間藩牧野家の屋敷に分霊されたのが始まりで、境内は大名屋敷の跡に建つ。"
+  },
+  {
+    "id": 224,
+    "courseId": 35,
+    "spotId": 14,
+    "order": 4,
+    "stayMinutes": 15,
+    "description": "明治初めに甘酒屋があったことが名の由来とされる通り。鯛焼きや豆腐、三味線の老舗が並ぶ。"
+  },
+  {
+    "id": 225,
+    "courseId": 35,
+    "spotId": 155,
+    "order": 5,
+    "stayMinutes": 5,
+    "description": "大国神を祀る。マンションの1階に社殿がある、都心ならではの神社。"
+  },
+  {
+    "id": 226,
+    "courseId": 35,
+    "spotId": 31,
+    "order": 6,
+    "stayMinutes": 10,
+    "description": "安産・子授けで知られる水天宮。日本橋七福神では弁財天を祀る。"
+  },
+  {
+    "id": 227,
+    "courseId": 35,
+    "spotId": 158,
+    "order": 7,
+    "stayMinutes": 5,
+    "description": "布袋尊を祀る。佐倉藩堀田家の屋敷神で、火伏せの神として信仰されてきた。"
+  },
+  {
+    "id": 228,
+    "courseId": 35,
+    "spotId": 159,
+    "order": 8,
+    "stayMinutes": 10,
+    "description": "福禄寿と弁財天を祀る。戦災を免れた社殿の龍の彫刻を見上げ、境内の銭洗いの井で金運も願える。"
+  },
+  {
+    "id": 229,
+    "courseId": 35,
+    "spotId": 160,
+    "order": 9,
+    "stayMinutes": 5,
+    "description": "恵比寿神を祀る。江戸時代に富くじが行われた神社で、境内の富塚がその歴史を伝える。"
+  },
+  {
+    "id": 230,
+    "courseId": 35,
+    "spotId": 161,
+    "order": 10,
+    "stayMinutes": 5,
+    "title": "ゴール：寶田恵比寿神社",
+    "description": "恵比寿神を祀る、七福神めぐり最後の神社。10月のべったら市の時期には周辺に屋台が並ぶ。"
+  },
+  {
+    "id": 231,
+    "courseId": 36,
+    "spotId": 122,
+    "order": 1,
+    "title": "出発：新宿三丁目駅",
+    "description": "駅上の新宿三丁目交差点付近は、甲州街道と青梅街道が分かれる「追分」だった場所。靖国通りの方へ歩く。"
+  },
+  {
+    "id": 232,
+    "courseId": 36,
+    "spotId": 162,
+    "order": 2,
+    "stayMinutes": 10,
+    "description": "宿場の遊女たちを弔った寺。山門の脇に子供合埋碑が建つ。"
+  },
+  {
+    "id": 233,
+    "courseId": 36,
+    "spotId": 163,
+    "order": 3,
+    "stayMinutes": 5,
+    "description": "成覚寺の隣。綿をかぶった奪衣婆像「綿のおばば」で知られる。"
+  },
+  {
+    "id": 234,
+    "courseId": 36,
+    "spotId": 164,
+    "order": 4,
+    "stayMinutes": 10,
+    "description": "内藤家の菩提寺。大きな銅造の地蔵菩薩坐像と閻魔堂を見て回る。"
+  },
+  {
+    "id": 235,
+    "courseId": 36,
+    "spotId": 165,
+    "order": 5,
+    "stayMinutes": 45,
+    "description": "内藤家の屋敷跡に広がる新宿御苑へ。大木戸門から入り、日本庭園や芝生の広場を歩いて同じ門へ戻る。"
+  },
+  {
+    "id": 236,
+    "courseId": 36,
+    "spotId": 166,
+    "order": 6,
+    "stayMinutes": 5,
+    "title": "ゴール：四谷大木戸跡",
+    "description": "甲州街道で江戸の境にあたった場所。玉川上水の水はここから地下を通って江戸市中へ送られた。"
+  },
+  {
+    "id": 237,
+    "courseId": 37,
+    "spotId": 167,
+    "order": 1,
+    "title": "出発：京橋の親柱",
+    "description": "京橋駅から中央通りを南へ。銀座一丁目側に残る京橋の親柱から歩きはじめる。"
+  },
+  {
+    "id": 238,
+    "courseId": 37,
+    "spotId": 168,
+    "order": 2,
+    "stayMinutes": 15,
+    "description": "1932年築の元・銀座アパートメント。手動扉のエレベーターが残る階段室をのぞける。"
+  },
+  {
+    "id": 239,
+    "courseId": 37,
+    "spotId": 169,
+    "order": 3,
+    "stayMinutes": 5,
+    "description": "中央通りに戻り、銀座の名の由来となった銀座役所の跡の碑を探す。"
+  },
+  {
+    "id": 240,
+    "courseId": 37,
+    "spotId": 97,
+    "order": 4,
+    "stayMinutes": 10,
+    "description": "和光の時計塔が立つ銀座の中心。交差点の四隅の建物を眺める。"
+  },
+  {
+    "id": 241,
+    "courseId": 37,
+    "spotId": 170,
+    "order": 5,
+    "stayMinutes": 5,
+    "description": "震災復興期の1929年に建った校舎。アーチ窓とフランス門を外から眺める。"
+  },
+  {
+    "id": 242,
+    "courseId": 37,
+    "spotId": 171,
+    "order": 6,
+    "stayMinutes": 5,
+    "description": "数寄屋橋御門の跡。「数寄屋橋此処にありき」の碑を見る。"
+  },
+  {
+    "id": 243,
+    "courseId": 37,
+    "spotId": 136,
+    "order": 7,
+    "title": "ゴール：有楽町駅",
+    "description": "数寄屋橋交差点から有楽町駅へ。"
   }
 ]
