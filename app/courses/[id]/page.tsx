@@ -472,6 +472,10 @@ const CourseDetailPage: FC<Props> = async ({ params }) => {
                   </div>
                 )}
 
+                {courseSpots.length >= 4 && (
+                  <AdUnit unit="inArticle" style={{ marginTop: 32 }} />
+                )}
+
                 {course.recommendedTimeOfDay.length > 0 && (
                   <div style={{ marginTop: 24 }}>
                     <h2
